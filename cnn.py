@@ -56,7 +56,8 @@ total_frames = 0
 for class_name in class_names:
     class_dir = os.path.join(data_dir, class_name)
     for file in os.listdir(class_dir):
-        if file.endswith('.mov'):
+        print(file)
+        if file.endswith('.MOV'):
             video_path = os.path.join(class_dir, file)
             frames = extract_frames(video_path, class_dir)
             total_frames += frames
