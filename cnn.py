@@ -31,9 +31,16 @@ num_classes = len(class_names)
 print(f"Classes: {class_names}")
 print(f"Number of classes: {num_classes}")
 
-# Create ImageDataGenerator for data augmentation and preprocessing
 def extract_frames(video_path, output_dir, interval=FRAME_INTERVAL):
+    if not os.path.exists(video_path):
+        print(f"Video file not found: {video_path}")
+        return 0
+    
     video = cv2.VideoCapture(video_path)
+    if not video.isOpened():
+        print(f"Error opening video file: {video_path}")
+        return 0
+    
     count = 0
     frame_count = 0
     
@@ -55,6 +62,9 @@ def extract_frames(video_path, output_dir, interval=FRAME_INTERVAL):
 total_frames = 0
 for class_name in class_names:
     class_dir = os.path.join(data_dir, class_name)
+    if not os.path.exists(class_dir):
+        print(f"Directory not found: {class_dir}")
+        continue
     for file in os.listdir(class_dir):
         print(file)
         if file.endswith('.MOV'):
@@ -81,6 +91,9 @@ all_labels = []
 
 for i, class_name in enumerate(class_names):
     class_dir = os.path.join(data_dir, class_name)
+    if not os.path.exists(class_dir):
+        print(f"Directory not found: {class_dir}")
+        continue
     for img_file in os.listdir(class_dir):
         if img_file.endswith(('.jpg', '.jpeg', '.png')):
             img_path = os.path.join(class_dir, img_file)
@@ -91,6 +104,12 @@ for i, class_name in enumerate(class_names):
 
 all_images = np.array(all_images)
 all_labels = np.array(all_labels)
+
+print(f"Total images loaded: {len(all_images)}")
+print(f"Images per class: {np.bincount(all_labels)}")
+
+if len(all_images) == 0:
+    raise ValueError("No images found. Please check your data directory.")
 
 # Split the data into training and testing sets
 X_train, X_test, y_train, y_test = train_test_split(all_images, all_labels, test_size=0.2, stratify=all_labels, random_state=42)
@@ -151,36 +170,47 @@ for model in models_to_test:
     print(f"\nTraining {model_name}")
     model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy'])
     
-    history = model.fit(
-        train_generator,
-        steps_per_epoch=len(X_train) // BATCH_SIZE,
-        epochs=EPOCHS,
-        validation_data=(X_test, y_test),
-        validation_steps=len(X_test) // BATCH_SIZE
-    )
+    try:
+        history = model.fit(
+            train_generator,
+            steps_per_epoch=len(X_train) // BATCH_SIZE,
+            epochs=EPOCHS,
+            validation_data=(X_test, y_test),
+            validation_steps=len(X_test) // BATCH_SIZE
+        )
+    except Exception as e:
+        print(f"Error during training {model_name}: {str(e)}")
+        continue
     
     # Evaluate the model
-    test_loss, test_accuracy = model.evaluate(test_generator)
-    print(f"{model_name} - Test accuracy: {test_accuracy:.4f}")
+    try:
+        test_loss, test_accuracy = model.evaluate(X_test, y_test)
+        print(f"{model_name} - Test accuracy: {test_accuracy:.4f}")
+    except Exception as e:
+        print(f"Error during evaluation of {model_name}: {str(e)}")
+        continue
     
     # Generate predictions
-    predictions = model.predict(test_generator)
-    y_pred = np.argmax(predictions, axis=1)
-    y_true = np.argmax(y_test, axis=1)
+    try:
+        predictions = model.predict(X_test)
+        y_pred = np.argmax(predictions, axis=1)
+        y_true = np.argmax(y_test, axis=1)
     
-    # Generate classification report and confusion matrix
-    report = classification_report(y_true, y_pred, target_names=class_names)
-    cm = confusion_matrix(y_true, y_pred)
+        # Generate classification report and confusion matrix
+        report = classification_report(y_true, y_pred, target_names=class_names)
+        cm = confusion_matrix(y_true, y_pred)
     
-    results[model_name] = {
-        'accuracy': test_accuracy,
-        'history': history.history,
-        'report': report,
-        'cm': cm
-    }
+        results[model_name] = {
+            'accuracy': test_accuracy,
+            'history': history.history,
+            'report': report,
+            'cm': cm
+        }
     
-    # Save the model
-    model.save(f'models/{model_name.lower().replace(" ", "_")}_model.h5')
+        # Save the model
+        model.save(f'{model_name.lower().replace(" ", "_")}_model.h5')
+    except Exception as e:
+        print(f"Error during prediction and reporting for {model_name}: {str(e)}")
 
 # Plot accuracy comparison
 plt.figure(figsize=(10, 6))
@@ -191,7 +221,7 @@ plt.title('Model Accuracy Comparison')
 plt.ylabel('Accuracy')
 plt.xlabel('Epoch')
 plt.legend()
-plt.savefig('figures/model_accuracy_comparison.png')
+plt.savefig('model_accuracy_comparison.png')
 plt.close()
 
 # Print final results and classification reports
@@ -207,7 +237,7 @@ for model_name, result in results.items():
     plt.title(f'{model_name} Confusion Matrix')
     plt.ylabel('True label')
     plt.xlabel('Predicted label')
-    plt.savefig(f'figures/{model_name.lower().replace(" ", "_")}_confusion_matrix.png')
+    plt.savefig(f'{model_name.lower().replace(" ", "_")}_confusion_matrix.png')
     plt.close()
 
 print("\nTraining and evaluation complete. Model files and visualizations have been saved.")
