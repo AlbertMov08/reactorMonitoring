@@ -11,6 +11,7 @@ from sklearn.metrics import classification_report, confusion_matrix
 import matplotlib.pyplot as plt
 import seaborn as sns
 import cv2
+from collections import Counter
 
 # Keep this seeding consistent
 np.random.seed(42)
@@ -78,34 +79,44 @@ print(f"Total frames extracted: {total_frames}")
 # Load all images (including extracted frames)
 all_images = []
 all_labels = []
+class_counts = Counter()
 
 for i, class_name in enumerate(class_names):
     class_dir = os.path.join(data_dir, class_name)
     if not os.path.exists(class_dir):
         print(f"Directory not found: {class_dir}")
         continue
-    class_images = 0
+    class_images = []
     for img_file in os.listdir(class_dir):
         if img_file.endswith(('.jpg', '.jpeg', '.png')):
             img_path = os.path.join(class_dir, img_file)
             img = keras.preprocessing.image.load_img(img_path, target_size=(IMG_HEIGHT, IMG_WIDTH))
             img_array = keras.preprocessing.image.img_to_array(img)
-            all_images.append(img_array)
-            all_labels.append(i)
-            class_images += 1
-    print(f"Loaded {class_images} images for class {class_name}")
+            class_images.append(img_array)
+    class_counts[i] = len(class_images)
+    all_images.extend(class_images)
+    all_labels.extend([i] * len(class_images))
+    print(f"Loaded {len(class_images)} images for class {class_name}")
 
-all_images = np.array(all_images)
-all_labels = np.array(all_labels)
+print("Class counts before balancing:", class_counts)
 
-print(f"Total images loaded: {len(all_images)}")
-print(f"Images per class: {np.bincount(all_labels)}")
+# Find the minimum count across all classes
+min_count = min(class_counts.values())
 
-if len(all_images) == 0:
-    raise ValueError("No images found. Please check your data directory.")
+# Balance the dataset
+balanced_images = []
+balanced_labels = []
+for i in range(num_classes):
+    class_images = [img for img, label in zip(all_images, all_labels) if label == i]
+    np.random.shuffle(class_images)
+    balanced_images.extend(class_images[:min_count])
+    balanced_labels.extend([i] * min_count)
 
-if len(all_images) < num_classes * 2:
-    raise ValueError(f"Not enough images ({len(all_images)}) for {num_classes} classes. Need at least {num_classes * 2}.")
+all_images = np.array(balanced_images)
+all_labels = np.array(balanced_labels)
+
+print(f"Total images after balancing: {len(all_images)}")
+print(f"Images per class after balancing: {Counter(all_labels)}")
 
 # Split the data into training and testing sets
 X_train, X_test, y_train, y_test = train_test_split(all_images, all_labels, test_size=0.2, stratify=all_labels, random_state=42)
@@ -122,25 +133,9 @@ print("Shape of training labels:", y_train.shape)
 print("Shape of test data:", X_test.shape)
 print("Shape of test labels:", y_test.shape)
 
-# Prepare data generators
-datagen = ImageDataGenerator(
-    rescale=1./255,
-    rotation_range=20,
-    width_shift_range=0.2,
-    height_shift_range=0.2,
-    horizontal_flip=True,
-    zoom_range=0.2
-)
-
-# Verify data generators
-print("Verifying data generators...")
-train_generator = datagen.flow(X_train, y_train, batch_size=BATCH_SIZE)
-test_generator = ImageDataGenerator(rescale=1./255).flow(X_test, y_test, batch_size=BATCH_SIZE, shuffle=False)
-
-X_batch, y_batch = next(train_generator)
-print("Sample batch shapes:")
-print("X_batch shape:", X_batch.shape)
-print("y_batch shape:", y_batch.shape)
+# Normalize the data
+X_train = X_train.astype('float32') / 255.0
+X_test = X_test.astype('float32') / 255.0
 
 def create_custom_cnn():
     model = Sequential([
@@ -188,18 +183,56 @@ for model in models_to_test:
     model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy'])
     
     try:
-        history = model.fit(
-            train_generator,
-            steps_per_epoch=len(X_train) // BATCH_SIZE,
-            epochs=EPOCHS,
-            validation_data=(X_test, y_test),
-            validation_steps=len(X_test) // BATCH_SIZE,
-            verbose=1
-        )
-        
-        if history.history.get('val_accuracy') is None:
-            print(f"Warning: No validation accuracy recorded for {model_name}")
-            continue
+        # Manual training loop
+        train_dataset = tf.data.Dataset.from_tensor_slices((X_train, y_train)).shuffle(1000).batch(BATCH_SIZE)
+        val_dataset = tf.data.Dataset.from_tensor_slices((X_test, y_test)).batch(BATCH_SIZE)
+
+        train_loss = tf.keras.metrics.Mean(name='train_loss')
+        train_accuracy = tf.keras.metrics.CategoricalAccuracy(name='train_accuracy')
+        val_loss = tf.keras.metrics.Mean(name='val_loss')
+        val_accuracy = tf.keras.metrics.CategoricalAccuracy(name='val_accuracy')
+
+        @tf.function
+        def train_step(images, labels):
+            with tf.GradientTape() as tape:
+                predictions = model(images, training=True)
+                loss = tf.keras.losses.categorical_crossentropy(labels, predictions)
+            gradients = tape.gradient(loss, model.trainable_variables)
+            model.optimizer.apply_gradients(zip(gradients, model.trainable_variables))
+            train_loss(loss)
+            train_accuracy(labels, predictions)
+
+        @tf.function
+        def val_step(images, labels):
+            predictions = model(images, training=False)
+            loss = tf.keras.losses.categorical_crossentropy(labels, predictions)
+            val_loss(loss)
+            val_accuracy(labels, predictions)
+
+        history = {'accuracy': [], 'val_accuracy': [], 'loss': [], 'val_loss': []}
+
+        for epoch in range(EPOCHS):
+            train_loss.reset_states()
+            train_accuracy.reset_states()
+            val_loss.reset_states()
+            val_accuracy.reset_states()
+
+            for images, labels in train_dataset:
+                train_step(images, labels)
+
+            for images, labels in val_dataset:
+                val_step(images, labels)
+
+            print(f'Epoch {epoch + 1}, '
+                  f'Loss: {train_loss.result():.4f}, '
+                  f'Accuracy: {train_accuracy.result():.4f}, '
+                  f'Val Loss: {val_loss.result():.4f}, '
+                  f'Val Accuracy: {val_accuracy.result():.4f}')
+
+            history['accuracy'].append(train_accuracy.result().numpy())
+            history['val_accuracy'].append(val_accuracy.result().numpy())
+            history['loss'].append(train_loss.result().numpy())
+            history['val_loss'].append(val_loss.result().numpy())
         
     except Exception as e:
         print(f"Error during training {model_name}: {str(e)}")
@@ -225,7 +258,7 @@ for model in models_to_test:
     
         results[model_name] = {
             'accuracy': test_accuracy,
-            'history': history.history,
+            'history': history,
             'report': report,
             'cm': cm
         }
