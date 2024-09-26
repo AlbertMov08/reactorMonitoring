@@ -19,8 +19,16 @@ IMG_HEIGHT, IMG_WIDTH = 224, 224
 BATCH_SIZE = 32
 EPOCHS = 20
 
-#TODO: Github may not be the best place for storage, eventually modify
 data_dir = '.'
+
+# Explicitly define the classes based on your directory structure
+class_names = ['Foam-Heavy', 'Foam-mild', 'Post-Antifoam Addition', 'Foam-Medium', 'No Foam']
+num_classes = len(class_names)
+
+print(f"Classes: {class_names}")
+print(f"Number of classes: {num_classes}")
+
+# Create ImageDataGenerator for data augmentation and preprocessing
 datagen = ImageDataGenerator(
     rescale=1./255,
     validation_split=0.2,
@@ -36,7 +44,9 @@ train_generator = datagen.flow_from_directory(
     target_size=(IMG_HEIGHT, IMG_WIDTH),
     batch_size=BATCH_SIZE,
     class_mode='categorical',
-    subset='training'
+    classes=class_names,
+    subset='training',
+    shuffle=True
 )
 
 validation_generator = datagen.flow_from_directory(
@@ -44,12 +54,10 @@ validation_generator = datagen.flow_from_directory(
     target_size=(IMG_HEIGHT, IMG_WIDTH),
     batch_size=BATCH_SIZE,
     class_mode='categorical',
-    subset='validation'
+    classes=class_names,
+    subset='validation',
+    shuffle=False
 )
-
-#dynamic class generation
-num_classes = len(train_generator.class_indices)
-print(f"Number of classes: {num_classes}")
 
 def create_custom_cnn():
     model = Sequential([
@@ -115,7 +123,6 @@ for model in models_to_test:
     y_true = validation_generator.classes
     
     # Generate classification report and confusion matrix
-    class_names = list(train_generator.class_indices.keys())
     report = classification_report(y_true, y_pred, target_names=class_names)
     cm = confusion_matrix(y_true, y_pred)
     
@@ -150,7 +157,7 @@ for model_name, result in results.items():
     
     # Plot confusion matrix
     plt.figure(figsize=(10, 8))
-    sns.heatmap(result['cm'], annot=True, fmt='d', cmap='Blues')
+    sns.heatmap(result['cm'], annot=True, fmt='d', cmap='Blues', xticklabels=class_names, yticklabels=class_names)
     plt.title(f'{model_name} Confusion Matrix')
     plt.ylabel('True label')
     plt.xlabel('Predicted label')
