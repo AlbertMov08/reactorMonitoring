@@ -75,16 +75,6 @@ for class_name in class_names:
 
 print(f"Total frames extracted: {total_frames}")
 
-# Prepare data generators
-datagen = ImageDataGenerator(
-    rescale=1./255,
-    rotation_range=20,
-    width_shift_range=0.2,
-    height_shift_range=0.2,
-    horizontal_flip=True,
-    zoom_range=0.2
-)
-
 # Load all images (including extracted frames)
 all_images = []
 all_labels = []
@@ -94,6 +84,7 @@ for i, class_name in enumerate(class_names):
     if not os.path.exists(class_dir):
         print(f"Directory not found: {class_dir}")
         continue
+    class_images = 0
     for img_file in os.listdir(class_dir):
         if img_file.endswith(('.jpg', '.jpeg', '.png')):
             img_path = os.path.join(class_dir, img_file)
@@ -101,6 +92,8 @@ for i, class_name in enumerate(class_names):
             img_array = keras.preprocessing.image.img_to_array(img)
             all_images.append(img_array)
             all_labels.append(i)
+            class_images += 1
+    print(f"Loaded {class_images} images for class {class_name}")
 
 all_images = np.array(all_images)
 all_labels = np.array(all_labels)
@@ -110,6 +103,9 @@ print(f"Images per class: {np.bincount(all_labels)}")
 
 if len(all_images) == 0:
     raise ValueError("No images found. Please check your data directory.")
+
+if len(all_images) < num_classes * 2:
+    raise ValueError(f"Not enough images ({len(all_images)}) for {num_classes} classes. Need at least {num_classes * 2}.")
 
 # Split the data into training and testing sets
 X_train, X_test, y_train, y_test = train_test_split(all_images, all_labels, test_size=0.2, stratify=all_labels, random_state=42)
@@ -121,9 +117,30 @@ print(f"Testing samples: {len(X_test)}")
 y_train = keras.utils.to_categorical(y_train, num_classes)
 y_test = keras.utils.to_categorical(y_test, num_classes)
 
-# Create data generators
+print("Shape of training data:", X_train.shape)
+print("Shape of training labels:", y_train.shape)
+print("Shape of test data:", X_test.shape)
+print("Shape of test labels:", y_test.shape)
+
+# Prepare data generators
+datagen = ImageDataGenerator(
+    rescale=1./255,
+    rotation_range=20,
+    width_shift_range=0.2,
+    height_shift_range=0.2,
+    horizontal_flip=True,
+    zoom_range=0.2
+)
+
+# Verify data generators
+print("Verifying data generators...")
 train_generator = datagen.flow(X_train, y_train, batch_size=BATCH_SIZE)
 test_generator = ImageDataGenerator(rescale=1./255).flow(X_test, y_test, batch_size=BATCH_SIZE, shuffle=False)
+
+X_batch, y_batch = next(train_generator)
+print("Sample batch shapes:")
+print("X_batch shape:", X_batch.shape)
+print("y_batch shape:", y_batch.shape)
 
 def create_custom_cnn():
     model = Sequential([
@@ -176,15 +193,21 @@ for model in models_to_test:
             steps_per_epoch=len(X_train) // BATCH_SIZE,
             epochs=EPOCHS,
             validation_data=(X_test, y_test),
-            validation_steps=len(X_test) // BATCH_SIZE
+            validation_steps=len(X_test) // BATCH_SIZE,
+            verbose=1
         )
+        
+        if history.history.get('val_accuracy') is None:
+            print(f"Warning: No validation accuracy recorded for {model_name}")
+            continue
+        
     except Exception as e:
         print(f"Error during training {model_name}: {str(e)}")
         continue
     
     # Evaluate the model
     try:
-        test_loss, test_accuracy = model.evaluate(X_test, y_test)
+        test_loss, test_accuracy = model.evaluate(X_test, y_test, verbose=0)
         print(f"{model_name} - Test accuracy: {test_accuracy:.4f}")
     except Exception as e:
         print(f"Error during evaluation of {model_name}: {str(e)}")
