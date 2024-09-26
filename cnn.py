@@ -155,7 +155,7 @@ for model in models_to_test:
         train_generator,
         steps_per_epoch=len(X_train) // BATCH_SIZE,
         epochs=EPOCHS,
-        validation_data=test_generator,
+        validation_data=(X_test, y_test),
         validation_steps=len(X_test) // BATCH_SIZE
     )
     
