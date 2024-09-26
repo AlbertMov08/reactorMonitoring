@@ -134,7 +134,7 @@ for model in models_to_test:
     }
     
     # Save the model
-    model.save(f'{model_name.lower().replace(" ", "_")}_model.h5')
+    model.save(f'models/{model_name.lower().replace(" ", "_")}_model.h5')
 
 # Plot accuracy comparison
 plt.figure(figsize=(10, 6))
@@ -145,7 +145,7 @@ plt.title('Model Accuracy Comparison')
 plt.ylabel('Accuracy')
 plt.xlabel('Epoch')
 plt.legend()
-plt.savefig('model_accuracy_comparison.png')
+plt.savefig('figures/model_accuracy_comparison.png')
 plt.close()
 
 # Print final results and classification reports
@@ -161,7 +161,7 @@ for model_name, result in results.items():
     plt.title(f'{model_name} Confusion Matrix')
     plt.ylabel('True label')
     plt.xlabel('Predicted label')
-    plt.savefig(f'{model_name.lower().replace(" ", "_")}_confusion_matrix.png')
+    plt.savefig(f'figures/{model_name.lower().replace(" ", "_")}_confusion_matrix.png')
     plt.close()
 
 print("\nTraining and evaluation complete. Model files and visualizations have been saved.")
