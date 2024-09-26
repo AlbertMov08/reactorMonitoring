@@ -1,6 +1,7 @@
 # reactorMonitoring
  
 ## CNN Implementation
+```
 Found 41 images belonging to 6 classes.
 Found 9 images belonging to 6 classes.
 Number of classes: 6
@@ -29,3 +30,4 @@ Model: "sequential"
  Non-trainable params: 0 (0.00 B)
  Epoch 50/50
 1/1 ━━━━━━━━━━━━━━━━━━━━ 3s 3s/step - accuracy: 0.4062 - loss: 1.4615 - val_accuracy: 0.6667 - val_loss: 1.3491
+```
