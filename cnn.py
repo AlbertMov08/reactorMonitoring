@@ -187,11 +187,6 @@ for model in models_to_test:
         train_dataset = tf.data.Dataset.from_tensor_slices((X_train, y_train)).shuffle(1000).batch(BATCH_SIZE)
         val_dataset = tf.data.Dataset.from_tensor_slices((X_test, y_test)).batch(BATCH_SIZE)
 
-        train_loss = tf.keras.metrics.Mean(name='train_loss')
-        train_accuracy = tf.keras.metrics.CategoricalAccuracy(name='train_accuracy')
-        val_loss = tf.keras.metrics.Mean(name='val_loss')
-        val_accuracy = tf.keras.metrics.CategoricalAccuracy(name='val_accuracy')
-
         @tf.function
         def train_step(images, labels):
             with tf.GradientTape() as tape:
@@ -199,40 +194,53 @@ for model in models_to_test:
                 loss = tf.keras.losses.categorical_crossentropy(labels, predictions)
             gradients = tape.gradient(loss, model.trainable_variables)
             model.optimizer.apply_gradients(zip(gradients, model.trainable_variables))
-            train_loss(loss)
-            train_accuracy(labels, predictions)
+            return loss, predictions
 
         @tf.function
         def val_step(images, labels):
             predictions = model(images, training=False)
             loss = tf.keras.losses.categorical_crossentropy(labels, predictions)
-            val_loss(loss)
-            val_accuracy(labels, predictions)
+            return loss, predictions
 
         history = {'accuracy': [], 'val_accuracy': [], 'loss': [], 'val_loss': []}
 
         for epoch in range(EPOCHS):
-            train_loss.reset_states()
-            train_accuracy.reset_states()
-            val_loss.reset_states()
-            val_accuracy.reset_states()
-
+            # Train
+            train_losses = []
+            train_accuracies = []
             for images, labels in train_dataset:
-                train_step(images, labels)
-
+                loss, predictions = train_step(images, labels)
+                train_losses.append(loss)
+                train_accuracies.append(
+                    tf.keras.metrics.categorical_accuracy(labels, predictions)
+                )
+            
+            # Validate
+            val_losses = []
+            val_accuracies = []
             for images, labels in val_dataset:
-                val_step(images, labels)
+                loss, predictions = val_step(images, labels)
+                val_losses.append(loss)
+                val_accuracies.append(
+                    tf.keras.metrics.categorical_accuracy(labels, predictions)
+                )
+            
+            # Compute epoch-level metrics
+            train_loss = tf.reduce_mean(train_losses)
+            train_accuracy = tf.reduce_mean(train_accuracies)
+            val_loss = tf.reduce_mean(val_losses)
+            val_accuracy = tf.reduce_mean(val_accuracies)
 
             print(f'Epoch {epoch + 1}, '
-                  f'Loss: {train_loss.result():.4f}, '
-                  f'Accuracy: {train_accuracy.result():.4f}, '
-                  f'Val Loss: {val_loss.result():.4f}, '
-                  f'Val Accuracy: {val_accuracy.result():.4f}')
+                  f'Loss: {train_loss:.4f}, '
+                  f'Accuracy: {train_accuracy:.4f}, '
+                  f'Val Loss: {val_loss:.4f}, '
+                  f'Val Accuracy: {val_accuracy:.4f}')
 
-            history['accuracy'].append(train_accuracy.result().numpy())
-            history['val_accuracy'].append(val_accuracy.result().numpy())
-            history['loss'].append(train_loss.result().numpy())
-            history['val_loss'].append(val_loss.result().numpy())
+            history['accuracy'].append(train_accuracy.numpy())
+            history['val_accuracy'].append(val_accuracy.numpy())
+            history['loss'].append(train_loss.numpy())
+            history['val_loss'].append(val_loss.numpy())
         
     except Exception as e:
         print(f"Error during training {model_name}: {str(e)}")
@@ -267,7 +275,6 @@ for model in models_to_test:
         model.save(f'{model_name.lower().replace(" ", "_")}_model.h5')
     except Exception as e:
         print(f"Error during prediction and reporting for {model_name}: {str(e)}")
-
 # Plot accuracy comparison
 plt.figure(figsize=(10, 6))
 for model_name, result in results.items():
