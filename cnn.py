@@ -5,7 +5,7 @@ from tensorflow import keras
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
 from tensorflow.keras.applications import VGG16, ResNet50, MobileNetV2
 from tensorflow.keras.models import Sequential
-from tensorflow.keras.layers import Dense, GlobalAveragePooling2D, Dropout
+from tensorflow.keras.layers import Dense, GlobalAveragePooling2D, Dropout, Input, Conv2D, MaxPooling2D, Flatten
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import classification_report, confusion_matrix
 import matplotlib.pyplot as plt
@@ -19,7 +19,7 @@ tf.random.set_seed(42)
 
 #I set this arbitrarily
 IMG_HEIGHT, IMG_WIDTH = 224, 224
-BATCH_SIZE = 32
+BATCH_SIZE = 11
 EPOCHS = 20
 FRAME_INTERVAL = 30  # Extract a frame every 30 frames
 
@@ -137,9 +137,10 @@ print("Shape of test labels:", y_test.shape)
 X_train = X_train.astype('float32') / 255.0
 X_test = X_test.astype('float32') / 255.0
 
-def create_custom_cnn():
+def create_custom_cnn(input_shape):
     model = Sequential([
-        keras.layers.Conv2D(32, (3, 3), activation='relu', input_shape=(IMG_HEIGHT, IMG_WIDTH, 3)),
+        Input(shape=input_shape),
+        keras.layers.Conv2D(32, (3, 3), activation='relu'),
         keras.layers.MaxPooling2D((2, 2)),
         keras.layers.Conv2D(64, (3, 3), activation='relu'),
         keras.layers.MaxPooling2D((2, 2)),
@@ -150,11 +151,12 @@ def create_custom_cnn():
     ])
     return model
 
-def create_pretrained_model(base_model, model_name):
-    base = base_model(weights='imagenet', include_top=False, input_shape=(IMG_HEIGHT, IMG_WIDTH, 3))
+def create_pretrained_model(base_model, model_name, input_shape):
+    base = base_model(weights='imagenet', include_top=False, input_shape=input_shape)
     base.trainable = False  # Freeze the base model
     
     model = Sequential([
+        Input(shape=input_shape),
         base,
         GlobalAveragePooling2D(),
         Dense(256, activation='relu'),
@@ -164,11 +166,12 @@ def create_pretrained_model(base_model, model_name):
     
     return model, model_name
 
+input_shape = (IMG_HEIGHT, IMG_WIDTH, 3)
 models_to_test = [
-    create_custom_cnn(),
-    create_pretrained_model(VGG16, 'VGG16'),
-    create_pretrained_model(ResNet50, 'ResNet50'),
-    create_pretrained_model(MobileNetV2, 'MobileNetV2')
+    create_custom_cnn(input_shape),
+    create_pretrained_model(VGG16, 'VGG16', input_shape),
+    create_pretrained_model(ResNet50, 'ResNet50', input_shape),
+    create_pretrained_model(MobileNetV2, 'MobileNetV2', input_shape)
 ]
 
 results = {}
@@ -212,7 +215,7 @@ for model in models_to_test:
                 loss, predictions = train_step(images, labels)
                 train_losses.append(loss)
                 train_accuracies.append(
-                    tf.keras.metrics.categorical_accuracy(labels, predictions)
+                    tf.reduce_mean(tf.keras.metrics.categorical_accuracy(labels, predictions))
                 )
             
             # Validate
@@ -222,7 +225,7 @@ for model in models_to_test:
                 loss, predictions = val_step(images, labels)
                 val_losses.append(loss)
                 val_accuracies.append(
-                    tf.keras.metrics.categorical_accuracy(labels, predictions)
+                    tf.reduce_mean(tf.keras.metrics.categorical_accuracy(labels, predictions))
                 )
             
             # Compute epoch-level metrics
