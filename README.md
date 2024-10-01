@@ -28,69 +28,69 @@ Model: "sequential"
  Non-trainable params: 0 (0.00 B)
 
 Custom CNN:
-Final accuracy: 0.6364
+Final accuracy: 0.7480
 
 Classification Report:
                         precision    recall  f1-score   support
 
-            Foam-Heavy       0.33      0.20      0.25         5
-             Foam-mild       0.60      0.75      0.67         4
-Post-Antifoam Addition       0.60      0.75      0.67         4
-           Foam-Medium       0.75      0.60      0.67         5
-               No Foam       0.80      1.00      0.89         4
+            Foam-Heavy       0.78      0.70      0.74       100
+             Foam-mild       0.66      0.64      0.65       100
+Post-Antifoam Addition       0.86      0.85      0.85       100
+           Foam-Medium       0.65      0.69      0.67       100
+               No Foam       0.80      0.86      0.83       100
 
-              accuracy                           0.64        22
-             macro avg       0.62      0.66      0.63        22
-          weighted avg       0.61      0.64      0.61        22
+              accuracy                           0.75       500
+             macro avg       0.75      0.75      0.75       500
+          weighted avg       0.75      0.75      0.75       500
 
 
 VGG16:
-Final accuracy: 0.5000
+Final accuracy: 0.8460
 
 Classification Report:
                         precision    recall  f1-score   support
 
-            Foam-Heavy       0.33      0.20      0.25         5
-             Foam-mild       0.43      0.75      0.55         4
-Post-Antifoam Addition       0.60      0.75      0.67         4
-           Foam-Medium       0.33      0.20      0.25         5
-               No Foam       0.75      0.75      0.75         4
+            Foam-Heavy       0.94      0.79      0.86       100
+             Foam-mild       0.85      0.71      0.77       100
+Post-Antifoam Addition       0.82      0.97      0.89       100
+           Foam-Medium       0.82      0.86      0.84       100
+               No Foam       0.83      0.90      0.86       100
 
-              accuracy                           0.50        22
-             macro avg       0.49      0.53      0.49        22
-          weighted avg       0.47      0.50      0.47        22
+              accuracy                           0.85       500
+             macro avg       0.85      0.85      0.84       500
+          weighted avg       0.85      0.85      0.84       500
 
 
 ResNet50:
-Final accuracy: 0.4091
+Final accuracy: 0.4700
 
 Classification Report:
                         precision    recall  f1-score   support
 
-            Foam-Heavy       0.25      0.20      0.22         5
-             Foam-mild       0.00      0.00      0.00         4
-Post-Antifoam Addition       0.43      0.75      0.55         4
-           Foam-Medium       0.50      0.20      0.29         5
-               No Foam       0.57      1.00      0.73         4
+            Foam-Heavy       0.29      0.16      0.21       100
+             Foam-mild       0.42      0.40      0.41       100
+Post-Antifoam Addition       0.55      0.96      0.70       100
+           Foam-Medium       0.38      0.30      0.33       100
+               No Foam       0.57      0.53      0.55       100
 
-              accuracy                           0.41        22
-             macro avg       0.35      0.43      0.36        22
-          weighted avg       0.35      0.41      0.35        22
+              accuracy                           0.47       500
+             macro avg       0.44      0.47      0.44       500
+          weighted avg       0.44      0.47      0.44       500
 
 
 MobileNetV2:
-Final accuracy: 0.6364
+Final accuracy: 0.9540
 
 Classification Report:
                         precision    recall  f1-score   support
 
-            Foam-Heavy       1.00      0.40      0.57         5
-             Foam-mild       0.25      0.25      0.25         4
-Post-Antifoam Addition       0.67      1.00      0.80         4
-           Foam-Medium       0.67      0.80      0.73         5
-               No Foam       0.75      0.75      0.75         4
+            Foam-Heavy       0.96      0.99      0.98       100
+             Foam-mild       0.87      0.95      0.91       100
+Post-Antifoam Addition       1.00      0.97      0.98       100
+           Foam-Medium       0.97      0.90      0.93       100
+               No Foam       0.98      0.96      0.97       100
 
-              accuracy                           0.64        22
-             macro avg       0.67      0.64      0.62        22
-          weighted avg       0.68      0.64      0.62        22
+              accuracy                           0.95       500
+             macro avg       0.96      0.95      0.95       500
+          weighted avg       0.96      0.95      0.95       500
 ```
