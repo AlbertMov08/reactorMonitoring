@@ -19,9 +19,9 @@ tf.random.set_seed(42)
 
 #I set this arbitrarily
 IMG_HEIGHT, IMG_WIDTH = 224, 224
-BATCH_SIZE = 11
-EPOCHS = 50
-FRAME_INTERVAL = 30  # Extract a frame every 30 frames
+BATCH_SIZE = 32
+EPOCHS = 20
+FRAME_INTERVAL = 5
 
 data_dir = '.'
 
@@ -67,7 +67,6 @@ for class_name in class_names:
         print(f"Directory not found: {class_dir}")
         continue
     for file in os.listdir(class_dir):
-        print(file)
         if file.endswith('.MOV'):
             video_path = os.path.join(class_dir, file)
             frames = extract_frames(video_path, class_dir)
@@ -76,10 +75,19 @@ for class_name in class_names:
 
 print(f"Total frames extracted: {total_frames}")
 
-# Load all images (including extracted frames)
+# Data augmentation setup
+datagen = ImageDataGenerator(
+    rescale=1./255,
+    rotation_range=20,
+    width_shift_range=0.2,
+    height_shift_range=0.2,
+    horizontal_flip=True,
+    zoom_range=0.2,
+    validation_split=0.2  # 20% of data will be used for validation
+)
+
 all_images = []
 all_labels = []
-class_counts = Counter()
 
 for i, class_name in enumerate(class_names):
     class_dir = os.path.join(data_dir, class_name)
@@ -93,30 +101,27 @@ for i, class_name in enumerate(class_names):
             img = keras.preprocessing.image.load_img(img_path, target_size=(IMG_HEIGHT, IMG_WIDTH))
             img_array = keras.preprocessing.image.img_to_array(img)
             class_images.append(img_array)
-    class_counts[i] = len(class_images)
+    
+    # Augment images to balance classes
+    target_size = 500
+    augmented_images = []
+    while len(class_images) + len(augmented_images) < target_size:
+        for img in class_images:
+            if len(class_images) + len(augmented_images) >= target_size:
+                break
+            aug_img = datagen.random_transform(img)
+            augmented_images.append(aug_img)
+    
+    class_images.extend(augmented_images)
     all_images.extend(class_images)
     all_labels.extend([i] * len(class_images))
-    print(f"Loaded {len(class_images)} images for class {class_name}")
+    print(f"Class {class_name}: {len(class_images)} images (including augmented)")
 
-print("Class counts before balancing:", class_counts)
+all_images = np.array(all_images)
+all_labels = np.array(all_labels)
 
-# Find the minimum count across all classes
-min_count = min(class_counts.values())
-
-# Balance the dataset
-balanced_images = []
-balanced_labels = []
-for i in range(num_classes):
-    class_images = [img for img, label in zip(all_images, all_labels) if label == i]
-    np.random.shuffle(class_images)
-    balanced_images.extend(class_images[:min_count])
-    balanced_labels.extend([i] * min_count)
-
-all_images = np.array(balanced_images)
-all_labels = np.array(balanced_labels)
-
-print(f"Total images after balancing: {len(all_images)}")
-print(f"Images per class after balancing: {Counter(all_labels)}")
+print(f"Total images after augmentation: {len(all_images)}")
+print(f"Images per class after augmentation: {Counter(all_labels)}")
 
 # Split the data into training and testing sets
 X_train, X_test, y_train, y_test = train_test_split(all_images, all_labels, test_size=0.2, stratify=all_labels, random_state=42)
@@ -186,64 +191,41 @@ for model in models_to_test:
     model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy'])
     
     try:
-        # Manual training loop
-        train_dataset = tf.data.Dataset.from_tensor_slices((X_train, y_train)).shuffle(1000).batch(BATCH_SIZE)
-        val_dataset = tf.data.Dataset.from_tensor_slices((X_test, y_test)).batch(BATCH_SIZE)
-
-        @tf.function
-        def train_step(images, labels):
-            with tf.GradientTape() as tape:
-                predictions = model(images, training=True)
-                loss = tf.keras.losses.categorical_crossentropy(labels, predictions)
-            gradients = tape.gradient(loss, model.trainable_variables)
-            model.optimizer.apply_gradients(zip(gradients, model.trainable_variables))
-            return loss, predictions
-
-        @tf.function
-        def val_step(images, labels):
-            predictions = model(images, training=False)
-            loss = tf.keras.losses.categorical_crossentropy(labels, predictions)
-            return loss, predictions
-
+        train_dataset = tf.data.Dataset.from_tensor_slices((X_train, y_train)).shuffle(1000).batch(BATCH_SIZE, drop_remainder=False)
+        val_dataset = tf.data.Dataset.from_tensor_slices((X_test, y_test)).batch(BATCH_SIZE, drop_remainder=False)
         history = {'accuracy': [], 'val_accuracy': [], 'loss': [], 'val_loss': []}
-
         for epoch in range(EPOCHS):
-            # Train
-            train_losses = []
-            train_accuracies = []
+            train_loss = tf.keras.metrics.Mean(name='train_loss')
+            train_accuracy = tf.keras.metrics.CategoricalAccuracy(name='train_accuracy')
+            val_loss = tf.keras.metrics.Mean(name='val_loss')
+            val_accuracy = tf.keras.metrics.CategoricalAccuracy(name='val_accuracy')
             for images, labels in train_dataset:
-                loss, predictions = train_step(images, labels)
-                train_losses.append(loss)
-                train_accuracies.append(
-                    tf.reduce_mean(tf.keras.metrics.categorical_accuracy(labels, predictions))
-                )
+                with tf.GradientTape() as tape:
+                    predictions = model(images, training=True)
+                    loss = tf.keras.losses.categorical_crossentropy(labels, predictions)
+                gradients = tape.gradient(loss, model.trainable_variables)
+                model.optimizer.apply_gradients(zip(gradients, model.trainable_variables))
             
-            # Validate
-            val_losses = []
-            val_accuracies = []
-            for images, labels in val_dataset:
-                loss, predictions = val_step(images, labels)
-                val_losses.append(loss)
-                val_accuracies.append(
-                    tf.reduce_mean(tf.keras.metrics.categorical_accuracy(labels, predictions))
-                )
-            
-            # Compute epoch-level metrics
-            train_loss = tf.reduce_mean(train_losses)
-            train_accuracy = tf.reduce_mean(train_accuracies)
-            val_loss = tf.reduce_mean(val_losses)
-            val_accuracy = tf.reduce_mean(val_accuracies)
+                train_loss.update_state(loss)
+                train_accuracy.update_state(labels, predictions)
+
+            for val_images, val_labels in val_dataset:
+                val_predictions = model(val_images, training=False)
+                v_loss = tf.keras.losses.categorical_crossentropy(val_labels, val_predictions)
+                
+                val_loss.update_state(v_loss)
+                val_accuracy.update_state(val_labels, val_predictions)
 
             print(f'Epoch {epoch + 1}, '
-                  f'Loss: {train_loss:.4f}, '
-                  f'Accuracy: {train_accuracy:.4f}, '
-                  f'Val Loss: {val_loss:.4f}, '
-                  f'Val Accuracy: {val_accuracy:.4f}')
+                  f'Loss: {train_loss.result():.4f}, '
+                  f'Accuracy: {train_accuracy.result():.4f}, '
+                  f'Val Loss: {val_loss.result():.4f}, '
+                  f'Val Accuracy: {val_accuracy.result():.4f}')
 
-            history['accuracy'].append(train_accuracy.numpy())
-            history['val_accuracy'].append(val_accuracy.numpy())
-            history['loss'].append(train_loss.numpy())
-            history['val_loss'].append(val_loss.numpy())
+            history['accuracy'].append(train_accuracy.result().numpy())
+            history['val_accuracy'].append(val_accuracy.result().numpy())
+            history['loss'].append(train_loss.result().numpy())
+            history['val_loss'].append(val_loss.result().numpy())
         
     except Exception as e:
         print(f"Error during training {model_name}: {str(e)}")
@@ -274,7 +256,6 @@ for model in models_to_test:
             'cm': cm
         }
     
-        # Save the model
         model.save(f'models/{model_name.lower().replace(" ", "_")}_model.h5')
     except Exception as e:
         print(f"Error during prediction and reporting for {model_name}: {str(e)}")
