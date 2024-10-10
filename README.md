@@ -1,4 +1,12 @@
 # reactorMonitoring
+
+## End Goal Implementation
+```
+webcam hooked up with computer, computer talking with server for ai software, evaluating images every five minutes, find sampling interval that makes sense
+evaluating across 2-4 different vessels
+if foaming event is seen in any vessel, can send signal to controller, dose in antifoam
+send notification to operator about problem
+```
  
 ## CNN Implementation
 ```
