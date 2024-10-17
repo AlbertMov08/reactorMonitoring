@@ -93,4 +93,21 @@ Post-Antifoam Addition       1.00      0.97      0.98       100
               accuracy                           0.95       500
              macro avg       0.96      0.95      0.95       500
           weighted avg       0.96      0.95      0.95       500
+
+ZeroShot OpenAI Model:
+Accuracy: 0.3265
+
+Classification Report:
+                        precision    recall  f1-score   support
+
+            Foam-Heavy       0.59      0.63      0.61        30
+             Foam-Mild       0.30      0.44      0.36        34
+Post-Antifoam Addition       0.00      0.00      0.00        22
+           Foam-Medium       0.17      0.38      0.24        21
+               No Foam       0.60      0.15      0.24        40
+                 Error       0.00      0.00      0.00         0
+
+              accuracy                           0.33       147
+             macro avg       0.28      0.27      0.24       147
+          weighted avg       0.38      0.33      0.31       147
 ```
