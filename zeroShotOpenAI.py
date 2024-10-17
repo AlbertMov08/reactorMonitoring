@@ -3,6 +3,7 @@ import requests
 from dotenv import load_dotenv
 load_dotenv()
 import os
+from pydantic import BaseModel
 
 # OpenAI API Key
 api_key = os.getenv("OPENAI_API_KEY")
@@ -31,7 +32,7 @@ payload = {
       "content": [
         {
           "type": "text",
-          "text": "Classify this image into the following categories: 'Foam-Heavy', 'Foam-mild', 'Post-Antifoam Addition', 'Foam-Medium', 'No Foam'"
+          "text": "Classify this image into the following categories: 'Foam-Heavy', 'Foam-mild', 'Post-Antifoam Addition', 'Foam-Medium', 'No Foam'. Do not provide any explanation of your reasoning. The only output allowed are those aforementioned ones."
         },
         {
           "type": "image_url",
@@ -47,4 +48,4 @@ payload = {
 
 response = requests.post("https://api.openai.com/v1/chat/completions", headers=headers, json=payload)
 
-print(response.json())
+print(response.json()['choices'][0]['message']['content'])
