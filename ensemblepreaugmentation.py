@@ -69,11 +69,6 @@ class EnsembleClassifier:
                 if img_file.endswith(('.jpg', '.jpeg', '.png')):
                     image_paths.append(os.path.join(class_dir, img_file))
             
-            augmented_dir = os.path.join(class_dir, 'augmented')
-            if os.path.exists(augmented_dir):
-                for img_file in os.listdir(augmented_dir):
-                    if img_file.endswith(('.jpg', '.jpeg', '.png')):
-                        image_paths.append(os.path.join(augmented_dir, img_file))
             
             for img_path in image_paths:
                 try:
@@ -215,10 +210,10 @@ def plot_results(results, class_names, save_dir='figures'):
         xticklabels=class_names,
         yticklabels=class_names
     )
-    plt.title('Ensemble Model Confusion Matrix')
+    plt.title('Ensemble Model PreAugmentation Confusion Matrix')
     plt.ylabel('True label')
     plt.xlabel('Predicted label')
-    plt.savefig(os.path.join(save_dir, 'ensemble_confusion_matrix.png'))
+    plt.savefig(os.path.join(save_dir, 'ensemble_preaugmentation_confusion_matrix.png'))
     plt.close()
 
 def main():
