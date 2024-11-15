@@ -63,7 +63,6 @@ class EnsembleClassifier:
                 print(f"Directory not found: {class_dir}")
                 continue
             
-            # Load images from main directory and augmented subdirectory
             image_paths = []
             for img_file in os.listdir(class_dir):
                 if img_file.endswith(('.jpg', '.jpeg', '.png')):

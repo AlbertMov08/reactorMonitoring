@@ -6,6 +6,9 @@ from torch import nn
 import torchvision.transforms as transforms
 from transformers import ViTFeatureExtractor, ViTForImageClassification
 from tensorflow import keras
+from tensorflow.keras.applications import MobileNetV2
+from tensorflow.keras.models import Sequential
+from tensorflow.keras.layers import Dense, GlobalAveragePooling2D, Dropout, Input
 from PIL import Image
 from sklearn.metrics import classification_report, confusion_matrix
 import matplotlib.pyplot as plt
@@ -14,7 +17,7 @@ import seaborn as sns
 class EnsembleClassifier:
     def __init__(self, cnn_model_path, class_names, img_height=224, img_width=224, device='cuda'):
         """
-        Initialize ensemble classifier with CNN and ViT
+        Initialize ensemble classifier with MobileNetV2 and ViT
         """
         self.class_names = class_names
         self.num_classes = len(class_names)
@@ -25,9 +28,31 @@ class EnsembleClassifier:
         print(f"Using device: {self.device}")
         print(f"PyTorch version: {torch.__version__}")
         
-        # Load your existing CNN model
-        print("Loading CNN model...")
-        self.cnn_model = tf.keras.models.load_model(cnn_model_path)
+        # Load MobileNetV2 with same architecture as training
+        print("Loading MobileNetV2 model...")
+        try:
+            # Create the same model architecture as during training
+            base_model = MobileNetV2(
+                weights='imagenet',
+                include_top=False,
+                input_shape=(img_height, img_width, 3)
+            )
+            base_model.trainable = False
+            
+            self.cnn_model = Sequential([
+                Input(shape=(img_height, img_width, 3)),
+                base_model,
+                GlobalAveragePooling2D(),
+                Dense(256, activation='relu'),
+                Dropout(0.5),
+                Dense(self.num_classes, activation='softmax')
+            ])
+            
+            # Load the weights
+            self.cnn_model.load_weights(cnn_model_path)
+        except Exception as e:
+            print(f"Error loading MobileNetV2 model: {str(e)}")
+            raise
         
         # Initialize ViT model
         print("Initializing ViT model...")
@@ -48,6 +73,49 @@ class EnsembleClassifier:
         self.cnn_weight = 0.5
         self.vit_weight = 0.5
         print("Model initialization complete")
+
+    def predict(self, image):
+        """
+        Make ensemble prediction on a single image
+        """
+        # Ensure image is in the right format for CNN
+        if isinstance(image, torch.Tensor):
+            image = image.cpu().numpy()
+        if isinstance(image, np.ndarray) and image.max() <= 1.0:
+            image = (image * 255).astype(np.uint8)
+        
+        # MobileNetV2 prediction
+        try:
+            cnn_input = tf.convert_to_tensor(image)
+            cnn_input = tf.expand_dims(cnn_input, 0)
+            cnn_input = tf.cast(cnn_input, tf.float32) / 255.0
+            cnn_probs = self.cnn_model.predict(cnn_input, verbose=0)[0]
+        except Exception as e:
+            print(f"Error in MobileNetV2 prediction: {str(e)}")
+            return None, None
+        
+        # ViT prediction
+        try:
+            if isinstance(image, np.ndarray):
+                image = Image.fromarray(image.astype('uint8'))
+            
+            inputs = self.feature_extractor(images=image, return_tensors="pt")
+            inputs = {k: v.to(self.device) for k, v in inputs.items()}
+            
+            with torch.no_grad():
+                outputs = self.vit_model(**inputs)
+                vit_probs = torch.softmax(outputs.logits, dim=-1)
+                vit_probs = vit_probs[0].cpu().numpy()
+        except Exception as e:
+            print(f"Error in ViT prediction: {str(e)}")
+            return None, None
+        
+        # Combine predictions
+        final_probs = (self.cnn_weight * cnn_probs + 
+                      self.vit_weight * vit_probs)
+        ensemble_prediction = np.argmax(final_probs)
+        
+        return final_probs, ensemble_prediction
 
     def load_and_preprocess_data(self, data_dir, batch_size=32):
         """
@@ -88,50 +156,6 @@ class EnsembleClassifier:
             print(f"Loaded {len(image_paths)} images for class {class_name}")
             
         return np.array(all_images), np.array(all_labels)
-    
-    def predict(self, image):
-        """
-        Make ensemble prediction on a single image
-        """
-        # Ensure image is in the right format for CNN
-        if isinstance(image, torch.Tensor):
-            image = image.cpu().numpy()
-        if isinstance(image, np.ndarray) and image.max() <= 1.0:
-            image = (image * 255).astype(np.uint8)
-        
-        # CNN prediction
-        try:
-            cnn_input = tf.convert_to_tensor(image)
-            cnn_input = tf.expand_dims(cnn_input, 0)
-            cnn_input = tf.cast(cnn_input, tf.float32) / 255.0
-            cnn_probs = self.cnn_model.predict(cnn_input, verbose=0)[0]
-        except Exception as e:
-            print(f"Error in CNN prediction: {str(e)}")
-            return None, None
-        
-        # ViT prediction
-        try:
-            if isinstance(image, np.ndarray):
-                image = Image.fromarray(image.astype('uint8'))
-            
-            # Prepare image for ViT
-            inputs = self.feature_extractor(images=image, return_tensors="pt")
-            inputs = {k: v.to(self.device) for k, v in inputs.items()}
-            
-            with torch.no_grad():
-                outputs = self.vit_model(**inputs)
-                vit_probs = torch.softmax(outputs.logits, dim=-1)
-                vit_probs = vit_probs[0].cpu().numpy()
-        except Exception as e:
-            print(f"Error in ViT prediction: {str(e)}")
-            return None, None
-        
-        # Combine predictions
-        final_probs = (self.cnn_weight * cnn_probs + 
-                      self.vit_weight * vit_probs)
-        ensemble_prediction = np.argmax(final_probs)
-        
-        return final_probs, ensemble_prediction
 
     def evaluate(self, X_test, y_test, batch_size=32):
         """
@@ -227,15 +251,15 @@ def main():
     tf.random.set_seed(42)
     torch.manual_seed(42)
     
-    # Your existing constants
+    # Your constants
     IMG_HEIGHT, IMG_WIDTH = 224, 224
     class_names = ['Foam-Heavy', 'Foam-mild', 'Post-Antifoam Addition', 'Foam-Medium', 'No Foam']
     data_dir = '.'
     
-    # Initialize ensemble
+    # Initialize ensemble with MobileNetV2
     print("Initializing ensemble classifier...")
     ensemble = EnsembleClassifier(
-        cnn_model_path='models/custom_cnn_model.h5',
+        cnn_model_path='models/mobilenetv2_postdataaug_model.h5',
         class_names=class_names,
         img_height=IMG_HEIGHT,
         img_width=IMG_WIDTH

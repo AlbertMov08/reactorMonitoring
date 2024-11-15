@@ -79,20 +79,20 @@ Post-Antifoam Addition       0.55      0.96      0.70       100
 
 
 MobileNetV2:
-Final accuracy: 0.9540
+Final accuracy: 0.9700
 
 Classification Report:
                         precision    recall  f1-score   support
 
-            Foam-Heavy       0.96      0.99      0.98       100
-             Foam-mild       0.87      0.95      0.91       100
-Post-Antifoam Addition       1.00      0.97      0.98       100
-           Foam-Medium       0.97      0.90      0.93       100
-               No Foam       0.98      0.96      0.97       100
+            Foam-Heavy       1.00      1.00      1.00        40
+             Foam-mild       0.97      0.93      0.95        40
+Post-Antifoam Addition       1.00      1.00      1.00        40
+           Foam-Medium       0.95      0.95      0.95        40
+               No Foam       0.93      0.97      0.95        40
 
-              accuracy                           0.95       500
-             macro avg       0.96      0.95      0.95       500
-          weighted avg       0.96      0.95      0.95       500
+              accuracy                           0.97       200
+             macro avg       0.97      0.97      0.97       200
+          weighted avg       0.97      0.97      0.97       200
 
 ZeroShot OpenAI Model:
 Accuracy: 0.3265
@@ -110,4 +110,20 @@ Post-Antifoam Addition       0.00      0.00      0.00        22
               accuracy                           0.33       147
              macro avg       0.28      0.27      0.24       147
           weighted avg       0.38      0.33      0.31       147
+
+Ensemble Model Results:
+Best weights found - MobileNetV2: 0.30, ViT: 0.70
+Accuracy: 0.9750
+Classification Report:
+                        precision    recall  f1-score   support
+
+            Foam-Heavy       1.00      1.00      1.00        40
+             Foam-mild       0.97      0.95      0.96        40
+Post-Antifoam Addition       1.00      1.00      1.00        40
+           Foam-Medium       0.97      0.95      0.96        40
+               No Foam       0.93      0.97      0.95        40
+
+              accuracy                           0.97       200
+             macro avg       0.98      0.97      0.98       200
+          weighted avg       0.98      0.97      0.98       200
 ```
