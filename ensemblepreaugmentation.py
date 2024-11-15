@@ -217,7 +217,7 @@ def plot_results(results, class_names, save_dir='figures'):
     plt.close()
 
 def main():
-    # Set random seeds for reproducibility
+    # rand seeds
     np.random.seed(42)
     tf.random.set_seed(42)
     torch.manual_seed(42)
