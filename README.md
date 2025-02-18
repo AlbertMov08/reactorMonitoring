@@ -8,7 +8,13 @@ if foaming event is seen in any vessel, can send signal to controller, dose in a
 send notification to operator about problem
 ```
  
-## CNN Implementation
+## Inference
+```
+python cnn_inference.py
+open http://localhost:8001/
+```
+
+## Models
 ```
 Number of classes: 5
 Model: "sequential"
