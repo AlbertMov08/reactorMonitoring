@@ -1,6 +1,13 @@
 # reactorMonitoring
- 
-## CNN Implementation
+
+## Inference
+```
+Users/rohanadwankar/anaconda3/bin/python /Users/rohanadwankar/reactorMonitoring/cnn_inference.py
+
+python -m http.server 8080
+```
+
+## Models
 ```
 Number of classes: 5
 Model: "sequential"

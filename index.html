@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Interactive for BioReactor Classification</title>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@17/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"
+    ></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+      .container {
+        display: flex;
+        align-items: flex-start;
+        padding: 20px;
+      }
+      video {
+        border: 1px solid #ccc;
+      }
+      .classification {
+        margin-left: 20px;
+        font-size: 1.5em;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="text/babel">
+      const { useRef, useState, useEffect } = React;
+      function App() {
+        const videoRef = useRef(null);
+        const canvasRef = useRef(null);
+        const [classification, setClassification] = useState("Waiting for prediction...");
+        const classMap = {
+          0: "Foam-Heavy",
+          1: "Foam-mild",
+          2: "Post-Antifoam Addition",
+          3: "Foam-Medium",
+          4: "No Foam"
+        };
+        const fetchClassification = async () => {
+          const video = videoRef.current;
+          const canvas = canvasRef.current;
+          if (video && canvas) {
+            const context = canvas.getContext("2d");
+            canvas.width = 224;
+            canvas.height = 224;
+            context.drawImage(video, 0, 0, canvas.width, canvas.height);
+            const dataURL = canvas.toDataURL("image/png");
+            try {
+              const response = await fetch("http://localhost:8000/predict", {
+                method: "POST",
+                headers: {
+                  "Content-Type": "application/json",
+                },
+                body: JSON.stringify({ image: dataURL }),
+              });
+              const result = await response.json();
+              if (result.classification !== undefined) {
+                setClassification(result.classification);
+              } else {
+                setClassification("Error in prediction");
+              }
+            } catch (error) {
+              console.error("Error fetching classification:", error);
+              setClassification("Error fetching classification");
+            }
+          }
+        };
+
+        useEffect(() => {
+          const video = videoRef.current;
+          if (video) {
+            video.addEventListener("timeupdate", fetchClassification);
+          }
+          return () => {
+            if (video) {
+              video.removeEventListener("timeupdate", fetchClassification);
+            }
+          };
+        }, []);
+
+        return (
+          <div className="container">
+            <video
+            ref={videoRef}
+            width="640"
+            height="480"
+            controls
+            crossOrigin="anonymous"
+            >
+              <source src="test.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+
+            <div className="classification">
+              <h2>Current Classification:</h2>
+              <div>{classMap[classification]}</div>
+            </div>
+
+            <canvas ref={canvasRef} style={{ display: "none" }} />
+          </div>
+        );
+      }
+      ReactDOM.render(<App />, document.getElementById("root"));
+    </script>
+  </body>
+</html>
