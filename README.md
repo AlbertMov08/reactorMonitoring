@@ -2,9 +2,8 @@
 
 ## Inference
 ```
-Users/rohanadwankar/anaconda3/bin/python /Users/rohanadwankar/reactorMonitoring/cnn_inference.py
-
-python -m http.server 8080
+python cnn_inference.py
+open http://localhost:8001/
 ```
 
 ## Models
