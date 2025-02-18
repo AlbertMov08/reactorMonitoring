@@ -54,11 +54,13 @@ async def get_home():
           body {
             font-family: Arial, sans-serif;
           }
-          .container {
-            display: flex;
-            align-items: flex-start;
-            padding: 20px;
-          }
+        .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* optional, centers the items horizontally */
+        padding: 20px;
+        }
+
           video {
             border: 1px solid #ccc;
           }
@@ -127,6 +129,8 @@ async def get_home():
 
             return (
               <div className="container">
+                                <h2>Current Classification:</h2>
+                  <div>{classMap[classification]}</div>
                 <video
                   ref={videoRef}
                   width="640"
@@ -141,8 +145,6 @@ async def get_home():
                   Your browser does not support the video tag.
                 </video>
                 <div className="classification">
-                  <h2>Current Classification:</h2>
-                  <div>{classMap[classification]}</div>
                 </div>
                 <canvas ref={canvasRef} style={{ display: "none" }} />
               </div>
