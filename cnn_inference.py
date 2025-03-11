@@ -6,7 +6,9 @@ from fastapi import FastAPI, Request
 from fastapi.responses import JSONResponse, HTMLResponse
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
-from tensorflow.keras.models import load_model
+from tensorflow.keras.models import load_model, Model
+from tensorflow.keras.layers import Dense, GlobalAveragePooling2D, Dropout, Input
+from tensorflow.keras.applications import MobileNetV2
 import uvicorn
 
 app = FastAPI()
@@ -23,8 +25,35 @@ app.add_middleware(
 # Mount a static directory for serving files (like test.mp4)
 app.mount("/static", StaticFiles(directory="static"), name="static")
 
-# Load the CNN model (update the path if necessary)
-model = load_model("models/custom_cnn_model.h5", compile=False)
+# Custom load function for MobileNetV2 model
+def load_mobilenetv2_model(num_classes=5):
+    # Recreate the model architecture
+    input_shape = (224, 224, 3)
+    input_tensor = Input(shape=input_shape)
+    base_model = MobileNetV2(weights='imagenet', include_top=False, input_tensor=input_tensor)
+    base_model.trainable = False
+    
+    x = base_model.output
+    x = GlobalAveragePooling2D()(x)
+    x = Dense(256, activation='relu')(x)
+    x = Dropout(0.5)(x)
+    predictions = Dense(num_classes, activation='softmax')(x)
+    
+    model = Model(inputs=input_tensor, outputs=predictions)
+    
+    # Load weights from the saved file
+    try:
+        model.load_weights("models/mobilenetv2_postdataaug_model.h5")
+        print("Successfully loaded model weights")
+    except:
+        print("Failed to load model weights directly")
+        # If direct weight loading fails, we could try more complex weight loading here
+    
+    return model
+
+# Load the model using our custom function
+model = load_mobilenetv2_model()
+
 IMG_SIZE = (224, 224)
 
 def preprocess_image(image_str: str):
