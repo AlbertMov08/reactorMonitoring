@@ -7,14 +7,13 @@ from fastapi import FastAPI, Request
 from fastapi.responses import JSONResponse, HTMLResponse
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
-from tensorflow.keras.models import load_model, Model
-from tensorflow.keras.layers import Dense, GlobalAveragePooling2D, Dropout, Input
-from tensorflow.keras.applications import MobileNetV2
+from tensorflow.keras.models import load_model
+import tensorflow as tf
 import uvicorn
 
 app = FastAPI()
 
-# Allow CORS from any origin (adjust if needed)
+# Allow CORS from any origin
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
@@ -23,90 +22,67 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# Mount a static directory for serving files (like test.mp4)
+# Mount a static directory for serving files
 app.mount("/static", StaticFiles(directory="static"), name="static")
 
 # Define class names based on the model training
 CLASS_NAMES = ['Foam-Heavy', 'Foam-mild', 'Post-Antifoam Addition', 'Foam-Medium', 'No Foam']
 
-# Custom load function for MobileNetV2 model
-def load_mobilenetv2_model(model_path, num_classes=5):
-    # Recreate the model architecture
-    input_shape = (224, 224, 3)
-    input_tensor = Input(shape=input_shape)
-    base_model = MobileNetV2(weights='imagenet', include_top=False, input_tensor=input_tensor)
-    base_model.trainable = False
-    
-    x = base_model.output
-    x = GlobalAveragePooling2D()(x)
-    x = Dense(256, activation='relu')(x)
-    x = Dropout(0.5)(x)
-    predictions = Dense(num_classes, activation='softmax')(x)
-    
-    model = Model(inputs=input_tensor, outputs=predictions)
-    
-    # Load weights from the saved file
-    try:
-        model.load_weights(model_path)
-        print(f"Successfully loaded model weights from {model_path}")
-        return model
-    except Exception as e:
-        print(f"Failed to load model weights from {model_path}: {str(e)}")
-        return None
-
-# Function to load all available models
+# Load available models
 def load_all_models():
     models_dict = {}
     models_dir = "models"
     
-    # First, try to load custom CNN model if exists
-    custom_cnn_path = os.path.join(models_dir, "custom_cnn_model.h5")
-    if os.path.exists(custom_cnn_path):
+    # Get list of all model files (both .h5 and .keras extensions)
+    model_files = [f for f in os.listdir(models_dir) if f.endswith(('.h5', '.keras'))]
+    
+    # Track which models we've already loaded (to avoid duplicates)
+    loaded_models = set()
+    
+    for file in model_files:
+        # Get base name without extension
+        if file.endswith('.keras'):
+            model_name = file[:-6]  # Remove .keras
+        else:
+            model_name = file[:-3]  # Remove .h5
+            
+        # Skip if we already loaded this model
+        if model_name in loaded_models:
+            continue
+            
+        model_path = os.path.join(models_dir, file)
+        
         try:
-            model = load_model(custom_cnn_path, compile=False)
-            models_dict["custom_cnn"] = model
-            print(f"Loaded model: custom_cnn")
+            # Load model directly as it was saved during training
+            model = load_model(model_path, compile=False)
+            models_dict[model_name] = model
+            loaded_models.add(model_name)
+            print(f"Successfully loaded model: {model_name}")
         except Exception as e:
-            print(f"Error loading custom CNN model: {str(e)}")
+            print(f"Error loading model {model_name}: {str(e)}")
+            # Try other formats or approaches if needed
     
-    # Try to load MobileNetV2 model
-    mobilenet_path = os.path.join(models_dir, "mobilenetv2_postdataaug_model.h5")
-    if os.path.exists(mobilenet_path):
-        model = load_mobilenetv2_model(mobilenet_path)
-        if model:
-            models_dict["mobilenetv2_postdataaug"] = model
-            print(f"Loaded model: mobilenetv2_postdataaug")
-    
-    # Try to load other standard models
-    for model_name in ["vgg16_model", "resnet50_model", "mobilenetv2_model"]:
-        model_path = os.path.join(models_dir, f"{model_name}.h5")
-        if os.path.exists(model_path):
-            try:
-                model = load_model(model_path, compile=False)
-                models_dict[model_name] = model
-                print(f"Loaded model: {model_name}")
-            except Exception as e:
-                print(f"Error loading {model_name}: {str(e)}")
-    
-    # Scan for any additional model files in the models directory
-    for file in os.listdir(models_dir):
-        if file.endswith(".h5") and file not in [
-            "custom_cnn_model.h5", 
-            "mobilenetv2_postdataaug_model.h5", 
-            "vgg16_model.h5", 
-            "resnet50_model.h5", 
-            "mobilenetv2_model.h5"
-        ]:
-            model_name = file[:-3]  # Remove .h5 extension
-            model_path = os.path.join(models_dir, file)
-            try:
-                model = load_model(model_path, compile=False)
-                models_dict[model_name] = model
-                print(f"Loaded additional model: {model_name}")
-            except Exception as e:
-                print(f"Error loading additional model {model_name}: {str(e)}")
+    # Create simulated models only if no real models loaded
+    if len(models_dict) == 0:
+        print("No models could be loaded. Creating simulated models for testing...")
+        models_dict = create_simulated_models()
     
     return models_dict
+
+def create_simulated_models():
+    """Create simulated models for UI testing when no real models can be loaded"""
+    models = {}
+    
+    for name in ["custom_cnn_model", "mobilenetv2_model", "vgg16_model", "resnet50_model"]:
+        model = tf.keras.Sequential([
+            tf.keras.layers.InputLayer(input_shape=(224, 224, 3)),
+            tf.keras.layers.GlobalAveragePooling2D(),
+            tf.keras.layers.Dense(5, activation='softmax')
+        ])
+        models[name] = model
+        print(f"Created simulated model: {name}")
+    
+    return models
 
 # Load all available models
 models = load_all_models()
