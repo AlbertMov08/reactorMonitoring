@@ -1,5 +1,6 @@
 import io
 import base64
+import os
 import numpy as np
 from PIL import Image
 from fastapi import FastAPI, Request
@@ -29,7 +30,7 @@ app.mount("/static", StaticFiles(directory="static"), name="static")
 CLASS_NAMES = ['Foam-Heavy', 'Foam-mild', 'Post-Antifoam Addition', 'Foam-Medium', 'No Foam']
 
 # Custom load function for MobileNetV2 model
-def load_mobilenetv2_model(num_classes=5):
+def load_mobilenetv2_model(model_path, num_classes=5):
     # Recreate the model architecture
     input_shape = (224, 224, 3)
     input_tensor = Input(shape=input_shape)
@@ -46,16 +47,70 @@ def load_mobilenetv2_model(num_classes=5):
     
     # Load weights from the saved file
     try:
-        model.load_weights("models/mobilenetv2_postdataaug_model.h5")
-        print("Successfully loaded model weights")
-    except:
-        print("Failed to load model weights directly")
-        # If direct weight loading fails, we could try more complex weight loading here
-    
-    return model
+        model.load_weights(model_path)
+        print(f"Successfully loaded model weights from {model_path}")
+        return model
+    except Exception as e:
+        print(f"Failed to load model weights from {model_path}: {str(e)}")
+        return None
 
-# Load the model using our custom function
-model = load_mobilenetv2_model()
+# Function to load all available models
+def load_all_models():
+    models_dict = {}
+    models_dir = "models"
+    
+    # First, try to load custom CNN model if exists
+    custom_cnn_path = os.path.join(models_dir, "custom_cnn_model.h5")
+    if os.path.exists(custom_cnn_path):
+        try:
+            model = load_model(custom_cnn_path, compile=False)
+            models_dict["custom_cnn"] = model
+            print(f"Loaded model: custom_cnn")
+        except Exception as e:
+            print(f"Error loading custom CNN model: {str(e)}")
+    
+    # Try to load MobileNetV2 model
+    mobilenet_path = os.path.join(models_dir, "mobilenetv2_postdataaug_model.h5")
+    if os.path.exists(mobilenet_path):
+        model = load_mobilenetv2_model(mobilenet_path)
+        if model:
+            models_dict["mobilenetv2_postdataaug"] = model
+            print(f"Loaded model: mobilenetv2_postdataaug")
+    
+    # Try to load other standard models
+    for model_name in ["vgg16_model", "resnet50_model", "mobilenetv2_model"]:
+        model_path = os.path.join(models_dir, f"{model_name}.h5")
+        if os.path.exists(model_path):
+            try:
+                model = load_model(model_path, compile=False)
+                models_dict[model_name] = model
+                print(f"Loaded model: {model_name}")
+            except Exception as e:
+                print(f"Error loading {model_name}: {str(e)}")
+    
+    # Scan for any additional model files in the models directory
+    for file in os.listdir(models_dir):
+        if file.endswith(".h5") and file not in [
+            "custom_cnn_model.h5", 
+            "mobilenetv2_postdataaug_model.h5", 
+            "vgg16_model.h5", 
+            "resnet50_model.h5", 
+            "mobilenetv2_model.h5"
+        ]:
+            model_name = file[:-3]  # Remove .h5 extension
+            model_path = os.path.join(models_dir, file)
+            try:
+                model = load_model(model_path, compile=False)
+                models_dict[model_name] = model
+                print(f"Loaded additional model: {model_name}")
+            except Exception as e:
+                print(f"Error loading additional model {model_name}: {str(e)}")
+    
+    return models_dict
+
+# Load all available models
+models = load_all_models()
+print(f"Loaded {len(models)} models: {list(models.keys())}")
 
 IMG_SIZE = (224, 224)
 
@@ -71,182 +126,6 @@ def preprocess_image(image_str: str):
     image_array = np.expand_dims(image_array, axis=0)  # Add batch dimension
     return image_array
 
-@app.get("/", response_class=HTMLResponse)
-async def get_home():
-    html_content = """
-    <!DOCTYPE html>
-    <html lang="en">
-      <head>
-        <meta charset="UTF-8" />
-        <title>Interactive for BioReactor Classification</title>
-        <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
-        <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
-        <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
-        <style>
-          body {
-            font-family: Arial, sans-serif;
-            background-color: #f5f5f5;
-          }
-          .container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 20px;
-            max-width: 800px;
-            margin: 0 auto;
-          }
-          .result-container {
-            margin: 20px 0;
-            padding: 15px;
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-            width: 100%;
-            text-align: center.
-          }
-          .confidence-bar {
-            height: 20px;
-            background-color: #e0e0e0;
-            border-radius: 10px;
-            margin: 10px 0;
-            overflow: hidden;
-          }
-          .confidence-fill {
-            height: 100%;
-            background-color: #4CAF50;
-            transition: width 0.3s ease;
-          }
-          video {
-            border: 1px solid #ccc;
-            border-radius: 8px;
-            max-width: 100%;
-          }
-          h2 {
-            color: #333;
-          }
-          .classification-name {
-            font-size: 1.5em;
-            font-weight: bold;
-            color: #2196F3;
-          }
-        </style>
-      </head>
-      <body>
-        <div id="root"></div>
-        <script type="text/babel">
-          const { useRef, useState, useEffect } = React;
-          function App() {
-            const videoRef = useRef(null);
-            const canvasRef = useRef(null);
-            const [predictionResult, setPredictionResult] = useState({
-              className: "Waiting for prediction...",
-              confidence: 0,
-              topPredictions: []
-            });
-            
-            const fetchClassification = async () => {
-              const video = videoRef.current;
-              const canvas = canvasRef.current;
-              if (video && canvas) {
-                const context = canvas.getContext("2d");
-                canvas.width = 224;
-                canvas.height = 224;
-                context.drawImage(video, 0, 0, canvas.width, canvas.height);
-                const dataURL = canvas.toDataURL("image/png");
-                try {
-                  const response = await fetch("http://localhost:8001/predict", {
-                    method: "POST",
-                    headers: {
-                      "Content-Type": "application/json",
-                    },
-                    body: JSON.stringify({ image: dataURL }),
-                  });
-                  const result = await response.json();
-                  if (result.class_name) {
-                    setPredictionResult({
-                      className: result.class_name,
-                      confidence: result.confidence,
-                      topPredictions: result.top_predictions || []
-                    });
-                  } else {
-                    setPredictionResult({
-                      className: "Error in prediction",
-                      confidence: 0,
-                      topPredictions: []
-                    });
-                  }
-                } catch (error) {
-                  console.error("Error fetching classification:", error);
-                  setPredictionResult({
-                    className: "Error fetching classification",
-                    confidence: 0,
-                    topPredictions: []
-                  });
-                }
-              }
-            };
-
-            useEffect(() => {
-              const video = videoRef.current;
-              if (video) {
-                video.addEventListener("timeupdate", fetchClassification);
-              }
-              return () => {
-                if (video) {
-                  video.removeEventListener("timeupdate", fetchClassification);
-                }
-              };
-            }, []);
-
-            return (
-              <div className="container">
-                <h1>BioReactor Foam Monitoring</h1>
-                
-                <div className="result-container">
-                  <h2>Current Classification:</h2>
-                  <div className="classification-name">{predictionResult.className}</div>
-                  <div>Confidence: {(predictionResult.confidence * 100).toFixed(1)}%</div>
-                  <div className="confidence-bar">
-                    <div 
-                      className="confidence-fill" 
-                      style={{width: `${predictionResult.confidence * 100}%`}}
-                    ></div>
-                  </div>
-                  
-                  {predictionResult.topPredictions.length > 0 && (
-                    <div>
-                      <h3>Top Predictions:</h3>
-                      {predictionResult.topPredictions.map((pred, index) => (
-                        <div key={index}>
-                          {pred.name}: {(pred.confidence * 100).toFixed(1)}%
-                        </div>
-                      ))}
-                    </div>
-                  )}
-                </div>
-                
-                <video
-                  ref={videoRef}
-                  width="640"
-                  height="480"
-                  controls
-                  crossOrigin="anonymous"
-                >
-                  <source src="/static/test.mp4" type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video>
-                
-                <canvas ref={canvasRef} style={{ display: "none" }} />
-              </div>
-            );
-          }
-          ReactDOM.render(<App />, document.getElementById("root"));
-        </script>
-      </body>
-    </html>
-    """
-    return HTMLResponse(content=html_content, status_code=200)
-
 @app.post("/predict")
 async def predict(request: Request):
     try:
@@ -256,32 +135,313 @@ async def predict(request: Request):
             return JSONResponse({"error": "No image provided"}, status_code=400)
         
         image_array = preprocess_image(image_str)
-        preds = model.predict(image_array)
         
-        # Get the predicted class and confidence
-        predicted_class = int(np.argmax(preds, axis=1)[0])
-        confidence = float(preds[0][predicted_class])
+        # Run prediction with all models
+        results = []
+        for model_name, model in models.items():
+            try:
+                preds = model.predict(image_array)
+                
+                # Get the predicted class and confidence
+                predicted_class = int(np.argmax(preds, axis=1)[0])
+                confidence = float(preds[0][predicted_class])
+                
+                # Get all prediction confidences for visualization
+                all_confidences = [float(conf) for conf in preds[0]]
+                
+                result = {
+                    "model_name": model_name,
+                    "predicted_class": predicted_class,
+                    "class_name": CLASS_NAMES[predicted_class],
+                    "confidence": confidence,
+                    "all_confidences": all_confidences
+                }
+                results.append(result)
+                
+                print(f"{model_name} prediction: {CLASS_NAMES[predicted_class]} (class {predicted_class}) with confidence {confidence:.4f}")
+            except Exception as e:
+                print(f"Error with model {model_name}: {str(e)}")
+                results.append({
+                    "model_name": model_name,
+                    "error": str(e)
+                })
         
-        # Get the top 3 predictions for debugging
-        top_indices = np.argsort(preds[0])[-3:][::-1]
-        top_predictions = [
-            {"class": int(idx), 
-             "name": CLASS_NAMES[idx],
-             "confidence": float(preds[0][idx])}
-            for idx in top_indices
-        ]
-        
-        print(f"Prediction: {CLASS_NAMES[predicted_class]} (class {predicted_class}) with confidence {confidence:.4f}")
-        
-        return JSONResponse({
-            "classification": predicted_class,
-            "confidence": confidence,
-            "class_name": CLASS_NAMES[predicted_class],
-            "top_predictions": top_predictions
-        })
+        return JSONResponse({"results": results})
     except Exception as e:
         print(f"Prediction error: {str(e)}")
         return JSONResponse({"error": str(e)}, status_code=500)
+
+@app.get("/", response_class=HTMLResponse)
+async def get_home():
+    html_content = """
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <title>Multi-Model BioReactor Classification</title>
+        <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+        <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+        <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+        <style>
+          body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 20px;
+          }
+          .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+          }
+          .models-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+            width: 100%;
+          }
+          .model-card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            padding: 15px;
+            width: 300px;
+            margin-bottom: 20px.
+          }
+          .model-name {
+            font-weight: bold;
+            font-size: 1.2em;
+            margin-bottom: 10px;
+            color: #333;
+            text-transform: capitalize.
+          }
+          .class-name {
+            font-size: 1.4em;
+            margin: 10px 0;
+            font-weight: bold;
+            color: #2196F3.
+          }
+          .confidence-bar {
+            height: 20px;
+            background-color: #e0e0e0;
+            border-radius: 10px;
+            margin: 8px 0;
+            overflow: hidden;
+            position: relative.
+          }
+          .confidence-fill {
+            height: 100%;
+            background-color: #4CAF50;
+            transition: width 0.3s ease.
+          }
+          .confidence-label {
+            position: absolute;
+            right: 5px;
+            top: 0;
+            color: #000;
+            font-size: 12px;
+            line-height: 20px;
+            z-index: 1.
+          }
+          .video-container {
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1).
+          }
+          video {
+            display: block;
+            max-width: 100%.
+          }
+          .header {
+            text-align: center;
+            margin-bottom: 20px.
+          }
+          .label {
+            color: #666;
+            font-size: 0.9em;
+            margin-bottom: 3px.
+          }
+          .all-confidences {
+            margin-top: 15px.
+          }
+          .class-confidence {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 5px.
+          }
+          .error-message {
+            color: #f44336;
+            font-style: italic.
+          }
+        </style>
+      </head>
+      <body>
+        <div id="root"></div>
+        <script type="text/babel">
+          const { useRef, useState, useEffect } = React;
+          
+          function ModelPrediction({ modelResult }) {
+            if (modelResult.error) {
+              return (
+                <div className="model-card">
+                  <div className="model-name">{modelResult.model_name.replace(/_/g, " ")}</div>
+                  <div className="error-message">Error: {modelResult.error}</div>
+                </div>
+              );
+            }
+            
+            return (
+              <div className="model-card">
+                <div className="model-name">{modelResult.model_name.replace(/_/g, " ")}</div>
+                <div className="class-name">{modelResult.class_name}</div>
+                
+                <div className="label">Confidence:</div>
+                <div className="confidence-bar">
+                  <div 
+                    className="confidence-fill" 
+                    style={{width: `${modelResult.confidence * 100}%`}}
+                  ></div>
+                  <div className="confidence-label">{(modelResult.confidence * 100).toFixed(1)}%</div>
+                </div>
+                
+                <div className="all-confidences">
+                  <div className="label">All Classes:</div>
+                  {modelResult.all_confidences && modelResult.all_confidences.map((conf, idx) => (
+                    <div key={idx} className="class-confidence">
+                      <span>{['Foam-Heavy', 'Foam-mild', 'Post-Antifoam Addition', 'Foam-Medium', 'No Foam'][idx]}</span>
+                      <span>{(conf * 100).toFixed(1)}%</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            );
+          }
+          
+          function App() {
+            const videoRef = useRef(null);
+            const canvasRef = useRef(null);
+            const [modelResults, setModelResults] = useState([]);
+            const [isProcessing, setIsProcessing] = useState(false);
+            
+            const fetchClassification = async () => {
+              const video = videoRef.current;
+              const canvas = canvasRef.current;
+              
+              if (video && canvas && !isProcessing) {
+                setIsProcessing(true);
+                
+                const context = canvas.getContext("2d");
+                canvas.width = 224;
+                canvas.height = 224;
+                context.drawImage(video, 0, 0, canvas.width, canvas.height);
+                const dataURL = canvas.toDataURL("image/png");
+                
+                try {
+                  const response = await fetch("http://localhost:8001/predict", {
+                    method: "POST",
+                    headers: {
+                      "Content-Type": "application/json",
+                    },
+                    body: JSON.stringify({ image: dataURL }),
+                  });
+                  
+                  const data = await response.json();
+                  
+                  if (data.results) {
+                    setModelResults(data.results);
+                  } else {
+                    console.error("Invalid response format:", data);
+                  }
+                } catch (error) {
+                  console.error("Error fetching classifications:", error);
+                } finally {
+                  setIsProcessing(false);
+                }
+              }
+            };
+            
+            useEffect(() => {
+              const video = videoRef.current;
+              let interval;
+              
+              if (video) {
+                // Listen for when video is playing
+                video.addEventListener('play', () => {
+                  // Set an interval to fetch classifications every 500ms while the video is playing
+                  interval = setInterval(() => {
+                    if (!video.paused && !video.ended) {
+                      fetchClassification();
+                    }
+                  }, 500);
+                });
+                
+                // Clean up when video pauses or ends
+                video.addEventListener('pause', () => {
+                  clearInterval(interval);
+                });
+                
+                video.addEventListener('ended', () => {
+                  clearInterval(interval);
+                });
+              }
+              
+              return () => {
+                clearInterval(interval);
+                if (video) {
+                  video.removeEventListener('play', () => {});
+                  video.removeEventListener('pause', () => {});
+                  video.removeEventListener('ended', () => {});
+                }
+              };
+            }, []);
+            
+            return (
+              <div className="container">
+                <div className="header">
+                  <h1>Multi-Model BioReactor Classification</h1>
+                  <p>Comparing predictions from all available models</p>
+                </div>
+                
+                <div className="video-container">
+                  <video
+                    ref={videoRef}
+                    width="640"
+                    height="480"
+                    controls
+                    crossOrigin="anonymous"
+                  >
+                    <source src="/static/test.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+                
+                <div className="models-container">
+                  {modelResults.length > 0 ? (
+                    modelResults.map((result, index) => (
+                      <ModelPrediction key={index} modelResult={result} />
+                    ))
+                  ) : (
+                    <p>Press play to see model predictions</p>
+                  )}
+                </div>
+                
+                <canvas ref={canvasRef} style={{ display: "none" }} />
+              </div>
+            );
+          }
+          
+          ReactDOM.render(<App />, document.getElementById("root"));
+        </script>
+      </body>
+    </html>
+    """
+    return HTMLResponse(content=html_content, status_code=200)
 
 if __name__ == "__main__":
     uvicorn.run("cnn_inference:app", host="0.0.0.0", port=8001, reload=True)
