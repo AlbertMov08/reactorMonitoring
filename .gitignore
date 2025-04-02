@@ -164,3 +164,4 @@ cython_debug/
 #temp to prevent excessive syncing from image regeneration
 # *.jpg
 .DS_Store
+*.keras
