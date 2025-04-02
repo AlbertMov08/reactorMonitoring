@@ -7,7 +7,9 @@ from fastapi import FastAPI, Request
 from fastapi.responses import JSONResponse, HTMLResponse
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
-from tensorflow.keras.models import load_model
+from tensorflow.keras.models import load_model, Model, Sequential
+from tensorflow.keras.layers import Dense, GlobalAveragePooling2D, Dropout, Input
+from tensorflow.keras.applications import MobileNetV2, VGG16, ResNet50
 import tensorflow as tf
 import uvicorn
 
@@ -28,39 +30,103 @@ app.mount("/static", StaticFiles(directory="static"), name="static")
 # Define class names based on the model training
 CLASS_NAMES = ['Foam-Heavy', 'Foam-mild', 'Post-Antifoam Addition', 'Foam-Medium', 'No Foam']
 
+# Create models with the exact same architecture as in training
+def create_mobilenetv2_model(input_shape=(224, 224, 3), num_classes=5):
+    """Create MobileNetV2 model with same architecture as training"""
+    base_model = MobileNetV2(weights='imagenet', include_top=False, input_shape=input_shape)
+    base_model.trainable = False
+    
+    model = Sequential([
+        Input(shape=input_shape),
+        base_model,
+        GlobalAveragePooling2D(),
+        Dense(256, activation='relu'),
+        Dropout(0.5),
+        Dense(num_classes, activation='softmax')
+    ])
+    return model
+
+def create_vgg16_model(input_shape=(224, 224, 3), num_classes=5):
+    """Create VGG16 model with same architecture as training"""
+    base_model = VGG16(weights='imagenet', include_top=False, input_shape=input_shape)
+    base_model.trainable = False
+    
+    model = Sequential([
+        Input(shape=input_shape),
+        base_model,
+        GlobalAveragePooling2D(),
+        Dense(256, activation='relu'),
+        Dropout(0.5),
+        Dense(num_classes, activation='softmax')
+    ])
+    return model
+
+def create_resnet50_model(input_shape=(224, 224, 3), num_classes=5):
+    """Create ResNet50 model with same architecture as training"""
+    base_model = ResNet50(weights='imagenet', include_top=False, input_shape=input_shape)
+    base_model.trainable = False
+    
+    model = Sequential([
+        Input(shape=input_shape),
+        base_model,
+        GlobalAveragePooling2D(),
+        Dense(256, activation='relu'),
+        Dropout(0.5),
+        Dense(num_classes, activation='softmax')
+    ])
+    return model
+
 # Load available models
 def load_all_models():
     models_dict = {}
     models_dir = "models"
     
-    # Get list of all model files (both .h5 and .keras extensions)
-    model_files = [f for f in os.listdir(models_dir) if f.endswith(('.h5', '.keras'))]
-    
-    # Track which models we've already loaded (to avoid duplicates)
-    loaded_models = set()
-    
-    for file in model_files:
-        # Get base name without extension
-        if file.endswith('.keras'):
-            model_name = file[:-6]  # Remove .keras
-        else:
-            model_name = file[:-3]  # Remove .h5
-            
-        # Skip if we already loaded this model
-        if model_name in loaded_models:
-            continue
-            
-        model_path = os.path.join(models_dir, file)
-        
+    # Try to load Custom CNN using standard loading (usually works)
+    custom_cnn_path = os.path.join(models_dir, "custom_cnn_model.h5")
+    if os.path.exists(custom_cnn_path):
         try:
-            # Load model directly as it was saved during training
-            model = load_model(model_path, compile=False)
-            models_dict[model_name] = model
-            loaded_models.add(model_name)
-            print(f"Successfully loaded model: {model_name}")
+            custom_cnn = load_model(custom_cnn_path, compile=False)
+            models_dict["custom_cnn_model"] = custom_cnn
+            print(f"Successfully loaded model: custom_cnn_model")
         except Exception as e:
-            print(f"Error loading model {model_name}: {str(e)}")
-            # Try other formats or approaches if needed
+            print(f"Error loading custom_cnn_model: {str(e)}")
+    
+    # Load MobileNetV2 model
+    model_names = {
+        'mobilenetv2_model': create_mobilenetv2_model,
+        'vgg16_model': create_vgg16_model,
+        'resnet50_model': create_resnet50_model
+    }
+    
+    # Try .keras extension (from the training script) first, then .h5
+    for model_name, create_func in model_names.items():
+        # Try loading from .keras file (preferred for TF 2.17+)
+        keras_file = os.path.join(models_dir, f"{model_name}.keras")
+        h5_file = os.path.join(models_dir, f"{model_name}.h5")
+        
+        if os.path.exists(keras_file):
+            try:
+                # Create model with same architecture
+                model = create_func()
+                # Load weights
+                model.load_weights(keras_file)
+                models_dict[model_name] = model
+                print(f"Successfully loaded model from keras file: {model_name}")
+                continue  # Skip to next model if successful
+            except Exception as e:
+                print(f"Error loading keras model {model_name}: {str(e)}")
+        
+        # If .keras file failed or doesn't exist, try .h5 file
+        if os.path.exists(h5_file):
+            try:
+                # Create model with same architecture
+                model = create_func()
+                # Try loading weights
+                model.load_weights(h5_file)
+                models_dict[model_name] = model
+                print(f"Successfully loaded model from h5 file: {model_name}")
+            except Exception as e:
+                print(f"Error loading h5 model {model_name}: {str(e)}")
     
     # Create simulated models only if no real models loaded
     if len(models_dict) == 0:
