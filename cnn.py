@@ -49,15 +49,22 @@ def extract_frames(video_path, output_dir, interval=FRAME_INTERVAL):
         success, frame = video.read()
         if not success:
             break
+
         if count % interval == 0:
             frame = cv2.resize(frame, (IMG_WIDTH, IMG_HEIGHT))
+
+            # ✅ BGR -> RGB BEFORE saving
+            frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
+
             output_path = os.path.join(output_dir, f"frame_{frame_count:04d}.jpg")
             cv2.imwrite(output_path, frame)
             frame_count += 1
+
         count += 1
     
     video.release()
     return frame_count
+
 
 # Process videos and extract frames
 total_frames = 0
