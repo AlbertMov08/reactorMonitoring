@@ -658,164 +658,6 @@ async def get_home():
       color: #6b7280;
     }
 
-
-    .journal-panel {
-      background: #ffffff;
-      border: 1px solid #e5e7eb;
-      border-radius: 22px;
-      padding: 22px;
-      box-shadow: 0 10px 28px rgba(15, 23, 42, 0.07);
-      margin-bottom: 24px;
-    }
-    .journal-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-      gap: 12px;
-      flex-wrap: wrap;
-      margin-bottom: 18px;
-    }
-    .journal-header h2 {
-      margin: 0;
-      font-size: 24px;
-      color: #111827;
-    }
-    .journal-header p {
-      margin: 6px 0 0 0;
-      color: #6b7280;
-      font-size: 14px;
-    }
-    .journal-count {
-      padding: 9px 12px;
-      border-radius: 999px;
-      background: #ecfdf5;
-      color: #047857;
-      border: 1px solid #a7f3d0;
-      font-size: 13px;
-      font-weight: 800;
-    }
-    .journal-form {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 14px;
-      margin-bottom: 18px;
-    }
-    .journal-field {
-      display: flex;
-      flex-direction: column;
-      gap: 6px;
-    }
-    .journal-field label {
-      font-size: 13px;
-      font-weight: 800;
-      color: #374151;
-    }
-    .journal-field input,
-    .journal-field select,
-    .journal-field textarea {
-      width: 100%;
-      border: 1px solid #d1d5db;
-      border-radius: 12px;
-      padding: 11px 12px;
-      font-size: 14px;
-      color: #111827;
-      background: #ffffff;
-      font-family: inherit;
-    }
-    .journal-field textarea {
-      min-height: 92px;
-      resize: vertical;
-    }
-    .journal-field.wide {
-      grid-column: span 3;
-    }
-    .journal-actions {
-      display: flex;
-      gap: 10px;
-      flex-wrap: wrap;
-      margin-bottom: 18px;
-    }
-    .journal-actions button {
-      border: none;
-      border-radius: 12px;
-      padding: 12px 16px;
-      font-size: 14px;
-      font-weight: 800;
-      cursor: pointer;
-      background: #2563eb;
-      color: white;
-      box-shadow: 0 6px 16px rgba(37, 99, 235, 0.2);
-    }
-    .journal-actions button.secondary {
-      background: #e5e7eb;
-      color: #111827;
-      box-shadow: none;
-    }
-    .journal-actions button.danger {
-      background: #fee2e2;
-      color: #991b1b;
-      box-shadow: none;
-    }
-    .journal-table-wrap {
-      overflow-x: auto;
-      border: 1px solid #e5e7eb;
-      border-radius: 16px;
-    }
-    .journal-table {
-      width: 100%;
-      border-collapse: collapse;
-      min-width: 980px;
-      background: #ffffff;
-    }
-    .journal-table th {
-      text-align: left;
-      font-size: 12px;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-      color: #6b7280;
-      background: #f8fafc;
-      padding: 12px;
-      border-bottom: 1px solid #e5e7eb;
-    }
-    .journal-table td {
-      padding: 12px;
-      border-bottom: 1px solid #f1f5f9;
-      font-size: 14px;
-      color: #374151;
-      vertical-align: top;
-    }
-    .journal-table tr:last-child td {
-      border-bottom: none;
-    }
-    .journal-badge {
-      display: inline-block;
-      padding: 5px 9px;
-      border-radius: 999px;
-      background: #eff6ff;
-      color: #1d4ed8;
-      font-size: 12px;
-      font-weight: 800;
-      white-space: nowrap;
-    }
-    .journal-delete {
-      border: none;
-      border-radius: 10px;
-      padding: 8px 10px;
-      background: #fee2e2;
-      color: #991b1b;
-      font-size: 12px;
-      font-weight: 800;
-      cursor: pointer;
-    }
-    .journal-empty {
-      text-align: center;
-      color: #6b7280;
-      padding: 24px;
-      background: #f8fafc;
-      border: 1px dashed #cbd5e1;
-      border-radius: 16px;
-    }
-
     @media (max-width: 1100px) {
       .main-grid,
       .summary-grid {
@@ -823,12 +665,6 @@ async def get_home():
       }
       .ensemble-grid {
         grid-template-columns: repeat(2, 1fr);
-      }
-      .journal-form {
-        grid-template-columns: 1fr 1fr;
-      }
-      .journal-field.wide {
-        grid-column: span 2;
       }
     }
 
@@ -844,12 +680,6 @@ async def get_home():
       }
       .ensemble-grid {
         grid-template-columns: 1fr;
-      }
-      .journal-form {
-        grid-template-columns: 1fr;
-      }
-      .journal-field.wide {
-        grid-column: span 1;
       }
     }
   </style>
@@ -931,269 +761,11 @@ async def get_home():
       );
     }
 
-
-    function ExperimentJournal() {
-      const STORAGE_KEY = "foam_experiment_journal_entries_v1";
-      const blankEntry = {
-        experimentType: "",
-        sampleId: "",
-        whatChanged: "",
-        reactionObserved: "",
-        reactionSpeed: "Medium",
-        timeUntilReaction: "",
-        foamLevel: "Medium",
-        likelyCause: "",
-        notes: "",
-      };
-
-      const [entries, setEntries] = useState([]);
-      const [form, setForm] = useState(blankEntry);
-
-      useEffect(() => {
-        try {
-          const saved = localStorage.getItem(STORAGE_KEY);
-          if (saved) {
-            const parsed = JSON.parse(saved);
-            if (Array.isArray(parsed)) {
-              setEntries(parsed);
-            }
-          }
-        } catch (err) {
-          console.error("Could not load journal entries:", err);
-        }
-      }, []);
-
-      useEffect(() => {
-        try {
-          localStorage.setItem(STORAGE_KEY, JSON.stringify(entries));
-        } catch (err) {
-          console.error("Could not save journal entries:", err);
-        }
-      }, [entries]);
-
-      const updateField = (field, value) => {
-        setForm(prev => ({ ...prev, [field]: value }));
-      };
-
-      const saveEntry = (event) => {
-        event.preventDefault();
-
-        const hasRequiredInfo =
-          form.experimentType.trim() ||
-          form.sampleId.trim() ||
-          form.reactionObserved.trim() ||
-          form.notes.trim();
-
-        if (!hasRequiredInfo) {
-          alert("Please enter at least an experiment type, sample ID, reaction observed, or notes.");
-          return;
-        }
-
-        const newEntry = {
-          id: Date.now(),
-          createdAt: new Date().toLocaleString(),
-          ...form,
-        };
-
-        setEntries(prev => [newEntry, ...prev]);
-        setForm(blankEntry);
-      };
-
-      const deleteEntry = (id) => {
-        setEntries(prev => prev.filter(entry => entry.id !== id));
-      };
-
-      const clearEntries = () => {
-        if (entries.length === 0) return;
-        if (window.confirm("Clear all local journal entries from this browser?")) {
-          setEntries([]);
-        }
-      };
-
-      const exportEntries = () => {
-        if (entries.length === 0) {
-          alert("No journal entries to export yet.");
-          return;
-        }
-
-        const blob = new Blob([JSON.stringify(entries, null, 2)], {
-          type: "application/json",
-        });
-        const url = URL.createObjectURL(blob);
-        const link = document.createElement("a");
-        link.href = url;
-        link.download = "foam_experiment_journal.json";
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
-        URL.revokeObjectURL(url);
-      };
-
-      return (
-        <div className="journal-panel">
-          <div className="journal-header">
-            <div>
-              <h2>Experiment Journal</h2>
-              <p>Record experiment type, reaction speed, foam behavior, and possible causes. Entries are saved locally in this browser for now.</p>
-            </div>
-            <div className="journal-count">{entries.length} saved entr{entries.length === 1 ? "y" : "ies"}</div>
-          </div>
-
-          <form onSubmit={saveEntry}>
-            <div className="journal-form">
-              <div className="journal-field">
-                <label>Experiment Type</label>
-                <input
-                  value={form.experimentType}
-                  onChange={(e) => updateField("experimentType", e.target.value)}
-                  placeholder="Fermentation, mixing, heating..."
-                />
-              </div>
-
-              <div className="journal-field">
-                <label>Sample ID / Reactor</label>
-                <input
-                  value={form.sampleId}
-                  onChange={(e) => updateField("sampleId", e.target.value)}
-                  placeholder="Reactor A, Sample 4..."
-                />
-              </div>
-
-              <div className="journal-field">
-                <label>Time Until Reaction</label>
-                <input
-                  value={form.timeUntilReaction}
-                  onChange={(e) => updateField("timeUntilReaction", e.target.value)}
-                  placeholder="30 sec, 2 min..."
-                />
-              </div>
-
-              <div className="journal-field">
-                <label>Reaction Speed</label>
-                <select
-                  value={form.reactionSpeed}
-                  onChange={(e) => updateField("reactionSpeed", e.target.value)}
-                >
-                  <option>Slow</option>
-                  <option>Medium</option>
-                  <option>Fast</option>
-                  <option>Very Fast</option>
-                  <option>Unknown</option>
-                </select>
-              </div>
-
-              <div className="journal-field">
-                <label>Foam Level Reached</label>
-                <select
-                  value={form.foamLevel}
-                  onChange={(e) => updateField("foamLevel", e.target.value)}
-                >
-                  <option>No Foam</option>
-                  <option>Foam-mild</option>
-                  <option>Foam-Medium</option>
-                  <option>Foam-Heavy</option>
-                  <option>Post-Antifoam Addition</option>
-                  <option>Unknown</option>
-                </select>
-              </div>
-
-              <div className="journal-field">
-                <label>Likely Cause</label>
-                <input
-                  value={form.likelyCause}
-                  onChange={(e) => updateField("likelyCause", e.target.value)}
-                  placeholder="Temperature, mixing speed, nutrient added..."
-                />
-              </div>
-
-              <div className="journal-field wide">
-                <label>What Changed?</label>
-                <textarea
-                  value={form.whatChanged}
-                  onChange={(e) => updateField("whatChanged", e.target.value)}
-                  placeholder="Describe what condition changed before the reaction happened."
-                />
-              </div>
-
-              <div className="journal-field wide">
-                <label>Reaction Observed / Notes</label>
-                <textarea
-                  value={form.reactionObserved}
-                  onChange={(e) => updateField("reactionObserved", e.target.value)}
-                  placeholder="Describe how the foam reacted, how quickly it rose, and anything important scientists should know."
-                />
-              </div>
-
-              <div className="journal-field wide">
-                <label>Extra Notes</label>
-                <textarea
-                  value={form.notes}
-                  onChange={(e) => updateField("notes", e.target.value)}
-                  placeholder="Lighting, camera angle, antifoam, unusual behavior, etc."
-                />
-              </div>
-            </div>
-
-            <div className="journal-actions">
-              <button type="submit">Save Entry</button>
-              <button type="button" className="secondary" onClick={exportEntries}>Export JSON</button>
-              <button type="button" className="danger" onClick={clearEntries}>Clear Local Entries</button>
-            </div>
-          </form>
-
-          {entries.length === 0 ? (
-            <div className="journal-empty">No journal entries yet. Add an experiment note above and it will stay after refresh on this browser.</div>
-          ) : (
-            <div className="journal-table-wrap">
-              <table className="journal-table">
-                <thead>
-                  <tr>
-                    <th>Date</th>
-                    <th>Experiment</th>
-                    <th>Sample</th>
-                    <th>Reaction</th>
-                    <th>Speed</th>
-                    <th>Foam</th>
-                    <th>Cause</th>
-                    <th>Notes</th>
-                    <th></th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {entries.map(entry => (
-                    <tr key={entry.id}>
-                      <td>{entry.createdAt}</td>
-                      <td>{entry.experimentType || "-"}</td>
-                      <td>{entry.sampleId || "-"}</td>
-                      <td>
-                        <div><strong>Changed:</strong> {entry.whatChanged || "-"}</div>
-                        <div style={{ marginTop: "6px" }}><strong>Observed:</strong> {entry.reactionObserved || "-"}</div>
-                        <div style={{ marginTop: "6px" }}><strong>Time:</strong> {entry.timeUntilReaction || "-"}</div>
-                      </td>
-                      <td><span className="journal-badge">{entry.reactionSpeed}</span></td>
-                      <td><span className="journal-badge">{entry.foamLevel}</span></td>
-                      <td>{entry.likelyCause || "-"}</td>
-                      <td>{entry.notes || "-"}</td>
-                      <td>
-                        <button className="journal-delete" onClick={() => deleteEntry(entry.id)}>Delete</button>
-                      </td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-          )}
-        </div>
-      );
-    }
-
     function App() {
       const videoRef = useRef(null);
       const canvasRef = useRef(null);
-      const webcamStreamRef = useRef(null);
       const tokenClientRef = useRef(null);
       const createdBlobUrlRef = useRef(null);
-      const [isWebcam, setIsWebcam] = useState(false);
 
       const [modelResults, setModelResults] = useState([]);
       const [ensembleProbs, setEnsembleProbs] = useState([0, 0, 0, 0, 0]);
@@ -1216,58 +788,6 @@ async def get_home():
       const [videoSourceType, setVideoSourceType] = useState("Local");
       const [configWarning, setConfigWarning] = useState("");
 
-      const startWebcam = async () => {
-        try {
-          if (!navigator.mediaDevices || !navigator.mediaDevices.getUserMedia) {
-            alert("Your browser does not support webcam access. Use Chrome/Safari on localhost or HTTPS.");
-            return;
-          }
-
-          const stream = await navigator.mediaDevices.getUserMedia({
-            video: {
-              width: { ideal: 1280 },
-              height: { ideal: 720 },
-              facingMode: "environment"
-            },
-            audio: false
-          });
-
-          webcamStreamRef.current = stream;
-
-          const video = videoRef.current;
-          if (video) {
-            video.pause();
-            video.srcObject = stream;
-            video.removeAttribute("src");
-            video.load();
-            await video.play();
-          }
-
-          setSelectedFile(null);
-          setVideoSourceName("Live webcam");
-          setVideoSourceType("Camera");
-          setDriveStatus("Webcam active. Live foam scanning is running.");
-          setIsWebcam(true);
-        } catch (err) {
-          console.error("Webcam error:", err);
-          alert("Could not access webcam: " + err.message);
-        }
-      };
-
-      const stopWebcam = () => {
-        if (webcamStreamRef.current) {
-          webcamStreamRef.current.getTracks().forEach((track) => track.stop());
-          webcamStreamRef.current = null;
-        }
-
-        const video = videoRef.current;
-        if (video && video.srcObject) {
-          video.srcObject = null;
-        }
-
-        setIsWebcam(false);
-      };
-
       const revokeCurrentBlobUrl = () => {
         if (createdBlobUrlRef.current) {
           URL.revokeObjectURL(createdBlobUrlRef.current);
@@ -1276,7 +796,6 @@ async def get_home():
       };
 
       const resetToDefaultVideo = () => {
-        stopWebcam();
         revokeCurrentBlobUrl();
         setSelectedFile(null);
         setVideoSourceName("test1.mp4");
@@ -1285,7 +804,6 @@ async def get_home():
         const video = videoRef.current;
         if (video) {
           video.pause();
-          video.srcObject = null;
           video.src = "/static/test1.mp4";
           video.load();
         }
@@ -1401,7 +919,6 @@ async def get_home():
       };
 
       const playDriveFile = async (file) => {
-        stopWebcam();
         try {
           setDriveStatus(`Loading ${file.name}...`);
 
@@ -1431,7 +948,6 @@ async def get_home():
           const video = videoRef.current;
           if (video) {
             video.pause();
-            video.srcObject = null;
             video.src = objectUrl;
             video.load();
             video.play().catch(() => {});
@@ -1605,7 +1121,7 @@ async def get_home():
         if (video) {
           const onPlay = () => {
             interval = setInterval(() => {
-              if (!video.paused && !video.ended && video.readyState >= 2) {
+              if (!video.paused && !video.ended) {
                 fetchClassification();
               }
             }, 700);
@@ -1636,9 +1152,6 @@ async def get_home():
 
           <div className="video-panel">
             <div className="toolbar">
-              <button onClick={startWebcam} disabled={isWebcam}>
-                {isWebcam ? "Webcam Active" : "Use Webcam"}
-              </button>
               <button onClick={chooseDriveFolder} disabled={!driveReady || pickerBusy || !GOOGLE_CLIENT_ID || !GOOGLE_API_KEY}>
                 {pickerBusy ? "Opening Drive..." : "Choose Drive Folder"}
               </button>
@@ -1742,10 +1255,6 @@ async def get_home():
               </div>
             </div>
           </div>
-
-
-
-          <ExperimentJournal />
 
           <div className="models-panel">
             <div className="models-panel-header">

@@ -1,369 +1,682 @@
-# train_all_models.py
+# train_models_fixed.py
+# Main Foam model training file
+#
+# Trains:
+# 1) MobileNetV2
+# 2) ResNet50
+# 3) EfficientNetB0
+# 4) Custom CNN
+#
+# VGG16 removed completely.
+#
+# Saves models as:
+# models/mobilenetv2_model.keras
+# models/resnet50_model.keras
+# models/efficientnetb0_model.keras
+# models/custom_cnn_model.keras
+
 import os
+import gc
+from collections import Counter
+
 import numpy as np
 import tensorflow as tf
 from tensorflow import keras
+from tensorflow.keras import layers
 
-from tensorflow.keras.applications import ResNet50
+from tensorflow.keras.applications import MobileNetV2, ResNet50, EfficientNetB0
+from tensorflow.keras.applications.mobilenet_v2 import preprocess_input as mobilenet_preprocess
 from tensorflow.keras.applications.resnet50 import preprocess_input as resnet50_preprocess
-from tensorflow.keras.models import Model
-from tensorflow.keras.layers import Dense, GlobalAveragePooling2D, Dropout, Input
+from tensorflow.keras.applications.efficientnet import preprocess_input as efficientnet_preprocess
 
 from sklearn.model_selection import train_test_split
-from sklearn.metrics import classification_report, confusion_matrix
 from sklearn.utils.class_weight import compute_class_weight
+from sklearn.metrics import classification_report, confusion_matrix
 
 import matplotlib.pyplot as plt
 import seaborn as sns
-from collections import Counter
 
+
+# -------------------------
 # Reproducibility
+# -------------------------
 np.random.seed(42)
 tf.random.set_seed(42)
 
-# Basic parameters
-IMG_HEIGHT, IMG_WIDTH = 224, 224
-BATCH_SIZE = 32
 
-# Training schedule
+# -------------------------
+# Project config
+# -------------------------
+DATA_DIR = "."
+
+IMG_HEIGHT = 224
+IMG_WIDTH = 224
+INPUT_SHAPE = (IMG_HEIGHT, IMG_WIDTH, 3)
+
+CLASS_NAMES = [
+    "Foam-Heavy",
+    "Foam-mild",
+    "Post-Antifoam Addition",
+    "Foam-Medium",
+    "No Foam",
+]
+
+NUM_CLASSES = len(CLASS_NAMES)
+
+USE_AUGMENTED = True
+
 EPOCHS_FROZEN = 8
-EPOCHS_FINETUNE = 12
+EPOCHS_FINETUNE = 10
+
 LR_FROZEN = 1e-3
 LR_FINETUNE = 1e-5
 
-# Directory containing class folders
-data_dir = '.'
+BATCH_SIZE_LIGHT = 32
+BATCH_SIZE_HEAVY = 4
 
-# Class definitions
-class_names = ['Foam-Heavy', 'Foam-mild', 'Post-Antifoam Addition', 'Foam-Medium', 'No Foam']
-num_classes = len(class_names)
+os.makedirs("models", exist_ok=True)
+os.makedirs("figures", exist_ok=True)
 
-print(f"Classes: {class_names}")
-print(f"Number of classes: {num_classes}")
+print("TensorFlow version:", tf.__version__)
+print("Classes:", CLASS_NAMES)
+print("Number of classes:", NUM_CLASSES)
+
+
+# -------------------------
+# Utility helpers
+# -------------------------
+def clear_memory():
+    tf.keras.backend.clear_session()
+    gc.collect()
+
+
+def load_images_from_folder(folder_path, label_idx):
+    images = []
+    labels = []
+
+    if not os.path.exists(folder_path):
+        return images, labels
+
+    for filename in os.listdir(folder_path):
+        file_path = os.path.join(folder_path, filename)
+
+        if os.path.isdir(file_path):
+            continue
+
+        if filename.lower().endswith((".jpg", ".jpeg", ".png")):
+            try:
+                img = keras.preprocessing.image.load_img(
+                    file_path,
+                    target_size=(IMG_HEIGHT, IMG_WIDTH),
+                )
+                img_array = keras.preprocessing.image.img_to_array(img)
+                images.append(img_array)
+                labels.append(label_idx)
+            except Exception as e:
+                print(f"Could not load image: {file_path}")
+                print("Error:", e)
+
+    return images, labels
 
 
 def load_data():
-    """
-    Load only original images from each class folder.
-    Skips augmented subfolders to reduce leakage.
-    """
     all_images = []
     all_labels = []
 
-    for i, class_name in enumerate(class_names):
-        class_dir = os.path.join(data_dir, class_name)
+    print("\nLoading image data...")
+
+    for label_idx, class_name in enumerate(CLASS_NAMES):
+        class_dir = os.path.join(DATA_DIR, class_name)
+
         if not os.path.exists(class_dir):
-            print(f"Directory not found: {class_dir}")
+            print(f"WARNING: Missing class folder: {class_dir}")
             continue
 
-        class_count = 0
+        main_images, main_labels = load_images_from_folder(class_dir, label_idx)
 
-        for img_file in os.listdir(class_dir):
-            img_path = os.path.join(class_dir, img_file)
+        aug_images = []
+        aug_labels = []
 
-            if os.path.isdir(img_path):
-                continue
+        if USE_AUGMENTED:
+            augmented_dir = os.path.join(class_dir, "augmented")
+            aug_images, aug_labels = load_images_from_folder(augmented_dir, label_idx)
 
-            if img_file.lower().endswith(('.jpg', '.jpeg', '.png')):
-                try:
-                    img = keras.preprocessing.image.load_img(
-                        img_path,
-                        target_size=(IMG_HEIGHT, IMG_WIDTH)
-                    )
-                    img_array = keras.preprocessing.image.img_to_array(img)
-                    all_images.append(img_array)
-                    all_labels.append(i)
-                    class_count += 1
-                except Exception as e:
-                    print(f"Error loading {img_path}: {str(e)}")
+        all_images.extend(main_images)
+        all_labels.extend(main_labels)
+        all_images.extend(aug_images)
+        all_labels.extend(aug_labels)
 
-        print(f"Class {class_name}: {class_count} original images loaded")
+        print(
+            f"{class_name}: "
+            f"{len(main_images)} main + {len(aug_images)} augmented = "
+            f"{len(main_images) + len(aug_images)}"
+        )
 
-    return np.array(all_images), np.array(all_labels)
+    X = np.array(all_images, dtype=np.float32)
+    y = np.array(all_labels, dtype=np.int32)
+
+    print("\nTotal images:", len(X))
+    print("Images per class:", Counter(y))
+
+    return X, y
 
 
-def create_resnet50_model(input_shape=(224, 224, 3), num_classes=5):
-    """
-    Functional API model to avoid loading issues with nested Sequential + ResNet50.
-    Returns:
-      - model
-      - base_model
-    """
-    base_model = ResNet50(
-        weights='imagenet',
-        include_top=False,
-        input_shape=input_shape
+def compile_model(model, learning_rate):
+    model.compile(
+        optimizer=keras.optimizers.Adam(learning_rate=learning_rate),
+        loss="categorical_crossentropy",
+        metrics=["accuracy"],
     )
-    base_model.trainable = False
-
-    inputs = Input(shape=input_shape)
-    x = base_model(inputs, training=False)
-    x = GlobalAveragePooling2D()(x)
-    x = Dense(128, activation='relu')(x)
-    x = Dropout(0.3)(x)
-    outputs = Dense(num_classes, activation='softmax')(x)
-
-    model = Model(inputs, outputs)
-    return model, base_model
 
 
-def preprocess_for_resnet50(X: np.ndarray) -> np.ndarray:
-    X = X.astype(np.float32)
-    return resnet50_preprocess(X)
+def get_callbacks(model_key):
+    return [
+        keras.callbacks.ModelCheckpoint(
+            filepath=f"models/{model_key}_best.keras",
+            monitor="val_accuracy",
+            save_best_only=True,
+            mode="max",
+            verbose=1,
+        ),
+        keras.callbacks.EarlyStopping(
+            monitor="val_loss",
+            patience=4,
+            restore_best_weights=True,
+            verbose=1,
+        ),
+        keras.callbacks.ReduceLROnPlateau(
+            monitor="val_loss",
+            factor=0.5,
+            patience=2,
+            min_lr=1e-7,
+            verbose=1,
+        ),
+    ]
 
 
-def plot_confusion_matrix(cm, filename):
+def save_full_model(model, model_key):
+    model_path = f"models/{model_key}.keras"
+    model.save(model_path)
+    print(f"Saved full model: {model_path}")
+
+
+def plot_training_history(histories, model_key):
+    train_acc = []
+    val_acc = []
+    train_loss = []
+    val_loss = []
+
+    for history in histories:
+        train_acc.extend(history.history.get("accuracy", []))
+        val_acc.extend(history.history.get("val_accuracy", []))
+        train_loss.extend(history.history.get("loss", []))
+        val_loss.extend(history.history.get("val_loss", []))
+
+    if len(train_acc) > 0:
+        plt.figure(figsize=(10, 6))
+        plt.plot(train_acc, marker="o", label="Train Accuracy")
+        plt.plot(val_acc, marker="s", label="Validation Accuracy")
+        plt.title(f"{model_key} Accuracy")
+        plt.xlabel("Epoch")
+        plt.ylabel("Accuracy")
+        plt.legend()
+        plt.grid(True, linestyle="--", alpha=0.5)
+        plt.tight_layout()
+        plt.savefig(f"figures/{model_key}_accuracy_curve.png")
+        plt.close()
+
+    if len(train_loss) > 0:
+        plt.figure(figsize=(10, 6))
+        plt.plot(train_loss, marker="o", label="Train Loss")
+        plt.plot(val_loss, marker="s", label="Validation Loss")
+        plt.title(f"{model_key} Loss")
+        plt.xlabel("Epoch")
+        plt.ylabel("Loss")
+        plt.legend()
+        plt.grid(True, linestyle="--", alpha=0.5)
+        plt.tight_layout()
+        plt.savefig(f"figures/{model_key}_loss_curve.png")
+        plt.close()
+
+
+def evaluate_model(model, model_key, X_test, y_test_cat, y_test_idx):
+    print(f"\nEvaluating {model_key}...")
+
+    test_loss, test_accuracy = model.evaluate(X_test, y_test_cat, verbose=1)
+
+    print(f"{model_key} test loss: {test_loss:.4f}")
+    print(f"{model_key} test accuracy: {test_accuracy:.4f}")
+
+    predictions = model.predict(X_test, verbose=1)
+    y_pred = np.argmax(predictions, axis=1)
+
+    report = classification_report(
+        y_test_idx,
+        y_pred,
+        labels=list(range(NUM_CLASSES)),
+        target_names=CLASS_NAMES,
+        zero_division=0,
+    )
+
+    cm = confusion_matrix(
+        y_test_idx,
+        y_pred,
+        labels=list(range(NUM_CLASSES)),
+    )
+
+    print("\nClassification Report:")
+    print(report)
+
     plt.figure(figsize=(10, 8))
     sns.heatmap(
         cm,
         annot=True,
-        fmt='d',
-        cmap='Blues',
-        xticklabels=class_names,
-        yticklabels=class_names
+        fmt="d",
+        cmap="Blues",
+        xticklabels=CLASS_NAMES,
+        yticklabels=CLASS_NAMES,
     )
-    plt.title('ResNet50 Confusion Matrix')
-    plt.ylabel('True label')
-    plt.xlabel('Predicted label')
+    plt.title(f"{model_key} Confusion Matrix")
+    plt.ylabel("True label")
+    plt.xlabel("Predicted label")
     plt.tight_layout()
-    plt.savefig(filename)
+    plt.savefig(f"figures/{model_key}_confusion_matrix.png")
     plt.close()
 
-
-def plot_training_curves(history1, history2, filename):
-    plt.figure(figsize=(12, 6))
-
-    train_acc = history1.history.get('accuracy', []) + history2.history.get('accuracy', [])
-    val_acc = history1.history.get('val_accuracy', []) + history2.history.get('val_accuracy', [])
-
-    plt.plot(train_acc, marker='o', label='Train Accuracy')
-    plt.plot(val_acc, marker='s', linestyle='--', label='Val Accuracy')
-
-    plt.title('ResNet50 Training / Validation Accuracy')
-    plt.xlabel('Epoch')
-    plt.ylabel('Accuracy')
-    plt.grid(True, linestyle='--', alpha=0.6)
-    plt.legend()
-    plt.tight_layout()
-    plt.savefig(filename)
-    plt.close()
+    return test_accuracy
 
 
-def train_resnet50(X_train_raw, y_train_cat, X_val_raw, y_val_cat, X_test_raw, y_test_cat, y_train_int):
-    print("\nTraining resnet50_model ...")
-
-    os.makedirs('models', exist_ok=True)
-    os.makedirs('figures', exist_ok=True)
-
-    X_train = preprocess_for_resnet50(X_train_raw)
-    X_val = preprocess_for_resnet50(X_val_raw)
-    X_test = preprocess_for_resnet50(X_test_raw)
-
-    class_weights_array = compute_class_weight(
-        class_weight='balanced',
-        classes=np.unique(y_train_int),
-        y=y_train_int
+# -------------------------
+# Model builders
+# -------------------------
+def build_mobilenetv2_model():
+    base_model = MobileNetV2(
+        weights="imagenet",
+        include_top=False,
+        input_shape=INPUT_SHAPE,
     )
-    class_weights = {i: float(w) for i, w in enumerate(class_weights_array)}
-    print("Class weights:", class_weights)
-
-    model, base_model = create_resnet50_model(
-        input_shape=(IMG_HEIGHT, IMG_WIDTH, 3),
-        num_classes=num_classes
-    )
-
-    model.summary()
-
-    # Phase 1
-    print("\n===== Phase 1: Train classifier head only =====")
     base_model.trainable = False
 
-    model.compile(
-        optimizer=tf.keras.optimizers.Adam(learning_rate=LR_FROZEN),
-        loss='categorical_crossentropy',
-        metrics=['accuracy']
+    model = keras.Sequential(
+        [
+            layers.Input(shape=INPUT_SHAPE),
+            base_model,
+            layers.GlobalAveragePooling2D(),
+            layers.Dense(256, activation="relu"),
+            layers.Dropout(0.5),
+            layers.Dense(NUM_CLASSES, activation="softmax"),
+        ],
+        name="mobilenetv2_model",
     )
 
-    checkpoint_phase1 = tf.keras.callbacks.ModelCheckpoint(
-        "models/resnet50_model_phase1_best.keras",
-        monitor='val_accuracy',
-        save_best_only=True,
-        mode='max',
-        verbose=1
+    return model, base_model
+
+
+def build_resnet50_model():
+    base_model = ResNet50(
+        weights="imagenet",
+        include_top=False,
+        input_shape=INPUT_SHAPE,
+    )
+    base_model.trainable = False
+
+    inputs = layers.Input(shape=INPUT_SHAPE)
+    x = base_model(inputs, training=False)
+    x = layers.GlobalAveragePooling2D()(x)
+    x = layers.Dense(128, activation="relu")(x)
+    x = layers.Dropout(0.3)(x)
+    outputs = layers.Dense(NUM_CLASSES, activation="softmax")(x)
+
+    model = keras.Model(inputs, outputs, name="resnet50_model")
+
+    return model, base_model
+
+
+def build_efficientnetb0_model():
+    base_model = EfficientNetB0(
+        weights="imagenet",
+        include_top=False,
+        input_shape=INPUT_SHAPE,
+    )
+    base_model.trainable = False
+
+    model = keras.Sequential(
+        [
+            layers.Input(shape=INPUT_SHAPE),
+            base_model,
+            layers.GlobalAveragePooling2D(),
+            layers.Dense(256, activation="relu"),
+            layers.Dropout(0.5),
+            layers.Dense(NUM_CLASSES, activation="softmax"),
+        ],
+        name="efficientnetb0_model",
     )
 
-    early_stopping_phase1 = tf.keras.callbacks.EarlyStopping(
-        monitor='val_loss',
-        patience=3,
-        restore_best_weights=True,
-        verbose=1
+    return model, base_model
+
+
+def build_custom_cnn_model():
+    model = keras.Sequential(
+        [
+            layers.Input(shape=INPUT_SHAPE),
+            layers.Conv2D(32, (3, 3), activation="relu"),
+            layers.MaxPooling2D(2, 2),
+            layers.Conv2D(64, (3, 3), activation="relu"),
+            layers.MaxPooling2D(2, 2),
+            layers.Conv2D(64, (3, 3), activation="relu"),
+            layers.Flatten(),
+            layers.Dense(64, activation="relu"),
+            layers.Dense(NUM_CLASSES, activation="softmax"),
+        ],
+        name="custom_cnn_model",
     )
+
+    return model
+
+
+# -------------------------
+# Fine-tuning helpers
+# -------------------------
+def freeze_batchnorm_layers(model):
+    for layer in model.layers:
+        if isinstance(layer, layers.BatchNormalization):
+            layer.trainable = False
+
+
+def fine_tune_base_model(model_key, base_model):
+    base_model.trainable = True
+
+    if model_key == "mobilenetv2_model":
+        layers_to_unfreeze = 40
+    elif model_key == "resnet50_model":
+        layers_to_unfreeze = 50
+    elif model_key == "efficientnetb0_model":
+        layers_to_unfreeze = 50
+    else:
+        layers_to_unfreeze = 0
+
+    if layers_to_unfreeze > 0:
+        for layer in base_model.layers[:-layers_to_unfreeze]:
+            layer.trainable = False
+
+        for layer in base_model.layers[-layers_to_unfreeze:]:
+            layer.trainable = True
+
+    freeze_batchnorm_layers(base_model)
+
+    trainable_count = sum(1 for layer in base_model.layers if layer.trainable)
+    print(
+        f"{model_key}: trainable base layers = "
+        f"{trainable_count}/{len(base_model.layers)}"
+    )
+
+
+# -------------------------
+# Training functions
+# -------------------------
+def train_transfer_model(
+    model_key,
+    display_name,
+    builder,
+    preprocess_func,
+    batch_size,
+    X_train_raw,
+    X_val_raw,
+    X_test_raw,
+    y_train_cat,
+    y_val_cat,
+    y_test_cat,
+    y_test_idx,
+    class_weight,
+):
+    print("\n==============================")
+    print(f"Training {display_name}")
+    print("==============================")
+
+    clear_memory()
+
+    model, base_model = builder()
+
+    X_train = preprocess_func(X_train_raw.copy())
+    X_val = preprocess_func(X_val_raw.copy())
+    X_test = preprocess_func(X_test_raw.copy())
+
+    histories = []
+
+    print(f"\n{display_name} Phase 1: frozen base")
+    base_model.trainable = False
+    compile_model(model, LR_FROZEN)
 
     history1 = model.fit(
         X_train,
         y_train_cat,
         validation_data=(X_val, y_val_cat),
         epochs=EPOCHS_FROZEN,
-        batch_size=BATCH_SIZE,
-        class_weight=class_weights,
-        callbacks=[checkpoint_phase1, early_stopping_phase1],
-        verbose=1
+        batch_size=batch_size,
+        class_weight=class_weight,
+        callbacks=get_callbacks(model_key),
+        verbose=1,
     )
 
-    # Phase 2
-    print("\n===== Phase 2: Fine-tune top ResNet50 layers =====")
-    base_model.trainable = True
+    histories.append(history1)
 
-    for layer in base_model.layers[:-30]:
-        layer.trainable = False
-
-    trainable_count = sum(int(layer.trainable) for layer in base_model.layers)
-    print(f"ResNet50 trainable layers after unfreezing: {trainable_count}/{len(base_model.layers)}")
-
-    model.compile(
-        optimizer=tf.keras.optimizers.Adam(learning_rate=LR_FINETUNE),
-        loss='categorical_crossentropy',
-        metrics=['accuracy']
-    )
-
-    checkpoint_phase2 = tf.keras.callbacks.ModelCheckpoint(
-        "models/resnet50_model_best.keras",
-        monitor='val_accuracy',
-        save_best_only=True,
-        mode='max',
-        verbose=1
-    )
-
-    early_stopping_phase2 = tf.keras.callbacks.EarlyStopping(
-        monitor='val_loss',
-        patience=5,
-        restore_best_weights=True,
-        verbose=1
-    )
-
-    reduce_lr = tf.keras.callbacks.ReduceLROnPlateau(
-        monitor='val_loss',
-        factor=0.5,
-        patience=2,
-        min_lr=1e-7,
-        verbose=1
-    )
+    print(f"\n{display_name} Phase 2: fine-tuning")
+    fine_tune_base_model(model_key, base_model)
+    compile_model(model, LR_FINETUNE)
 
     history2 = model.fit(
         X_train,
         y_train_cat,
         validation_data=(X_val, y_val_cat),
         epochs=EPOCHS_FINETUNE,
-        batch_size=BATCH_SIZE,
-        class_weight=class_weights,
-        callbacks=[checkpoint_phase2, early_stopping_phase2, reduce_lr],
-        verbose=1
+        batch_size=batch_size,
+        class_weight=class_weight,
+        callbacks=get_callbacks(model_key),
+        verbose=1,
     )
 
-    print("\n===== Final Evaluation on Test Set =====")
-    test_loss, test_accuracy = model.evaluate(X_test, y_test_cat, verbose=1)
-    print(f"resnet50_model - Test accuracy: {test_accuracy:.4f}")
+    histories.append(history2)
 
-    predictions = model.predict(X_test, verbose=1)
-    if isinstance(predictions, list):
-        predictions = predictions[0]
+    test_accuracy = evaluate_model(
+        model=model,
+        model_key=model_key,
+        X_test=X_test,
+        y_test_cat=y_test_cat,
+        y_test_idx=y_test_idx,
+    )
 
-    y_pred = np.argmax(predictions, axis=1)
-    y_true = np.argmax(y_test_cat, axis=1)
+    plot_training_history(histories, model_key)
+    save_full_model(model, model_key)
 
-    report = classification_report(y_true, y_pred, target_names=class_names)
-    cm = confusion_matrix(y_true, y_pred)
+    del model
+    del base_model
+    clear_memory()
 
-    print("\nClassification Report:")
-    print(report)
-
-    plot_confusion_matrix(cm, 'figures/resnet50_model_confusion_matrix.png')
-    plot_training_curves(history1, history2, 'figures/resnet50_model_accuracy_curve.png')
-
-    final_keras_path = "models/resnet50_model.keras"
-    final_h5_path = "models/resnet50_model.h5"
-
-    model.save(final_keras_path)
-    print(f"Model saved to {final_keras_path}")
-
-    try:
-        model.save(final_h5_path)
-        print(f"Model saved to {final_h5_path}")
-    except Exception as e:
-        print(f"Warning: could not save .h5 model: {str(e)}")
-        try:
-            model.save_weights(final_h5_path)
-            print(f"Saved weights instead to {final_h5_path}")
-        except Exception as e2:
-            print(f"Warning: also failed to save weights: {str(e2)}")
-
-    return {
-        'model': model,
-        'history_phase1': history1.history,
-        'history_phase2': history2.history,
-        'accuracy': test_accuracy,
-        'report': report,
-        'cm': cm
-    }
+    return test_accuracy
 
 
+def train_custom_cnn(
+    X_train_raw,
+    X_val_raw,
+    X_test_raw,
+    y_train_cat,
+    y_val_cat,
+    y_test_cat,
+    y_test_idx,
+    class_weight,
+):
+    model_key = "custom_cnn_model"
+
+    print("\n==============================")
+    print("Training Custom CNN")
+    print("==============================")
+
+    clear_memory()
+
+    model = build_custom_cnn_model()
+
+    X_train = X_train_raw.astype(np.float32) / 255.0
+    X_val = X_val_raw.astype(np.float32) / 255.0
+    X_test = X_test_raw.astype(np.float32) / 255.0
+
+    compile_model(model, LR_FROZEN)
+
+    history = model.fit(
+        X_train,
+        y_train_cat,
+        validation_data=(X_val, y_val_cat),
+        epochs=EPOCHS_FROZEN + EPOCHS_FINETUNE,
+        batch_size=BATCH_SIZE_LIGHT,
+        class_weight=class_weight,
+        callbacks=get_callbacks(model_key),
+        verbose=1,
+    )
+
+    test_accuracy = evaluate_model(
+        model=model,
+        model_key=model_key,
+        X_test=X_test,
+        y_test_cat=y_test_cat,
+        y_test_idx=y_test_idx,
+    )
+
+    plot_training_history([history], model_key)
+    save_full_model(model, model_key)
+
+    del model
+    clear_memory()
+
+    return test_accuracy
+
+
+# -------------------------
+# Main
+# -------------------------
 def main():
-    print(f"TensorFlow version: {tf.__version__}")
-    print("Loading and preprocessing data...")
+    X, y = load_data()
 
-    X_raw, y = load_data()
-
-    print(f"Total images: {len(X_raw)}")
-    print(f"Images per class: {Counter(y)}")
-
-    if len(X_raw) == 0:
-        print("ERROR: No images found. Check your class folders and image extensions.")
+    if len(X) == 0:
+        print("ERROR: No images found.")
+        print("Make sure these folders exist:")
+        for class_name in CLASS_NAMES:
+            print("-", class_name)
         return
 
-    X_temp, X_test_raw, y_temp, y_test = train_test_split(
-        X_raw,
+    print("\nSplitting data...")
+
+    # 70% train, 15% validation, 15% test
+    X_temp, X_test, y_temp, y_test = train_test_split(
+        X,
         y,
         test_size=0.15,
         stratify=y,
-        random_state=42
+        random_state=42,
     )
 
-    X_train_raw, X_val_raw, y_train, y_val = train_test_split(
+    X_train, X_val, y_train, y_val = train_test_split(
         X_temp,
         y_temp,
         test_size=0.1765,
         stratify=y_temp,
-        random_state=42
+        random_state=42,
     )
 
-    print(f"Training samples: {len(X_train_raw)}")
-    print(f"Validation samples: {len(X_val_raw)}")
-    print(f"Testing samples: {len(X_test_raw)}")
+    print("Training samples:", len(X_train))
+    print("Validation samples:", len(X_val))
+    print("Testing samples:", len(X_test))
 
-    y_train_cat = keras.utils.to_categorical(y_train, num_classes)
-    y_val_cat = keras.utils.to_categorical(y_val, num_classes)
-    y_test_cat = keras.utils.to_categorical(y_test, num_classes)
+    y_train_cat = keras.utils.to_categorical(y_train, NUM_CLASSES)
+    y_val_cat = keras.utils.to_categorical(y_val, NUM_CLASSES)
+    y_test_cat = keras.utils.to_categorical(y_test, NUM_CLASSES)
+
+    class_weights_array = compute_class_weight(
+        class_weight="balanced",
+        classes=np.unique(y_train),
+        y=y_train,
+    )
+
+    class_weight = {
+        int(cls): float(weight)
+        for cls, weight in zip(np.unique(y_train), class_weights_array)
+    }
+
+    print("Class weights:", class_weight)
 
     results = {}
-    try:
-        results["resnet50_model"] = train_resnet50(
-            X_train_raw,
-            y_train_cat,
-            X_val_raw,
-            y_val_cat,
-            X_test_raw,
-            y_test_cat,
-            y_train
-        )
-    except Exception as e:
-        print(f"Error training resnet50_model: {str(e)}")
-        return
 
-    print("\n===== TRAINING RESULTS =====")
-    for model_key, result in results.items():
-        print(f"{model_key}: Test Accuracy = {result['accuracy']:.4f}")
+    # 1. MobileNetV2
+    results["mobilenetv2_model"] = train_transfer_model(
+        model_key="mobilenetv2_model",
+        display_name="MobileNetV2",
+        builder=build_mobilenetv2_model,
+        preprocess_func=mobilenet_preprocess,
+        batch_size=BATCH_SIZE_LIGHT,
+        X_train_raw=X_train,
+        X_val_raw=X_val,
+        X_test_raw=X_test,
+        y_train_cat=y_train_cat,
+        y_val_cat=y_val_cat,
+        y_test_cat=y_test_cat,
+        y_test_idx=y_test,
+        class_weight=class_weight,
+    )
 
-    print("\nTraining complete! Model saved to 'models/' and figures to 'figures/'.")
+    # 2. ResNet50
+    results["resnet50_model"] = train_transfer_model(
+        model_key="resnet50_model",
+        display_name="ResNet50",
+        builder=build_resnet50_model,
+        preprocess_func=resnet50_preprocess,
+        batch_size=BATCH_SIZE_HEAVY,
+        X_train_raw=X_train,
+        X_val_raw=X_val,
+        X_test_raw=X_test,
+        y_train_cat=y_train_cat,
+        y_val_cat=y_val_cat,
+        y_test_cat=y_test_cat,
+        y_test_idx=y_test,
+        class_weight=class_weight,
+    )
+
+    # 3. EfficientNetB0
+    results["efficientnetb0_model"] = train_transfer_model(
+        model_key="efficientnetb0_model",
+        display_name="EfficientNetB0",
+        builder=build_efficientnetb0_model,
+        preprocess_func=efficientnet_preprocess,
+        batch_size=BATCH_SIZE_HEAVY,
+        X_train_raw=X_train,
+        X_val_raw=X_val,
+        X_test_raw=X_test,
+        y_train_cat=y_train_cat,
+        y_val_cat=y_val_cat,
+        y_test_cat=y_test_cat,
+        y_test_idx=y_test,
+        class_weight=class_weight,
+    )
+
+    # 4. Custom CNN
+    results["custom_cnn_model"] = train_custom_cnn(
+        X_train_raw=X_train,
+        X_val_raw=X_val,
+        X_test_raw=X_test,
+        y_train_cat=y_train_cat,
+        y_val_cat=y_val_cat,
+        y_test_cat=y_test_cat,
+        y_test_idx=y_test,
+        class_weight=class_weight,
+    )
+
+    print("\n==============================")
+    print("FINAL TRAINING RESULTS")
+    print("==============================")
+
+    for model_key, accuracy in results.items():
+        print(f"{model_key}: test accuracy = {accuracy:.4f}")
+
+    print("\nDone.")
+    print("Models saved in: ./models")
+    print("Figures saved in: ./figures")
 
 
 if __name__ == "__main__":
