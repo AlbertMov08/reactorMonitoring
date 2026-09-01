@@ -111,9 +111,9 @@ MIN_WEIGHTED_MODEL_AGREEMENT = float(
 )
 
 # Keep secrets out of source code. Set these in your terminal or deployment env.
-SLACK_WEBHOOK_URL = "https://hooks.slack.com/services/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"
-GOOGLE_CLIENT_ID = "1003881011936-ntgdn3d28kbbn5si56fkmmfppakst7bg.apps.googleusercontent.com"
-GOOGLE_API_KEY = "AIzaSyCKS54ZwDki5N4XyauyEind0OZ8-O6r-uM"
+SLACK_WEBHOOK_URL = ""
+GOOGLE_CLIENT_ID = ""
+GOOGLE_API_KEY = ""
 
 # Google Sheets feedback configuration. Keep the service-account JSON out of GitHub.
 GOOGLE_SHEETS_SPREADSHEET_ID = os.getenv("GOOGLE_SHEETS_SPREADSHEET_ID", "").strip()
