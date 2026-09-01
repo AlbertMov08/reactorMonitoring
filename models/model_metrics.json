@@ -1,0 +1,52 @@
+{
+  "custom_cnn_model": {
+    "validation": {
+      "accuracy": 0.7243589743589743,
+      "macro_f1": 0.7204891774891775
+    },
+    "test": {
+      "accuracy": 0.7677419354838709,
+      "macro_f1": 0.7723636363636365
+    }
+  },
+  "mobilenetv2_model": {
+    "validation": {
+      "accuracy": 0.9423076923076923,
+      "macro_f1": 0.9421838153578541
+    },
+    "test": {
+      "accuracy": 0.967741935483871,
+      "macro_f1": 0.9694663894663895
+    }
+  },
+  "resnet50_model": {
+    "validation": {
+      "accuracy": 0.967948717948718,
+      "macro_f1": 0.9705793107555181
+    },
+    "test": {
+      "accuracy": 0.9806451612903225,
+      "macro_f1": 0.9820237672882781
+    }
+  },
+  "efficientnetb0_model": {
+    "validation": {
+      "accuracy": 0.967948717948718,
+      "macro_f1": 0.9709199946874266
+    },
+    "test": {
+      "accuracy": 0.9806451612903225,
+      "macro_f1": 0.980813770798366
+    }
+  },
+  "ensemble": {
+    "validation": {
+      "accuracy": 0.9807692307692307,
+      "macro_f1": 0.9831424021218526
+    },
+    "test": {
+      "accuracy": 0.9870967741935484,
+      "macro_f1": 0.9873711478475464
+    }
+  }
+}

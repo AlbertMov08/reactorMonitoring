@@ -30,7 +30,7 @@ data_dir = '.'
 
 
 # Explicitly define the classes based on your directory structure
-class_names = ['Foam-Heavy', 'Foam-mild', 'Post-Antifoam Addition', 'Foam-Medium', 'No Foam']
+class_names = ['Foam-Heavy', 'Foam-Mild', 'Post-Antifoam Addition', 'Foam-Medium', 'No Foam']
 num_classes = len(class_names)
 
 

@@ -1,0 +1,27 @@
+{
+  "classes": {
+    "Foam-Heavy": {
+      "valid_original_images": 174,
+      "unreadable_images": 0
+    },
+    "Foam-Mild": {
+      "valid_original_images": 212,
+      "unreadable_images": 0
+    },
+    "Post-Antifoam Addition": {
+      "valid_original_images": 119,
+      "unreadable_images": 0
+    },
+    "Foam-Medium": {
+      "valid_original_images": 203,
+      "unreadable_images": 0
+    },
+    "No Foam": {
+      "valid_original_images": 239,
+      "unreadable_images": 0
+    }
+  },
+  "missing_folders": [],
+  "unreadable_images": [],
+  "duplicates": []
+}

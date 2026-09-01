@@ -1,0 +1,30 @@
+{
+  "class_names": [
+    "Foam-Heavy",
+    "Foam-Mild",
+    "Post-Antifoam Addition",
+    "Foam-Medium",
+    "No Foam"
+  ],
+  "image_size": [
+    224,
+    224
+  ],
+  "weights": {
+    "custom_cnn_model": 0.12935437599285227,
+    "mobilenetv2_model": 0.006060831885454617,
+    "resnet50_model": 0.334997169582992,
+    "efficientnetb0_model": 0.5295876225387012
+  },
+  "temperatures": {
+    "custom_cnn_model": 0.8500000000000001,
+    "mobilenetv2_model": 0.675,
+    "resnet50_model": 0.8,
+    "efficientnetb0_model": 0.8
+  },
+  "smoothing_window": 7,
+  "min_confidence": 0.45,
+  "min_margin": 0.06,
+  "resize_mode": "resize_with_pad",
+  "notes": "Weights optimized on validation macro-F1. No class-specific bias multipliers are used."
+}

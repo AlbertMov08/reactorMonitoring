@@ -254,7 +254,7 @@ def main():
     
     # Your constants
     IMG_HEIGHT, IMG_WIDTH = 224, 224
-    class_names = ['Foam-Heavy', 'Foam-mild', 'Post-Antifoam Addition', 'Foam-Medium', 'No Foam']
+    class_names = ['Foam-Heavy', 'Foam-Mild', 'Post-Antifoam Addition', 'Foam-Medium', 'No Foam']
     data_dir = '.'
     
     # Initialize ensemble with MobileNetV2

@@ -1,0 +1,157 @@
+path,subtype,group,true_class,predicted_class,confidence,second_choice,second_confidence,correct
+Foam-Heavy/WIN_20260707_13_40_01_Pro.jpg,root,Foam-Heavy::root::Foam-Heavy/WIN_20260707_13_40_01_Pro.jpg,Foam-Heavy,Foam-Heavy,0.9876262545585632,Post-Antifoam Addition,0.004476252477616072,True
+Foam-Heavy/frame_0029.jpg,root,Foam-Heavy::root::Foam-Heavy/frame_0029.jpg,Foam-Heavy,Foam-Heavy,0.9555226564407349,Post-Antifoam Addition,0.016071297228336334,True
+Foam-Heavy/frame_0013.jpg,root,Foam-Heavy::root::Foam-Heavy/frame_0013.jpg,Foam-Heavy,Foam-Heavy,0.9752604365348816,Foam-Mild,0.015049116685986519,True
+Foam-Heavy/frame_0004.jpg,root,Foam-Heavy::root::Foam-Heavy/frame_0004.jpg,Foam-Heavy,Foam-Heavy,0.983654797077179,Post-Antifoam Addition,0.007373443804681301,True
+Foam-Heavy/frame_0063.jpg,root,Foam-Heavy::root::Foam-Heavy/frame_0063.jpg,Foam-Heavy,Foam-Heavy,0.9730657339096069,Foam-Medium,0.012007561512291431,True
+Foam-Heavy/IMG_5508.png,root,Foam-Heavy::root::Foam-Heavy/IMG_5508.png,Foam-Heavy,Foam-Heavy,0.9914669990539551,Foam-Mild,0.005194241646677256,True
+Foam-Heavy/frame_0114.jpg,root,Foam-Heavy::root::Foam-Heavy/frame_0114.jpg,Foam-Heavy,Foam-Heavy,0.9762176275253296,Post-Antifoam Addition,0.01153607852756977,True
+Foam-Heavy/IMG_5521.png,root,Foam-Heavy::root::Foam-Heavy/IMG_5521.png,Foam-Heavy,Foam-Heavy,0.9558553099632263,Post-Antifoam Addition,0.019669031724333763,True
+Foam-Heavy/frame_0071.jpg,root,Foam-Heavy::root::Foam-Heavy/frame_0071.jpg,Foam-Heavy,Foam-Heavy,0.9658665657043457,Post-Antifoam Addition,0.019654501229524612,True
+Foam-Heavy/frame_0104.jpg,root,Foam-Heavy::root::Foam-Heavy/frame_0104.jpg,Foam-Heavy,Foam-Heavy,0.9185497760772705,Post-Antifoam Addition,0.059463877230882645,True
+Foam-Heavy/frame_0072.jpg,root,Foam-Heavy::root::Foam-Heavy/frame_0072.jpg,Foam-Heavy,Foam-Heavy,0.9379702210426331,Post-Antifoam Addition,0.04048263281583786,True
+Foam-Heavy/frame_0112.jpg,root,Foam-Heavy::root::Foam-Heavy/frame_0112.jpg,Foam-Heavy,Foam-Heavy,0.9809773564338684,Foam-Mild,0.015440345741808414,True
+Foam-Heavy/frame_0107.jpg,root,Foam-Heavy::root::Foam-Heavy/frame_0107.jpg,Foam-Heavy,Foam-Heavy,0.9717733263969421,Post-Antifoam Addition,0.018436579033732414,True
+Foam-Heavy/WIN_20260707_13_39_59_Pro.jpg,root,Foam-Heavy::root::Foam-Heavy/WIN_20260707_13_39_59_Pro.jpg,Foam-Heavy,Foam-Heavy,0.9814614653587341,Post-Antifoam Addition,0.009921162389218807,True
+Foam-Heavy/frame_0123.jpg,root,Foam-Heavy::root::Foam-Heavy/frame_0123.jpg,Foam-Heavy,Foam-Heavy,0.9875199794769287,Foam-Mild,0.00512400409206748,True
+Foam-Heavy/WIN_20260707_13_41_36_Pro.jpg,root,Foam-Heavy::root::Foam-Heavy/WIN_20260707_13_41_36_Pro.jpg,Foam-Heavy,Foam-Heavy,0.9415120482444763,Foam-Medium,0.022519702091813087,True
+Foam-Heavy/frame_0057.jpg,root,Foam-Heavy::root::Foam-Heavy/frame_0057.jpg,Foam-Heavy,Foam-Heavy,0.9905866980552673,Post-Antifoam Addition,0.0034115142188966274,True
+Foam-Heavy/frame_0082.jpg,root,Foam-Heavy::root::Foam-Heavy/frame_0082.jpg,Foam-Heavy,Foam-Heavy,0.940186083316803,Post-Antifoam Addition,0.0343337208032608,True
+Foam-Heavy/frame_0055.jpg,root,Foam-Heavy::root::Foam-Heavy/frame_0055.jpg,Foam-Heavy,Foam-Heavy,0.948058009147644,Post-Antifoam Addition,0.033476848155260086,True
+Foam-Heavy/frame_0087.jpg,root,Foam-Heavy::root::Foam-Heavy/frame_0087.jpg,Foam-Heavy,Foam-Heavy,0.9460682272911072,Foam-Mild,0.03907984122633934,True
+Foam-Heavy/frame_0093.jpg,root,Foam-Heavy::root::Foam-Heavy/frame_0093.jpg,Foam-Heavy,Foam-Heavy,0.9973510503768921,Foam-Mild,0.0019077712204307318,True
+Foam-Heavy/frame_0045.jpg,root,Foam-Heavy::root::Foam-Heavy/frame_0045.jpg,Foam-Heavy,Foam-Heavy,0.609085202217102,Post-Antifoam Addition,0.35578781366348267,True
+Foam-Heavy/WIN_20260707_13_40_07_Pro.jpg,root,Foam-Heavy::root::Foam-Heavy/WIN_20260707_13_40_07_Pro.jpg,Foam-Heavy,Foam-Heavy,0.9940354824066162,Post-Antifoam Addition,0.00278211641125381,True
+Foam-Heavy/frame_0132.jpg,root,Foam-Heavy::root::Foam-Heavy/frame_0132.jpg,Foam-Heavy,Foam-Heavy,0.9743348360061646,Foam-Mild,0.015477992594242096,True
+Foam-Heavy/frame_0037.jpg,root,Foam-Heavy::root::Foam-Heavy/frame_0037.jpg,Foam-Heavy,Foam-Heavy,0.9828165769577026,Post-Antifoam Addition,0.01143625658005476,True
+Foam-Heavy/WIN_20260707_13_41_25_Pro.jpg,root,Foam-Heavy::root::Foam-Heavy/WIN_20260707_13_41_25_Pro.jpg,Foam-Heavy,Foam-Heavy,0.9549381136894226,Post-Antifoam Addition,0.02394619770348072,True
+Foam-Heavy/frame_0033.jpg,root,Foam-Heavy::root::Foam-Heavy/frame_0033.jpg,Foam-Heavy,Foam-Heavy,0.9495326280593872,Post-Antifoam Addition,0.02661004103720188,True
+Foam-Heavy/frame_0018.jpg,root,Foam-Heavy::root::Foam-Heavy/frame_0018.jpg,Foam-Heavy,Foam-Heavy,0.9721178412437439,Foam-Mild,0.01694878190755844,True
+Foam-Heavy/frame_0019.jpg,root,Foam-Heavy::root::Foam-Heavy/frame_0019.jpg,Foam-Heavy,Foam-Heavy,0.9823350310325623,Foam-Mild,0.008757280185818672,True
+Foam-Mild/frame_0014.jpg,root,Foam-Mild::root::Foam-Mild/frame_0014.jpg,Foam-Mild,Foam-Mild,0.9870632290840149,Foam-Medium,0.006528377532958984,True
+Foam-Mild/WIN_20260707_13_35_48_Pro.jpg,root,Foam-Mild::root::Foam-Mild/WIN_20260707_13_35_48_Pro.jpg,Foam-Mild,Foam-Mild,0.839606761932373,No Foam,0.11319854855537415,True
+Foam-Mild/frame_0148.jpg,root,Foam-Mild::root::Foam-Mild/frame_0148.jpg,Foam-Mild,Foam-Mild,0.9919961094856262,Foam-Medium,0.0034998590126633644,True
+Foam-Mild/frame_0160.jpg,root,Foam-Mild::root::Foam-Mild/frame_0160.jpg,Foam-Mild,Foam-Mild,0.992649257183075,Foam-Medium,0.0031475855503231287,True
+Foam-Mild/WIN_20260707_13_21_14_Pro.jpg,root,Foam-Mild::root::Foam-Mild/WIN_20260707_13_21_14_Pro.jpg,Foam-Mild,Foam-Mild,0.9770333170890808,Foam-Medium,0.009649360552430153,True
+Foam-Mild/frame_0006.jpg,root,Foam-Mild::root::Foam-Mild/frame_0006.jpg,Foam-Mild,Foam-Mild,0.9658313989639282,Foam-Medium,0.023063788190484047,True
+Foam-Mild/WIN_20260707_13_35_40_Pro.jpg,root,Foam-Mild::root::Foam-Mild/WIN_20260707_13_35_40_Pro.jpg,Foam-Mild,Foam-Mild,0.9958359003067017,Post-Antifoam Addition,0.0018300449009984732,True
+Foam-Mild/frame_0039.jpg,root,Foam-Mild::root::Foam-Mild/frame_0039.jpg,Foam-Mild,Foam-Mild,0.956465482711792,Post-Antifoam Addition,0.017474336549639702,True
+Foam-Mild/WIN_20260707_13_14_16_Pro.jpg,root,Foam-Mild::root::Foam-Mild/WIN_20260707_13_14_16_Pro.jpg,Foam-Mild,No Foam,0.6023313403129578,Foam-Mild,0.2682330310344696,False
+Foam-Mild/frame_0038.jpg,root,Foam-Mild::root::Foam-Mild/frame_0038.jpg,Foam-Mild,Foam-Mild,0.9641406536102295,Post-Antifoam Addition,0.015432504005730152,True
+Foam-Mild/IMG_5481.png,root,Foam-Mild::root::Foam-Mild/IMG_5481.png,Foam-Mild,Foam-Mild,0.8172928690910339,Foam-Medium,0.14897625148296356,True
+Foam-Mild/frame_0048.jpg,root,Foam-Mild::root::Foam-Mild/frame_0048.jpg,Foam-Mild,Foam-Mild,0.9430160522460938,No Foam,0.02651139721274376,True
+Foam-Mild/frame_0115.jpg,root,Foam-Mild::root::Foam-Mild/frame_0115.jpg,Foam-Mild,Foam-Mild,0.9819059371948242,Foam-Heavy,0.009836947545409203,True
+Foam-Mild/frame_0065.jpg,root,Foam-Mild::root::Foam-Mild/frame_0065.jpg,Foam-Mild,Foam-Mild,0.9792212843894958,No Foam,0.010408915579319,True
+Foam-Mild/WIN_20260707_13_17_44_Pro.jpg,root,Foam-Mild::root::Foam-Mild/WIN_20260707_13_17_44_Pro.jpg,Foam-Mild,Foam-Mild,0.9527519345283508,Post-Antifoam Addition,0.030502352863550186,True
+Foam-Mild/frame_0139.jpg,root,Foam-Mild::root::Foam-Mild/frame_0139.jpg,Foam-Mild,Foam-Mild,0.7047305703163147,No Foam,0.22799107432365417,True
+Foam-Mild/frame_0110.jpg,root,Foam-Mild::root::Foam-Mild/frame_0110.jpg,Foam-Mild,Foam-Mild,0.878436267375946,No Foam,0.09105510264635086,True
+Foam-Mild/frame_0064.jpg,root,Foam-Mild::root::Foam-Mild/frame_0064.jpg,Foam-Mild,Foam-Mild,0.9651394486427307,Foam-Medium,0.01900983788073063,True
+Foam-Mild/IMG_5485.png,root,Foam-Mild::root::Foam-Mild/IMG_5485.png,Foam-Mild,No Foam,0.9975103139877319,Foam-Medium,0.0018570655956864357,False
+Foam-Mild/frame_0112.jpg,root,Foam-Mild::root::Foam-Mild/frame_0112.jpg,Foam-Mild,Foam-Mild,0.9129863381385803,No Foam,0.036267366260290146,True
+Foam-Mild/frame_0067.jpg,root,Foam-Mild::root::Foam-Mild/frame_0067.jpg,Foam-Mild,Foam-Mild,0.7487933039665222,No Foam,0.16947156190872192,True
+Foam-Mild/frame_0081.jpg,root,Foam-Mild::root::Foam-Mild/frame_0081.jpg,Foam-Mild,Foam-Mild,0.990656316280365,No Foam,0.003854642389342189,True
+Foam-Mild/frame_0056.jpg,root,Foam-Mild::root::Foam-Mild/frame_0056.jpg,Foam-Mild,Foam-Mild,0.9911600947380066,Foam-Medium,0.0036875633522868156,True
+Foam-Mild/WIN_20260707_13_35_46_Pro.jpg,root,Foam-Mild::root::Foam-Mild/WIN_20260707_13_35_46_Pro.jpg,Foam-Mild,Foam-Mild,0.9514974355697632,No Foam,0.03103036805987358,True
+Foam-Mild/frame_0096.jpg,root,Foam-Mild::root::Foam-Mild/frame_0096.jpg,Foam-Mild,Foam-Mild,0.9768293499946594,Foam-Medium,0.01123038213700056,True
+Foam-Mild/frame_0134.jpg,root,Foam-Mild::root::Foam-Mild/frame_0134.jpg,Foam-Mild,Foam-Mild,0.9290830492973328,No Foam,0.03516304865479469,True
+Foam-Mild/WIN_20260707_13_16_34_Pro.jpg,root,Foam-Mild::root::Foam-Mild/WIN_20260707_13_16_34_Pro.jpg,Foam-Mild,Foam-Mild,0.9586673974990845,No Foam,0.02128830924630165,True
+Foam-Mild/frame_0124.jpg,root,Foam-Mild::root::Foam-Mild/frame_0124.jpg,Foam-Mild,Foam-Mild,0.9651659727096558,Foam-Medium,0.01510323490947485,True
+Foam-Mild/frame_0092.jpg,root,Foam-Mild::root::Foam-Mild/frame_0092.jpg,Foam-Mild,Foam-Mild,0.9465953707695007,Foam-Medium,0.02339559979736805,True
+Foam-Mild/frame_0132.jpg,root,Foam-Mild::root::Foam-Mild/frame_0132.jpg,Foam-Mild,Foam-Mild,0.9259528517723083,No Foam,0.05220768600702286,True
+Foam-Mild/frame_0085.jpg,root,Foam-Mild::root::Foam-Mild/frame_0085.jpg,Foam-Mild,Foam-Mild,0.9795176982879639,No Foam,0.007050307933241129,True
+Foam-Mild/frame_0033.jpg,root,Foam-Mild::root::Foam-Mild/frame_0033.jpg,Foam-Mild,Foam-Mild,0.9286105632781982,Post-Antifoam Addition,0.036320194602012634,True
+Foam-Mild/frame_0153.jpg,root,Foam-Mild::root::Foam-Mild/frame_0153.jpg,Foam-Mild,Foam-Mild,0.937949001789093,No Foam,0.019359271973371506,True
+Foam-Mild/frame_0024.jpg,root,Foam-Mild::root::Foam-Mild/frame_0024.jpg,Foam-Mild,Foam-Mild,0.8176621198654175,Foam-Medium,0.1647283434867859,True
+Foam-Mild/frame_0018.jpg,root,Foam-Mild::root::Foam-Mild/frame_0018.jpg,Foam-Mild,Foam-Mild,0.9534281492233276,Foam-Medium,0.035992734134197235,True
+Post-Antifoam Addition/WIN_20260707_13_43_32_Pro.jpg,root,Post-Antifoam Addition::root::Post-Antifoam Addition/WIN_20260707_13_43_32_Pro.jpg,Post-Antifoam Addition,Post-Antifoam Addition,0.8512715697288513,Foam-Mild,0.05810810625553131,True
+Post-Antifoam Addition/WIN_20260707_13_43_40_Pro.jpg,root,Post-Antifoam Addition::root::Post-Antifoam Addition/WIN_20260707_13_43_40_Pro.jpg,Post-Antifoam Addition,Post-Antifoam Addition,0.6149424910545349,Foam-Medium,0.240517258644104,True
+Post-Antifoam Addition/frame_0013.jpg,root,Post-Antifoam Addition::root::Post-Antifoam Addition/frame_0013.jpg,Post-Antifoam Addition,Post-Antifoam Addition,0.9340673089027405,Foam-Heavy,0.04143533110618591,True
+Post-Antifoam Addition/frame_0103.jpg,root,Post-Antifoam Addition::root::Post-Antifoam Addition/frame_0103.jpg,Post-Antifoam Addition,Post-Antifoam Addition,0.960761308670044,Foam-Heavy,0.022740544751286507,True
+Post-Antifoam Addition/frame_0089.jpg,root,Post-Antifoam Addition::root::Post-Antifoam Addition/frame_0089.jpg,Post-Antifoam Addition,Post-Antifoam Addition,0.9677659869194031,Foam-Heavy,0.015868598595261574,True
+Post-Antifoam Addition/frame_0100.jpg,root,Post-Antifoam Addition::root::Post-Antifoam Addition/frame_0100.jpg,Post-Antifoam Addition,Post-Antifoam Addition,0.9844851493835449,Foam-Mild,0.006182315293699503,True
+Post-Antifoam Addition/frame_0061.jpg,root,Post-Antifoam Addition::root::Post-Antifoam Addition/frame_0061.jpg,Post-Antifoam Addition,Post-Antifoam Addition,0.9891051650047302,Foam-Heavy,0.005154267884790897,True
+Post-Antifoam Addition/frame_0049.jpg,root,Post-Antifoam Addition::root::Post-Antifoam Addition/frame_0049.jpg,Post-Antifoam Addition,Post-Antifoam Addition,0.9888603091239929,Foam-Heavy,0.0037240285892039537,True
+Post-Antifoam Addition/frame_0065.jpg,root,Post-Antifoam Addition::root::Post-Antifoam Addition/frame_0065.jpg,Post-Antifoam Addition,Post-Antifoam Addition,0.9910606741905212,Foam-Heavy,0.0035785813815891743,True
+Post-Antifoam Addition/frame_0071.jpg,root,Post-Antifoam Addition::root::Post-Antifoam Addition/frame_0071.jpg,Post-Antifoam Addition,Post-Antifoam Addition,0.9091739654541016,Foam-Heavy,0.05114073306322098,True
+Post-Antifoam Addition/frame_0104.jpg,root,Post-Antifoam Addition::root::Post-Antifoam Addition/frame_0104.jpg,Post-Antifoam Addition,Post-Antifoam Addition,0.9482409358024597,Foam-Heavy,0.028637971729040146,True
+Post-Antifoam Addition/WIN_20260707_13_43_29_Pro.jpg,root,Post-Antifoam Addition::root::Post-Antifoam Addition/WIN_20260707_13_43_29_Pro.jpg,Post-Antifoam Addition,Post-Antifoam Addition,0.9685782194137573,No Foam,0.01841723546385765,True
+Post-Antifoam Addition/frame_0080.jpg,root,Post-Antifoam Addition::root::Post-Antifoam Addition/frame_0080.jpg,Post-Antifoam Addition,Post-Antifoam Addition,0.9933650493621826,No Foam,0.0028677366208285093,True
+Post-Antifoam Addition/IMG_5529.png,root,Post-Antifoam Addition::root::Post-Antifoam Addition/IMG_5529.png,Post-Antifoam Addition,Post-Antifoam Addition,0.615930438041687,Foam-Heavy,0.20752277970314026,True
+Post-Antifoam Addition/frame_0087.jpg,root,Post-Antifoam Addition::root::Post-Antifoam Addition/frame_0087.jpg,Post-Antifoam Addition,Post-Antifoam Addition,0.9863646030426025,Foam-Heavy,0.005772972013801336,True
+Post-Antifoam Addition/frame_0051.jpg,root,Post-Antifoam Addition::root::Post-Antifoam Addition/frame_0051.jpg,Post-Antifoam Addition,Post-Antifoam Addition,0.9874476790428162,Foam-Mild,0.006842256989330053,True
+Post-Antifoam Addition/frame_0035.jpg,root,Post-Antifoam Addition::root::Post-Antifoam Addition/frame_0035.jpg,Post-Antifoam Addition,Post-Antifoam Addition,0.9825128316879272,Foam-Heavy,0.007389092352241278,True
+Post-Antifoam Addition/frame_0020.jpg,root,Post-Antifoam Addition::root::Post-Antifoam Addition/frame_0020.jpg,Post-Antifoam Addition,Post-Antifoam Addition,0.9658230543136597,Foam-Heavy,0.01841629669070244,True
+Post-Antifoam Addition/frame_0008.jpg,root,Post-Antifoam Addition::root::Post-Antifoam Addition/frame_0008.jpg,Post-Antifoam Addition,Post-Antifoam Addition,0.9880504012107849,Foam-Mild,0.008601929061114788,True
+Post-Antifoam Addition/frame_0036.jpg,root,Post-Antifoam Addition::root::Post-Antifoam Addition/frame_0036.jpg,Post-Antifoam Addition,Post-Antifoam Addition,0.9812393188476562,Foam-Heavy,0.006089351139962673,True
+Post-Antifoam Addition/frame_0026.jpg,root,Post-Antifoam Addition::root::Post-Antifoam Addition/frame_0026.jpg,Post-Antifoam Addition,Post-Antifoam Addition,0.9641872048377991,Foam-Mild,0.025224950164556503,True
+Post-Antifoam Addition/frame_0031.jpg,root,Post-Antifoam Addition::root::Post-Antifoam Addition/frame_0031.jpg,Post-Antifoam Addition,Post-Antifoam Addition,0.9837436079978943,Foam-Mild,0.007954162545502186,True
+Foam-Medium/frame_0014.jpg,root,Foam-Medium::root::Foam-Medium/frame_0014.jpg,Foam-Medium,Foam-Mild,0.6336710453033447,Foam-Medium,0.3169303238391876,False
+Foam-Medium/frame_0015.jpg,root,Foam-Medium::root::Foam-Medium/frame_0015.jpg,Foam-Medium,Foam-Mild,0.702134370803833,Foam-Medium,0.2685410976409912,False
+Foam-Medium/WIN_20260707_13_26_52_Pro.jpg,root,Foam-Medium::root::Foam-Medium/WIN_20260707_13_26_52_Pro.jpg,Foam-Medium,Foam-Medium,0.9290786981582642,Post-Antifoam Addition,0.029987577348947525,True
+Foam-Medium/WIN_20260707_13_33_01_Pro.jpg,root,Foam-Medium::root::Foam-Medium/WIN_20260707_13_33_01_Pro.jpg,Foam-Medium,Foam-Medium,0.9711650609970093,No Foam,0.018403559923171997,True
+Foam-Medium/WIN_20260707_13_31_57_Pro.jpg,root,Foam-Medium::root::Foam-Medium/WIN_20260707_13_31_57_Pro.jpg,Foam-Medium,Foam-Medium,0.9159052968025208,Foam-Heavy,0.04187251999974251,True
+Foam-Medium/frame_0005.jpg,root,Foam-Medium::root::Foam-Medium/frame_0005.jpg,Foam-Medium,Foam-Medium,0.8209744095802307,Foam-Mild,0.15749803185462952,True
+Foam-Medium/frame_0038.jpg,root,Foam-Medium::root::Foam-Medium/frame_0038.jpg,Foam-Medium,Foam-Medium,0.9796624779701233,Foam-Heavy,0.008656409569084644,True
+Foam-Medium/frame_0088.jpg,root,Foam-Medium::root::Foam-Medium/frame_0088.jpg,Foam-Medium,Foam-Medium,0.974239706993103,Post-Antifoam Addition,0.012588206678628922,True
+Foam-Medium/WIN_20260707_13_31_11_Pro.jpg,root,Foam-Medium::root::Foam-Medium/WIN_20260707_13_31_11_Pro.jpg,Foam-Medium,Foam-Medium,0.9762415289878845,Post-Antifoam Addition,0.012935929000377655,True
+Foam-Medium/WIN_20260707_13_35_16_Pro.jpg,root,Foam-Medium::root::Foam-Medium/WIN_20260707_13_35_16_Pro.jpg,Foam-Medium,Foam-Medium,0.9384652972221375,Post-Antifoam Addition,0.04158675670623779,True
+Foam-Medium/frame_0071.jpg,root,Foam-Medium::root::Foam-Medium/frame_0071.jpg,Foam-Medium,Foam-Medium,0.9663084745407104,No Foam,0.018201053142547607,True
+Foam-Medium/frame_0059.jpg,root,Foam-Medium::root::Foam-Medium/frame_0059.jpg,Foam-Medium,Foam-Medium,0.9834432005882263,Post-Antifoam Addition,0.006859558168798685,True
+Foam-Medium/WIN_20260707_13_34_37_Pro.jpg,root,Foam-Medium::root::Foam-Medium/WIN_20260707_13_34_37_Pro.jpg,Foam-Medium,Foam-Medium,0.9310106635093689,Foam-Heavy,0.03202919661998749,True
+Foam-Medium/frame_0067.jpg,root,Foam-Medium::root::Foam-Medium/frame_0067.jpg,Foam-Medium,Foam-Medium,0.9324685335159302,Foam-Heavy,0.02686532586812973,True
+Foam-Medium/frame_0056.jpg,root,Foam-Medium::root::Foam-Medium/frame_0056.jpg,Foam-Medium,Foam-Medium,0.9657363295555115,Foam-Mild,0.016548048704862595,True
+Foam-Medium/WIN_20260707_13_26_37_Pro.jpg,root,Foam-Medium::root::Foam-Medium/WIN_20260707_13_26_37_Pro.jpg,Foam-Medium,Foam-Medium,0.9340879917144775,Foam-Heavy,0.03474697470664978,True
+Foam-Medium/WIN_20260707_13_34_49_Pro.jpg,root,Foam-Medium::root::Foam-Medium/WIN_20260707_13_34_49_Pro.jpg,Foam-Medium,Foam-Medium,0.9775756597518921,Foam-Heavy,0.012905765324831009,True
+Foam-Medium/frame_0093.jpg,root,Foam-Medium::root::Foam-Medium/frame_0093.jpg,Foam-Medium,Foam-Medium,0.9576795101165771,Post-Antifoam Addition,0.022549085319042206,True
+Foam-Medium/WIN_20260707_13_35_03_Pro.jpg,root,Foam-Medium::root::Foam-Medium/WIN_20260707_13_35_03_Pro.jpg,Foam-Medium,Foam-Medium,0.9363576173782349,Post-Antifoam Addition,0.038346271961927414,True
+Foam-Medium/frame_0078.jpg,root,Foam-Medium::root::Foam-Medium/frame_0078.jpg,Foam-Medium,Foam-Medium,0.9330655336380005,Post-Antifoam Addition,0.03527539595961571,True
+Foam-Medium/frame_0051.jpg,root,Foam-Medium::root::Foam-Medium/frame_0051.jpg,Foam-Medium,Foam-Medium,0.9789875149726868,No Foam,0.010489664040505886,True
+Foam-Medium/frame_0092.jpg,root,Foam-Medium::root::Foam-Medium/frame_0092.jpg,Foam-Medium,Foam-Medium,0.9457417130470276,Post-Antifoam Addition,0.03273775056004524,True
+Foam-Medium/frame_0047.jpg,root,Foam-Medium::root::Foam-Medium/frame_0047.jpg,Foam-Medium,Foam-Medium,0.9510501027107239,Foam-Mild,0.03314654156565666,True
+Foam-Medium/WIN_20260707_13_33_17_Pro.jpg,root,Foam-Medium::root::Foam-Medium/WIN_20260707_13_33_17_Pro.jpg,Foam-Medium,Foam-Medium,0.9941152334213257,Post-Antifoam Addition,0.0031688569579273462,True
+Foam-Medium/WIN_20260707_13_33_07_Pro.jpg,root,Foam-Medium::root::Foam-Medium/WIN_20260707_13_33_07_Pro.jpg,Foam-Medium,Foam-Medium,0.750485897064209,No Foam,0.1385144740343094,True
+Foam-Medium/WIN_20260707_13_34_41_Pro.jpg,root,Foam-Medium::root::Foam-Medium/WIN_20260707_13_34_41_Pro.jpg,Foam-Medium,Foam-Medium,0.9717393517494202,Foam-Mild,0.012260925024747849,True
+Foam-Medium/frame_0021.jpg,root,Foam-Medium::root::Foam-Medium/frame_0021.jpg,Foam-Medium,Foam-Medium,0.8001070022583008,No Foam,0.1257968544960022,True
+Foam-Medium/WIN_20260707_13_35_01_Pro.jpg,root,Foam-Medium::root::Foam-Medium/WIN_20260707_13_35_01_Pro.jpg,Foam-Medium,Foam-Medium,0.9189502596855164,Post-Antifoam Addition,0.06126043200492859,True
+Foam-Medium/WIN_20260707_13_29_45_Pro.jpg,root,Foam-Medium::root::Foam-Medium/WIN_20260707_13_29_45_Pro.jpg,Foam-Medium,Foam-Medium,0.8828504085540771,Foam-Heavy,0.06304378062486649,True
+Foam-Medium/WIN_20260707_13_33_14_Pro.jpg,root,Foam-Medium::root::Foam-Medium/WIN_20260707_13_33_14_Pro.jpg,Foam-Medium,Foam-Medium,0.96613609790802,Foam-Heavy,0.018321476876735687,True
+Foam-Medium/frame_0030.jpg,root,Foam-Medium::root::Foam-Medium/frame_0030.jpg,Foam-Medium,Foam-Medium,0.6326388716697693,Foam-Mild,0.32614412903785706,True
+No Foam/WIN_20260707_13_08_07_Pro.jpg,root,No Foam::root::No Foam/WIN_20260707_13_08_07_Pro.jpg,No Foam,No Foam,0.9373718500137329,Foam-Mild,0.0606476292014122,True
+No Foam/frame_0000.jpg,root,No Foam::root::No Foam/frame_0000.jpg,No Foam,No Foam,0.9326635003089905,Foam-Mild,0.027843961492180824,True
+No Foam/frame_0174.jpg,root,No Foam::root::No Foam/frame_0174.jpg,No Foam,No Foam,0.9903745651245117,Foam-Mild,0.006801611743867397,True
+No Foam/frame_0029.jpg,root,No Foam::root::No Foam/frame_0029.jpg,No Foam,No Foam,0.9642426371574402,Foam-Medium,0.029847463592886925,True
+No Foam/frame_0163.jpg,root,No Foam::root::No Foam/frame_0163.jpg,No Foam,No Foam,0.9879976511001587,Post-Antifoam Addition,0.007766997907310724,True
+No Foam/frame_0176.jpg,root,No Foam::root::No Foam/frame_0176.jpg,No Foam,No Foam,0.94536292552948,Foam-Mild,0.04028700292110443,True
+No Foam/WIN_20260707_13_40_44_Pro.jpg,root,No Foam::root::No Foam/WIN_20260707_13_40_44_Pro.jpg,No Foam,No Foam,0.9820677638053894,Foam-Mild,0.012097128666937351,True
+No Foam/frame_0013.jpg,root,No Foam::root::No Foam/frame_0013.jpg,No Foam,No Foam,0.8835766911506653,Foam-Mild,0.07334800064563751,True
+No Foam/frame_0005.jpg,root,No Foam::root::No Foam/frame_0005.jpg,No Foam,No Foam,0.7349855899810791,Foam-Mild,0.12550491094589233,True
+No Foam/frame_0074.jpg,root,No Foam::root::No Foam/frame_0074.jpg,No Foam,No Foam,0.9990243911743164,Foam-Mild,0.0004804586060345173,True
+No Foam/WIN_20260707_13_09_02_Pro.jpg,root,No Foam::root::No Foam/WIN_20260707_13_09_02_Pro.jpg,No Foam,No Foam,0.9945683479309082,Foam-Mild,0.004181347321718931,True
+No Foam/frame_0049.jpg,root,No Foam::root::No Foam/frame_0049.jpg,No Foam,No Foam,0.9976321458816528,Foam-Medium,0.0014302144991233945,True
+No Foam/IMG_5469.png,root,No Foam::root::No Foam/IMG_5469.png,No Foam,No Foam,0.9913676381111145,Foam-Medium,0.0036999632138758898,True
+No Foam/frame_0064.jpg,root,No Foam::root::No Foam/frame_0064.jpg,No Foam,No Foam,0.9969308972358704,Foam-Mild,0.0011421984527260065,True
+No Foam/frame_0072.jpg,root,No Foam::root::No Foam/frame_0072.jpg,No Foam,No Foam,0.9948780536651611,Foam-Mild,0.00247314409352839,True
+No Foam/frame_0066.jpg,root,No Foam::root::No Foam/frame_0066.jpg,No Foam,No Foam,0.9937818646430969,Foam-Medium,0.0034467834047973156,True
+No Foam/frame_0106.jpg,root,No Foam::root::No Foam/frame_0106.jpg,No Foam,No Foam,0.9994648098945618,Post-Antifoam Addition,0.0003954170097131282,True
+No Foam/frame_0113.jpg,root,No Foam::root::No Foam/frame_0113.jpg,No Foam,No Foam,0.9936169385910034,Post-Antifoam Addition,0.0035972867626696825,True
+No Foam/IMG_5462.png,root,No Foam::root::No Foam/IMG_5462.png,No Foam,No Foam,0.5240870118141174,Foam-Mild,0.4392959773540497,True
+No Foam/frame_0122.jpg,root,No Foam::root::No Foam/frame_0122.jpg,No Foam,No Foam,0.9970782995223999,Foam-Mild,0.001586039667017758,True
+No Foam/IMG_5475.png,root,No Foam::root::No Foam/IMG_5475.png,No Foam,Foam-Heavy,0.32189449667930603,No Foam,0.31486058235168457,False
+No Foam/frame_0096.jpg,root,No Foam::root::No Foam/frame_0096.jpg,No Foam,No Foam,0.9905694723129272,Foam-Mild,0.006309898570179939,True
+No Foam/frame_0109.jpg,root,No Foam::root::No Foam/frame_0109.jpg,No Foam,No Foam,0.99456787109375,Foam-Mild,0.004429462365806103,True
+No Foam/frame_0108.jpg,root,No Foam::root::No Foam/frame_0108.jpg,No Foam,No Foam,0.9982794523239136,Foam-Mild,0.0008934763609431684,True
+No Foam/frame_0054.jpg,root,No Foam::root::No Foam/frame_0054.jpg,No Foam,No Foam,0.9975402355194092,Foam-Mild,0.0010082266526296735,True
+No Foam/IMG_5474.png,root,No Foam::root::No Foam/IMG_5474.png,No Foam,No Foam,0.9971509575843811,Foam-Medium,0.0012678493512794375,True
+No Foam/frame_0079.jpg,root,No Foam::root::No Foam/frame_0079.jpg,No Foam,No Foam,0.9986168146133423,Foam-Medium,0.000541604298632592,True
+No Foam/frame_0045.jpg,root,No Foam::root::No Foam/frame_0045.jpg,No Foam,No Foam,0.9961108565330505,Foam-Medium,0.0019683085847646,True
+No Foam/frame_0092.jpg,root,No Foam::root::No Foam/frame_0092.jpg,No Foam,No Foam,0.9937635064125061,Foam-Mild,0.0028232845943421125,True
+No Foam/WIN_20260707_13_09_15_Pro.jpg,root,No Foam::root::No Foam/WIN_20260707_13_09_15_Pro.jpg,No Foam,No Foam,0.9686646461486816,Foam-Mild,0.02838491089642048,True
+No Foam/frame_0035.jpg,root,No Foam::root::No Foam/frame_0035.jpg,No Foam,No Foam,0.9858877062797546,Foam-Medium,0.0060601853765547276,True
+No Foam/frame_0155.jpg,root,No Foam::root::No Foam/frame_0155.jpg,No Foam,No Foam,0.9877477884292603,Foam-Heavy,0.0037076519802212715,True
+No Foam/frame_0140.jpg,root,No Foam::root::No Foam/frame_0140.jpg,No Foam,No Foam,0.9940722584724426,Foam-Mild,0.002617333550006151,True
+No Foam/frame_0022.jpg,root,No Foam::root::No Foam/frame_0022.jpg,No Foam,No Foam,0.9889256358146667,Foam-Medium,0.004585182294249535,True
+No Foam/frame_0156.jpg,root,No Foam::root::No Foam/frame_0156.jpg,No Foam,No Foam,0.9715797901153564,Foam-Medium,0.012828021310269833,True
+No Foam/frame_0142.jpg,root,No Foam::root::No Foam/frame_0142.jpg,No Foam,No Foam,0.9885718822479248,Foam-Heavy,0.0050837015733122826,True
+No Foam/frame_0033.jpg,root,No Foam::root::No Foam/frame_0033.jpg,No Foam,No Foam,0.9872027039527893,Foam-Medium,0.005998843815177679,True
+No Foam/WIN_20260707_13_41_12_Pro.jpg,root,No Foam::root::No Foam/WIN_20260707_13_41_12_Pro.jpg,No Foam,No Foam,0.9967865943908691,Post-Antifoam Addition,0.0020864452235400677,True
+No Foam/frame_0144.jpg,root,No Foam::root::No Foam/frame_0144.jpg,No Foam,No Foam,0.9293776154518127,Foam-Mild,0.03648899123072624,True

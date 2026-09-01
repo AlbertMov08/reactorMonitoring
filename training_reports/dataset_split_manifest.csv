@@ -1,0 +1,931 @@
+split,class_name,label,subtype,group,path,sha256
+train,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/WIN_20260707_13_41_28_Pro.jpg,Foam-Heavy/WIN_20260707_13_41_28_Pro.jpg,2da49dc0a40e7da3ac063e58131207578c906b71c82925d36a6036411517e6ab
+train,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/WIN_20260707_13_41_38_Pro.jpg,Foam-Heavy/WIN_20260707_13_41_38_Pro.jpg,7e53b3bf757dffcd84bf5fd1df7c032e49e3186043e2b6b28b3e7a2923da92d8
+train,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/frame_0028.jpg,Foam-Heavy/frame_0028.jpg,a33240864d6c8261120baeb49f19392570c31408dd65be415270cf48d1fee005
+train,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/frame_0001.jpg,Foam-Heavy/frame_0001.jpg,ccf1451d6bdf00c92bee32391da25762480419694b118909549866ba0c166d8e
+train,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/frame_0015.jpg,Foam-Heavy/frame_0015.jpg,c5310138cb30c0509c25146d5a529844f88fd9822644c3ee07cd7f818cbf2551
+train,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/frame_0003.jpg,Foam-Heavy/frame_0003.jpg,7556238e139f01b6ef38122a8f0c3e13d100108e677a4b10d3c5f0529b7e4610
+train,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/frame_0017.jpg,Foam-Heavy/frame_0017.jpg,14063b6aaaaf2aaf1c0ff99f87557997404ddc569686441df16bc5a2399a0346
+train,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/WIN_20260707_13_41_43_Pro.jpg,Foam-Heavy/WIN_20260707_13_41_43_Pro.jpg,28ad8cafd92b88b6a78e4b6a10154d14821ccbe16dc9e330bffb4a821dca8945
+train,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/WIN_20260707_13_40_18_Pro.jpg,Foam-Heavy/WIN_20260707_13_40_18_Pro.jpg,9ca235481d4ef9b706e9f0f4e10f2839c14a2cc9cfe8bd2e3cd52c89bef6a55c
+train,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/frame_0016.jpg,Foam-Heavy/frame_0016.jpg,2b8868fcbdc3f83b25c38a14f69d39dd7ad69a39650871cf4ed7b5f554a2b948
+train,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/frame_0006.jpg,Foam-Heavy/frame_0006.jpg,237e08cce3fe08293dc8b3bbc85e95e29737a7dc867f613dce22cba24fe4a23d
+train,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/frame_0012.jpg,Foam-Heavy/frame_0012.jpg,f6c239f8ff0a81ab588b1a78b73b3ab3e91288332549f813850ebceee0bbcce1
+train,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/WIN_20260707_13_41_30_Pro.jpg,Foam-Heavy/WIN_20260707_13_41_30_Pro.jpg,0d0c15edf3f28b71153452ec339dac880798acf15d7c2773281a7348b7f3c946
+train,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/frame_0007.jpg,Foam-Heavy/frame_0007.jpg,fb1863977cb73dce6f04765646850bfd231a32a7b3fce6f2ddbac5ad74ea0cc9
+train,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/frame_0005.jpg,Foam-Heavy/frame_0005.jpg,bcc4114d7a7f046100eae00b0aa2df4eb6224fe582c8193b31e1e7ce3ad2e072
+train,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/frame_0039.jpg,Foam-Heavy/frame_0039.jpg,ba75e047cb10fda376d554e48c575eed1d9ba6f25c7c59745c7ba5b148219079
+train,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/WIN_20260707_13_40_10_Pro.jpg,Foam-Heavy/WIN_20260707_13_40_10_Pro.jpg,b23a3cac220d1a44123dd2318eef91475fecd71247ee3a2556dc7a09b7eff7e6
+train,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/WIN_20260707_13_39_56_Pro.jpg,Foam-Heavy/WIN_20260707_13_39_56_Pro.jpg,6165659f0dfd17ef3a8ed1b515c0feabb2de2c44eb8b7212976513ed047a4228
+train,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/frame_0038.jpg,Foam-Heavy/frame_0038.jpg,7af59a1aa9c6b6716b7081acc5ae0e0d6e9245368b3590ccdc606d2910fcdb18
+train,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/frame_0010.jpg,Foam-Heavy/frame_0010.jpg,2ce2691d1fbdc63bcd138cc9af8406e423545c040324114ed696f6afed47e065
+train,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/frame_0088.jpg,Foam-Heavy/frame_0088.jpg,7150153eeaf8de52257ec33a857b1a9a6cf118585e5b90a6ee083ff093ba25f7
+train,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/frame_0103.jpg,Foam-Heavy/frame_0103.jpg,298b4c4c4491d25e09d93a456fc07089f942c021e8df9ccbc19f06361cdf4ca8
+train,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/frame_0117.jpg,Foam-Heavy/frame_0117.jpg,c79d22ea903de413302a757e7252ece7c11a9cded4a44f27d6311351a5218f83
+train,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/frame_0116.jpg,Foam-Heavy/frame_0116.jpg,6792ec3cdeaff370e3e222c29041348b7c5ecd5ec490f264e27266e71f67533e
+train,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/frame_0102.jpg,Foam-Heavy/frame_0102.jpg,bceb34886beffddd54f4eb76cd33cfc81640c2851d6f0e4645da44f0b9bdce96
+train,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/frame_0062.jpg,Foam-Heavy/frame_0062.jpg,5088e6cbf162b00567f9793ce1e37bf7fe85fcfb038ab133e18d97fc66e15697
+train,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/frame_0076.jpg,Foam-Heavy/frame_0076.jpg,91d26fd55c8aad2c4b3bc93dd0719cbc016315d5c91b382e6755dfe1ea53fae0
+train,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/frame_0089.jpg,Foam-Heavy/frame_0089.jpg,b7b6019b040e0cb58f08c3756fffcb78f26ab6a2e66f60ae98fadb23a9530b64
+train,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/frame_0048.jpg,Foam-Heavy/frame_0048.jpg,b77e6fcc3ff1a27b7a1688fa8312b97194a2bddd1099d6b3b46c9bf83a14a6a6
+train,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/frame_0060.jpg,Foam-Heavy/frame_0060.jpg,1818ca3521cd3c969b70d7b73c3c2a26950588b4d22a9a51de7f8c56b0ba37c4
+train,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/frame_0074.jpg,Foam-Heavy/frame_0074.jpg,cbc6560af633ddd8789c424b6621263532c16cda54190f5786b13d549943c81b
+train,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/IMG_5520.png,Foam-Heavy/IMG_5520.png,2b6e40ee343855d4500def76642a33fe2cc05968a0cdaf7705a93b94d8f1fd6b
+train,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/frame_0128.jpg,Foam-Heavy/frame_0128.jpg,2ba84de0785294b73ca0baef700d2add71aab9e606ae3aac7ad7aa0fc0e4cfef
+train,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/WIN_20260707_13_38_52_Pro.jpg,Foam-Heavy/WIN_20260707_13_38_52_Pro.jpg,da9e0e7bff7ebb80312b28719a25846492159d94cf492e04b828fd8cd4197c35
+train,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/frame_0100.jpg,Foam-Heavy/frame_0100.jpg,37f426fb6f50ab328dc041780ac7b4b28dfafc44d2d9d873fd64c4fb60270b5f
+train,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/frame_0101.jpg,Foam-Heavy/frame_0101.jpg,e8fed71f559f5dda1f71e45942c46cc6fdb360e83a67d96ddeeec11a4260472e
+train,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/frame_0115.jpg,Foam-Heavy/frame_0115.jpg,d793afa21bb7e6aefaa352f947b3d1b0c0bd10056f029b98a9ccef54489ae769
+train,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/IMG_5509.png,Foam-Heavy/IMG_5509.png,d0723f69c38c4dda4e6508edfa99b4bb594f7618be872b51057d91a16832c3b8
+train,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/frame_0075.jpg,Foam-Heavy/frame_0075.jpg,60eb55474d543fa04ad5913804c9a74a6f2a381cb3060c9a351678b70e3a43e6
+train,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/frame_0065.jpg,Foam-Heavy/frame_0065.jpg,6c20abe11af7f3c1ea068ab7f2a0f1345d7920a9f033acf4a09db41cd72ac2c9
+train,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/frame_0059.jpg,Foam-Heavy/frame_0059.jpg,91f5b29db1aac265d56e887dd0f40aed122d8867e2590000593201cf1c2472c4
+train,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/WIN_20260707_13_40_03_Pro.jpg,Foam-Heavy/WIN_20260707_13_40_03_Pro.jpg,69aa6cbf4ed1e64526cf56cc7fdf6a745277bacb89d7a267bd88f39467d1f789
+train,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/WIN_20260707_13_40_13_Pro.jpg,Foam-Heavy/WIN_20260707_13_40_13_Pro.jpg,de1180f798bfc39467ded393d016497d79dc9db9958828a2804a2c012cdf74e1
+train,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/IMG_5519.png,Foam-Heavy/IMG_5519.png,035c64dffbf4d1310c32412696bd6170e694f0337a927a699ced54437da63d42
+train,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/frame_0105.jpg,Foam-Heavy/frame_0105.jpg,9ede61e068bc35a1cfa030773531c0bf58de8668c61971634410bda487744d54
+train,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/frame_0110.jpg,Foam-Heavy/frame_0110.jpg,e8b0964427a1639f11c0f4a92a3b9c9900c53c5aead946b88cfeaa345fad3701
+train,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/IMG_5518.png,Foam-Heavy/IMG_5518.png,cbd377fba1738b9ae11a1168870322abbb903c4cfeeb4f43c3b36e024179ac91
+train,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/frame_0058.jpg,Foam-Heavy/frame_0058.jpg,87dbe068a11be2b681263445e9fcef14a46a217ccc29f31c0fa08425bbf89133
+train,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/frame_0070.jpg,Foam-Heavy/frame_0070.jpg,bde316dc5e40acff84e018b5883ab9912d09211efeaaa8253b839448ba2380bb
+train,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/frame_0064.jpg,Foam-Heavy/frame_0064.jpg,1586a82a3a5df7a24fd2f5834f0ce43d00728eb3937892b45c6120f05ca242c0
+train,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/WIN_20260707_13_41_33_Pro.jpg,Foam-Heavy/WIN_20260707_13_41_33_Pro.jpg,d68b12bf876328926e6729571367ad22e0c6be8eeaf166303f01ddc2c0079d01
+train,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/WIN_20260707_13_41_41_Pro.jpg,Foam-Heavy/WIN_20260707_13_41_41_Pro.jpg,ce97345d15ed35781de384904870d8168506d32f28006eb592d6e22735c8936c
+train,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/frame_0106.jpg,Foam-Heavy/frame_0106.jpg,a15d8e08f9c6812657ad15964dbd033f6da73c5dd5572c55a91eb0007cdbf29b
+train,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/frame_0113.jpg,Foam-Heavy/frame_0113.jpg,01978d44d3183698069b8a427b26fd14d5a497ded2ce85dfe85b1ac80b49be90
+train,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/frame_0067.jpg,Foam-Heavy/frame_0067.jpg,6b8957f1411f925f7203963aa966d6a043754b96216a8c6278a794d567860002
+train,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/frame_0098.jpg,Foam-Heavy/frame_0098.jpg,3d82a3e4edd7c902d63460f1c92b6f0a6fdc3bad263dbf0197bf3aec3b427b6c
+train,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/frame_0095.jpg,Foam-Heavy/frame_0095.jpg,1eee172d218fc3cc0e12445dc9661c9d9a07a6c9c5a148da2ed18d232a0470c7
+train,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/frame_0081.jpg,Foam-Heavy/frame_0081.jpg,9758b89c7f363601e9786c4b68926df1142936d3113621e614e4d746fb394298
+train,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/frame_0056.jpg,Foam-Heavy/frame_0056.jpg,cfe761e949ca188dbd8d3c8587abb69680bd1dd0ce1ebfdcc9a2c53fcbf38d13
+train,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/frame_0042.jpg,Foam-Heavy/frame_0042.jpg,4db93109eaf77bafddf38835a11c286ada4eeab78c4a0d4c6a14b923ea63013f
+train,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/IMG_5517.png,Foam-Heavy/IMG_5517.png,2eacaa4adc7d4b1921295bfc704a5784b9953769f26b6cfe7d2ea265ce1d5fee
+train,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/frame_0080.jpg,Foam-Heavy/frame_0080.jpg,e8a391c1d0361f58a0e49d5725f5c08f94382f47ec33b06da85743019faabb45
+train,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/frame_0094.jpg,Foam-Heavy/frame_0094.jpg,e69929013c5ada7daedc88aa918e4df3fdb5083bd0a83b49c7892a57f5192f59
+train,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/frame_0096.jpg,Foam-Heavy/frame_0096.jpg,3926a295a597e20a02fb34dc1e5eb850704f735df8db16dab661790119dd0a2e
+train,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/frame_0069.jpg,Foam-Heavy/frame_0069.jpg,6ef571df0650c1cbcaac3d2b8932a0b17c1d1c574f71c9f7ed470d73d1d6a706
+train,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/frame_0041.jpg,Foam-Heavy/frame_0041.jpg,016aa3b39daf212c94ab9a1b6d947e0246687356151aa1d33ee70bc0836e9240
+train,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/frame_0121.jpg,Foam-Heavy/frame_0121.jpg,a841715ea27bed03155ffeaadfb10fbf86df028f0caeff54980fec27584521d6
+train,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/frame_0120.jpg,Foam-Heavy/frame_0120.jpg,72a86773e980b8d63e96174bf56fc50e5cdd31dac8e0e9d21c1311fbc9211def
+train,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/frame_0108.jpg,Foam-Heavy/frame_0108.jpg,079b4c818e96d8eb1096a603e6a7623fc4801898c0ebd032f5c5af99d7209e10
+train,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/IMG_5514.png,Foam-Heavy/IMG_5514.png,efcae55fdf5ac39ca62f2c42b5aee6b0b5c5923aa7a0289e1999fd35114aab3c
+train,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/frame_0054.jpg,Foam-Heavy/frame_0054.jpg,b98b92cf7d8074637c09b67ee8f987d6f7845885f52de7edbf2d77b694cb19fc
+train,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/frame_0040.jpg,Foam-Heavy/frame_0040.jpg,8f52ed7bfe91fbc656cc0bd9238b4de0e54a21ece9209b28e59c66134fe023eb
+train,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/frame_0068.jpg,Foam-Heavy/frame_0068.jpg,1cb09ff95aaf8b829e0fb81504ec047debf224731331dc404b723475a65f3475
+train,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/frame_0097.jpg,Foam-Heavy/frame_0097.jpg,355277587bf6e1e9a46de8a4d9d8e5e98a51cd11e9eda85543de0b1aa907587a
+train,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/frame_0083.jpg,Foam-Heavy/frame_0083.jpg,c5583bb5b410d4a2905fad9b3a581f5c2a7f0b9f7a8b1e0585b8d42281fac6f9
+train,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/frame_0044.jpg,Foam-Heavy/frame_0044.jpg,e11a99622017816f8f7fa76491654689af608b04f6c6bf056afa9ed3bbae6e13
+train,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/frame_0050.jpg,Foam-Heavy/frame_0050.jpg,83c6f690e245a36f6015e7706cdf826cc5d00bf46b371adc7bee7a7430e25c2f
+train,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/frame_0078.jpg,Foam-Heavy/frame_0078.jpg,f5ba86d915436ed0a275107231723a4e74d000b015d20231f62af8ad4a70e017
+train,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/IMG_5510.png,Foam-Heavy/IMG_5510.png,28259fb525a63aa52120758342cb58ca5bc9e4750300997b729e3fda6c31c980
+train,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/frame_0130.jpg,Foam-Heavy/frame_0130.jpg,48b22a0a23010b0d9e134ded6660d5d5e6de92be9cbe0660374455ce0df967ca
+train,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/frame_0124.jpg,Foam-Heavy/frame_0124.jpg,ff31d4ef95dacf57814de73e7be0b4652827b477d37fe7b8cb4271cde24020fc
+train,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/frame_0118.jpg,Foam-Heavy/frame_0118.jpg,20000ab4d9386ee894d4305a20e77d6ffd0d6c15483a05f03a72884bbb3b4313
+train,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/frame_0119.jpg,Foam-Heavy/frame_0119.jpg,fd24b58f7b9c6ddb39a159c2503d1ed3e1f57f7cb77a49f1e8cda96ae4c67aec
+train,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/frame_0125.jpg,Foam-Heavy/frame_0125.jpg,a67dd160cab1fbaf355c1823fe0f37f0a5b9869e9e457438f9291eedd401a5c9
+train,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/frame_0131.jpg,Foam-Heavy/frame_0131.jpg,a5121b13917dba2e96b163d2860b8f801f044bfc798295b751d4c3e1dc5aede9
+train,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/IMG_5511.png,Foam-Heavy/IMG_5511.png,f4728257ad8941ecfcfd10d6fa3a39609014808190265e128eef7f1d743fd2a6
+train,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/frame_0079.jpg,Foam-Heavy/frame_0079.jpg,54efa1206126d0c1671a6829c888aa01577d689c0a00d44683ee868bf06cc307
+train,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/frame_0051.jpg,Foam-Heavy/frame_0051.jpg,83294c3a56ce1f324fd95f52c48b36fef0be623d700995e3407897d9dd9657a9
+train,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/frame_0086.jpg,Foam-Heavy/frame_0086.jpg,46407b8215b12316263318943a9e3d3d7a4baa48fdea0c07c7759ff8f680094f
+train,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/frame_0090.jpg,Foam-Heavy/frame_0090.jpg,872de98ed87abaca0a85cf281ee23d8cb0fd9ab80531c52727652e3a4e154c41
+train,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/WIN_20260707_13_40_31_Pro.jpg,Foam-Heavy/WIN_20260707_13_40_31_Pro.jpg,c45f966baf32f70d5e7774e2812683f66a212e28410907d82291dd3880df1760
+train,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/WIN_20260707_13_39_58_Pro.jpg,Foam-Heavy/WIN_20260707_13_39_58_Pro.jpg,197b32e22e35badee0e58124c6fabb1b672a1a3e3e89c386153fff36900e36c6
+train,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/frame_0053.jpg,Foam-Heavy/frame_0053.jpg,13cf97fb09be11c33e3a496fecc35b5872fb30791ecae34d103abfbc373a9fc8
+train,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/frame_0047.jpg,Foam-Heavy/frame_0047.jpg,29f20cd65e08ba370e3087259550cefdaa21cab09f03cb49eb3d51c647b9b4c2
+train,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/IMG_5513.png,Foam-Heavy/IMG_5513.png,09ee92bbe2d375ef0775f09ea62fedd112e639dda384ae5babbf0ac79bdaf7d6
+train,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/frame_0127.jpg,Foam-Heavy/frame_0127.jpg,9312309b9ec183adb0e4b711c1a919778488f4ba70cc3ebfd52ce9520de0d23a
+train,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/IMG_5506.png,Foam-Heavy/IMG_5506.png,5545c91f65ab7524287c01bde159a397f3f6c1bef920bb2d7c0e38bdc0822835
+train,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/IMG_5512.png,Foam-Heavy/IMG_5512.png,af46ec779de6d4a977caa75f8c4cec93f72ea0cedb373d0130781d7553e392db
+train,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/frame_0052.jpg,Foam-Heavy/frame_0052.jpg,2f5152c2b8a92f0764f71599e547ea0183635870e2a5d54e544c3972f6bd52d3
+train,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/frame_0085.jpg,Foam-Heavy/frame_0085.jpg,60730ede84bce2ad0581f9cde6aa06facccd436cacb77b3e4925334708417a3d
+train,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/frame_0009.jpg,Foam-Heavy/frame_0009.jpg,6fc32b2dc752b2777ee42899e0d37bdd060555555d9aed69a3dd481edfcfea80
+train,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/frame_0035.jpg,Foam-Heavy/frame_0035.jpg,fd6d84795d2ffb4651396a764a1eb292b89d15d72f486f55d71c6296c6ea332c
+train,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/frame_0021.jpg,Foam-Heavy/frame_0021.jpg,956e3516413cc690a3029ccdd69fdee429b174f30657cf59097ef79c377e42de
+train,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/WIN_20260707_13_40_15_Pro.jpg,Foam-Heavy/WIN_20260707_13_40_15_Pro.jpg,aa2360dce7c8200ee1cff9abe9c90ddcacfca8d6366be03f9c898628196c677f
+train,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/frame_0034.jpg,Foam-Heavy/frame_0034.jpg,def518d4dcb35342d3baa19e4a93c0b3e314e94384324c21c76f5839069e7279
+train,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/frame_0008.jpg,Foam-Heavy/frame_0008.jpg,de5d7fd1fb4e4710353c3723cb0bc2a256de2d6c464d07de86b10cb502edb0bd
+train,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/frame_0022.jpg,Foam-Heavy/frame_0022.jpg,2e4f32c3aca031c52a039a1ed1080b413fddf5b324b7da28ccfd7bf5851f8c27
+train,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/WIN_20260707_13_40_23_Pro.jpg,Foam-Heavy/WIN_20260707_13_40_23_Pro.jpg,442031d8aa02c03fd85a440fff53d5fc8eb9d628af3b6e7bef106516d0ade73a
+train,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/frame_0023.jpg,Foam-Heavy/frame_0023.jpg,4d21d4cc93bcee24c0e9a22f7559f4c36827e1c92b220c2a9fe2165edb7ccd2f
+train,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/frame_0027.jpg,Foam-Heavy/frame_0027.jpg,71691105333d4554a4b2d1f0649134d448b55c08d064dd4a9587b90803d07eee
+train,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/frame_0032.jpg,Foam-Heavy/frame_0032.jpg,e45eaf0485455d8b2b82337a55ed0ff9401b6a70fa216cbed234a0ce67d904d3
+train,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/frame_0026.jpg,Foam-Heavy/frame_0026.jpg,e35a55aa570e38bbf3824a0a57c400e9610229fae852bb34b5e446a09708d99d
+train,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/frame_0030.jpg,Foam-Heavy/frame_0030.jpg,1fe393582a6519702946c640c218a7a96d2d7217509b7fa105aab09aa5de1023
+train,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/frame_0024.jpg,Foam-Heavy/frame_0024.jpg,7df9e6b27fd7044ab530de7c42eda6282d970345043905765bcdcde9fe29df61
+train,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/frame_0031.jpg,Foam-Heavy/frame_0031.jpg,a0ed78de9ac4afeb2c1f8597b490ab54220c7570ee6b149f3999e7ef059ce874
+train,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0028.jpg,Foam-Mild/frame_0028.jpg,79dcf3a2ecac335bce9f058904ae5ff0ce85c03349b32da222732fd30550403f
+train,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0000.jpg,Foam-Mild/frame_0000.jpg,33026a81b983e6fb63098f5097ebf37d5a91640a4973483a9bef5d84b560f436
+train,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0161.jpg,Foam-Mild/frame_0161.jpg,e2648645e6cfa9737997ee32e5ea0634b39c54b0419a575e2dd7f4358f911d83
+train,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0149.jpg,Foam-Mild/frame_0149.jpg,995122b90c0b66becf813b780761e2e0dee4c41c4c29de6257099f3d600b21a2
+train,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0001.jpg,Foam-Mild/frame_0001.jpg,a00f461eed79627fa2e1ec13f1caf3f7b979c78814cfa945b38929d6f8922752
+train,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0029.jpg,Foam-Mild/frame_0029.jpg,24610f0ba3727cd829e14cbfdd1a63f2d89368bd47e1cbbed49cc8c808bddb6e
+train,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0017.jpg,Foam-Mild/frame_0017.jpg,1ae1db82f6d047fb1b5d5183ea6ac93195a6860304a1d4e2c85125753fcfe70d
+train,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0162.jpg,Foam-Mild/frame_0162.jpg,3d37fd32c17ad1612b7342d01d69e65daf4be39d7416b69dd2fe197e00bc5743
+train,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0016.jpg,Foam-Mild/frame_0016.jpg,742cf032a69881b13d6c8d66a1c27116c63878be7e140c88c86bf342fcba11c6
+train,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0002.jpg,Foam-Mild/frame_0002.jpg,3a4a79cf5725f9e50fa954058e935f619b966704149e77435a6b07aa42034fc0
+train,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0012.jpg,Foam-Mild/frame_0012.jpg,f383bf7f3a0d612ded2fad115af9b9fe8e632344cbf4a5dac673b2e4659481a5
+train,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/WIN_20260707_13_35_32_Pro.jpg,Foam-Mild/WIN_20260707_13_35_32_Pro.jpg,c7c421c95099a8545cf71e155a5358f51f1fc1095bb0a88a551cf0b55fd73890
+train,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0013.jpg,Foam-Mild/frame_0013.jpg,e320149a836ebb114ce19c563701c403db3d4977100163d9fa55527405b96403
+train,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0007.jpg,Foam-Mild/frame_0007.jpg,72b786bc610fec2472fa00c2d7dfadd60fb44ed8ebfcba4d28c2e6a33bfba598
+train,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/WIN_20260707_13_13_49_Pro.jpg,Foam-Mild/WIN_20260707_13_13_49_Pro.jpg,32d1ee7995ac1973bcede317963db488c804642e926ab3c47d222679bfc01800
+train,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0005.jpg,Foam-Mild/frame_0005.jpg,cce0860f9a98f8581daa41d8702b06c3fb1efff0991350635ae72ca7b7728d11
+train,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/WIN_20260707_13_18_09_Pro.jpg,Foam-Mild/WIN_20260707_13_18_09_Pro.jpg,46ae263f4911236bb1f1d9e3040571eabe7c0406d9b0941d0875aafd66c12806
+train,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/WIN_20260707_13_19_42_Pro.jpg,Foam-Mild/WIN_20260707_13_19_42_Pro.jpg,937e81f6ce445a9c6a32587549b1d691a03e5a4fe7228ffce47af39d71f18733
+train,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0158.jpg,Foam-Mild/frame_0158.jpg,bc319f6f07b1139261fe938d92a21b539e65aa3cf7c48b9ab1cbd8053ab8b02d
+train,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/WIN_20260707_13_16_33_Pro.jpg,Foam-Mild/WIN_20260707_13_16_33_Pro.jpg,c8bb69fb2ec1c65f79a685728394cbad10d09363262620d55940320e7f9d752d
+train,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0004.jpg,Foam-Mild/frame_0004.jpg,22c477d79f386f225da1cca337725743d0e427171802bf4a02adfaff68869939
+train,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0010.jpg,Foam-Mild/frame_0010.jpg,274c49f7e38f51957e71348409c0a918faae8e49e4bb0a29b0f30f6f67f20bcc
+train,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0088.jpg,Foam-Mild/frame_0088.jpg,3f2f89e572f0faa4136a44a3000afad04a7646cb2fd67cdfecad60e898412598
+train,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0077.jpg,Foam-Mild/frame_0077.jpg,e8ea617781fc06c091bf9fd956e83d6ef58c1db10a3cbc2caa2c667fc36b107c
+train,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/WIN_20260707_13_14_32_Pro.jpg,Foam-Mild/WIN_20260707_13_14_32_Pro.jpg,880cd0f8e4415c81d09fd4348f8041a8cd37a19abf83420074896aef77046d45
+train,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/IMG_5480.png,Foam-Mild/IMG_5480.png,42a41ba3892bd3ba50c0bea111071ee9a21805ab1e8bccfe0d40047e8ff7695e
+train,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/WIN_20260707_13_35_42_Pro.jpg,Foam-Mild/WIN_20260707_13_35_42_Pro.jpg,b0a229ba30351e001456055648dcbcd8661bc9c05c5d7dfd144c4324406aaeb5
+train,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/WIN_20260707_13_14_40_Pro.jpg,Foam-Mild/WIN_20260707_13_14_40_Pro.jpg,11b8f78b172937c75ff8b846309352eda50b298149f007cdbc232e9890d897a9
+train,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0103.jpg,Foam-Mild/frame_0103.jpg,7b32debff994b724eddee991b25c141528e37e49b824408dbf6e7d03d9298062
+train,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0117.jpg,Foam-Mild/frame_0117.jpg,81f0a66f7488360f4c8817a713bd6f92bff4055c8e4f8e14c677936d3a9069c0
+train,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0102.jpg,Foam-Mild/frame_0102.jpg,6ce55e0c9edbb4f1d202f01e6260318ee32a8bafeafb25e7a1f331d5271547ab
+train,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0062.jpg,Foam-Mild/frame_0062.jpg,ef1e31e332448ed2eddb0984ac935b9df5d37e4aa863990ba8feb5c751cb0547
+train,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0076.jpg,Foam-Mild/frame_0076.jpg,af4f4d213047bc1cd8b0b79701a7bb22d64ad9855b657d1213e9ef75f5c163e6
+train,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0089.jpg,Foam-Mild/frame_0089.jpg,4c93c33dac33ac5d3b5be4e908f6c789a577271976b918662dee9f25bbfb7198
+train,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0060.jpg,Foam-Mild/frame_0060.jpg,7ec4e6dabc03638328de61e3ccdf74c4db99fa9d567e83e5a1cc65fca9cf547d
+train,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0074.jpg,Foam-Mild/frame_0074.jpg,ef02cea52fcddbcd9ac6cc9eebf4aaabd646415712fd05086abc54f9742c8cec
+train,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/WIN_20260707_13_17_45_Pro.jpg,Foam-Mild/WIN_20260707_13_17_45_Pro.jpg,23aeb782e3d75e66d77298ba6084f3e1f1087cc72ba78fa186cadc14f0db6084
+train,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0128.jpg,Foam-Mild/frame_0128.jpg,c7ee451a3650122dd84ff0b4436bd13f96f2250e70bf931c48c5ce5412ab026d
+train,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0114.jpg,Foam-Mild/frame_0114.jpg,a2b9695018c45f05770f8d286e68d83fdd9c7645c520733586917050862610f5
+train,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0100.jpg,Foam-Mild/frame_0100.jpg,d0718ab928a6750428f2c4d84658b9ff031cf2ccde4d918dffd070070108122b
+train,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0101.jpg,Foam-Mild/frame_0101.jpg,af4ddf35071f749ad51e45c9d660b52701a2019916329f8c61702ac918902b50
+train,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0129.jpg,Foam-Mild/frame_0129.jpg,ef6e6e9e8652d5cf444ee963076bcd55b92f8c87cdec31a73b0faeb5db42c9e6
+train,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/IMG_5482.png,Foam-Mild/IMG_5482.png,8e0807f990b0c077f150859c49ec968551de3425c82c403b1a4f900ac0b1b8cc
+train,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0075.jpg,Foam-Mild/frame_0075.jpg,02e1bb3ab12ab92e4010afe0756c850a91b77f2071e78ad631250af645772874
+train,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0061.jpg,Foam-Mild/frame_0061.jpg,78627d6f01b0a708bc4304ce37a95173a36667cf70384068535606471e644645
+train,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0049.jpg,Foam-Mild/frame_0049.jpg,050ae9405f5670243d748f326f5abc534a5b025eae4a79d1b76fd9e160bff446
+train,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/WIN_20260707_13_35_38_Pro.jpg,Foam-Mild/WIN_20260707_13_35_38_Pro.jpg,ee2f2c7bfb99b045ec106ba5405bd7e45caaf77d6f1980f2337dbea123ac02ca
+train,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/IMG_5479.png,Foam-Mild/IMG_5479.png,ae04642790b6dfec35c8415eeb6f2c3654804e020c0c90e2db0b7343db4becc5
+train,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/IMG_5486.png,Foam-Mild/IMG_5486.png,bb1d8d48ec63bb7cfdb7bd9f96c198ebcb3548f789d5f66026838859878f58b4
+train,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/WIN_20260707_13_19_41_Pro.jpg,Foam-Mild/WIN_20260707_13_19_41_Pro.jpg,38f4994b82d4384f2f4b0aa3996372ba8f44c16a6c61c78312cfdf5123cdda2d
+train,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0111.jpg,Foam-Mild/frame_0111.jpg,a8462c5c9637b3cf690872dd1e8fbd2c6bfdbf8053d9ad2c75e936ca80ffab3f
+train,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0105.jpg,Foam-Mild/frame_0105.jpg,5c099c2b6ad44f22742ded3e44dfe40d2555f61aa813fbe34f00249f5e3bfcbd
+train,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0138.jpg,Foam-Mild/frame_0138.jpg,60e730eaa24644bb9f8fe795a838b75137408aa1ba3a330a7dc0ac15abc5866f
+train,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0104.jpg,Foam-Mild/frame_0104.jpg,d10b1dc2ff18f4c5c19913eefa903b0bf358a7b1adc844b98e9798b89afdc52e
+train,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0058.jpg,Foam-Mild/frame_0058.jpg,263aceb24fbb90733406e06609bf7b8e9a0ec70ee74b631acf87064e8dbdc187
+train,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0070.jpg,Foam-Mild/frame_0070.jpg,a407c2793f377e3bc1e90ea7aa41c992d04565fae79f120f42e64866de25fd32
+train,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0099.jpg,Foam-Mild/frame_0099.jpg,e0156b3c28b75e2acf8389b8e10953d52bce6e65bcf16e6fd79bf42a722bcf2f
+train,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0066.jpg,Foam-Mild/frame_0066.jpg,09dab89f7e448fcdcff9cc481e124923f8b9e5ff7300c3beb12e2291631b1d13
+train,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0113.jpg,Foam-Mild/frame_0113.jpg,6fbbf637648deafd2fb3d675c710bf1492515347e0ded914f0d84e13a8c4f5b5
+train,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/WIN_20260707_13_18_08_Pro (2).jpg,Foam-Mild/WIN_20260707_13_18_08_Pro (2).jpg,80118d456e5113832222ab86963daa18e15150ebdca317a9ca0e75b95b2efa1d
+train,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/IMG_5484.png,Foam-Mild/IMG_5484.png,cc39349c1c6557143d04684b5c7d83e187f10e8f06561d0bd590285ad56dd92e
+train,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0073.jpg,Foam-Mild/frame_0073.jpg,262d5fac9c400e03aff793727866bce376dc19dadcc21e291680dc83cdb8cf4e
+train,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0098.jpg,Foam-Mild/frame_0098.jpg,2187c834db85913b8bf15d0a7f927dc96a66c74b01d609c94d9a1027f712f10b
+train,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0042.jpg,Foam-Mild/frame_0042.jpg,75e03ec29e1510cd1d79520142cca65fd132c523cb1be278f935864206508ee9
+train,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/WIN_20260707_13_19_00_Pro.jpg,Foam-Mild/WIN_20260707_13_19_00_Pro.jpg,d7cc5cac7faed3cbaafcd90437a9e562f3813ac09b97d8ed20b96d920cc49107
+train,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0122.jpg,Foam-Mild/frame_0122.jpg,469272a9bb56cdf6c554041c404a44f69b6ec29a32ea7dbeb8c0c38bf105e8c1
+train,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0136.jpg,Foam-Mild/frame_0136.jpg,7a61d33818a7d95c9fd6dd18595134bfe8e16b7565be34cc6825b56883a53608
+train,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0137.jpg,Foam-Mild/frame_0137.jpg,ddba3ba1425b0ba5e77461485a858c1f026e55267cfd922bf275691b3e4a01b6
+train,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0123.jpg,Foam-Mild/frame_0123.jpg,8c02f1ae9a57970a18ccd0305a2d2ab9de757e9e9dd4229f10ba3c7bf1873777
+train,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/WIN_20260707_13_16_03_Pro.jpg,Foam-Mild/WIN_20260707_13_16_03_Pro.jpg,e3d3881773fcab08c849ab149d075826a717a9a5109d09d288fd812a9513d274
+train,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/WIN_20260707_13_35_34_Pro.jpg,Foam-Mild/WIN_20260707_13_35_34_Pro.jpg,81663204217a19b7a761729625ebb377c6ad838d74dc526a150e657d1a920eb1
+train,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0043.jpg,Foam-Mild/frame_0043.jpg,495798d7c982ee4e4d4cbab3556958412522e96b49ebc059160e0cbb106ef51d
+train,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0057.jpg,Foam-Mild/frame_0057.jpg,d310edc91bd2ab3c9580338aa454ac40fab5be7cdeef6c0b5ea0a2f0e7b59053
+train,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0080.jpg,Foam-Mild/frame_0080.jpg,93f6b2fdfa2bb4e6a244ac92a35804a7bc96a711dd3bdfdaa5ec5468eb89b414
+train,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0094.jpg,Foam-Mild/frame_0094.jpg,b3d17e4aeb2a67c395507b21a450f2d40b4f0b3b35ccb2f375c9c5f38345da62
+train,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0082.jpg,Foam-Mild/frame_0082.jpg,b96b834fed8b08ecea146e8ee2bdc543b2623e37f5b81f1e59b6fe12a70f626a
+train,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0069.jpg,Foam-Mild/frame_0069.jpg,46a47d2213479612858754b928010165750e4c12dd4e1ab78102e1b556fc0a52
+train,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0041.jpg,Foam-Mild/frame_0041.jpg,5c941ea5650291ea3473f9bb4bd6ad14e11b94f1ef302737d44422a85beebc5d
+train,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0055.jpg,Foam-Mild/frame_0055.jpg,5bb7b7502d9918aa27eff28522ebb6a5c87dcd0ad5ca6713c85db9adf973b4ac
+train,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/WIN_20260707_13_21_35_Pro.jpg,Foam-Mild/WIN_20260707_13_21_35_Pro.jpg,eb92f6552d03d9f918bfec79955ebca5c9af6d589308340284dad2ca21a0429d
+train,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/WIN_20260707_13_13_46_Pro.jpg,Foam-Mild/WIN_20260707_13_13_46_Pro.jpg,dd8f2fb073075aa801ab7719a45a74fdc78598d2e7bf64e7c7e295fd522358d7
+train,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0109.jpg,Foam-Mild/frame_0109.jpg,07f3eaddfd0a232d73439ccf499dccb6eb68d8d164e6b5bbbe17df7b20a99aef
+train,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0121.jpg,Foam-Mild/frame_0121.jpg,b3d6cc30c12c28e841e912b5d605e112529e3f83b6204367e86eb11be799f911
+train,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0120.jpg,Foam-Mild/frame_0120.jpg,a288f00104e83ba255202b89a4bf43492c91e6b5ced99f9f913067480376e083
+train,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0108.jpg,Foam-Mild/frame_0108.jpg,7768aac41da39b6443a3efcc19c48119594efe7a188f26fad9aaaa9d4dcc6f78
+train,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0040.jpg,Foam-Mild/frame_0040.jpg,ba0f4eb4a6627c41550140b2728eb2c86677defb718f07031ca5332b14be37fa
+train,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0068.jpg,Foam-Mild/frame_0068.jpg,86899ad580069656347ad99eb8818d93ef0616966684f198fa20f3b06b67b150
+train,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0097.jpg,Foam-Mild/frame_0097.jpg,53ec1fe417672239be3a4ff5a27ea67e779cd3db70e4f9d97f47887a4d60d083
+train,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/WIN_20260707_13_16_46_Pro.jpg,Foam-Mild/WIN_20260707_13_16_46_Pro.jpg,f31b004b47712ee79b05f1cb2b657da7b2f45f3f2852600daa2735a39a34b808
+train,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0044.jpg,Foam-Mild/frame_0044.jpg,934260ea4cac83514ff1eb4eb2a2ffc381fcae204369649d31304566fc0b039c
+train,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0050.jpg,Foam-Mild/frame_0050.jpg,7c35c7f7522578fff0a81bb395642398398becd2aa4227ea82a8501778c61b1e
+train,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0078.jpg,Foam-Mild/frame_0078.jpg,410739ce2e527124166e05d85fc417147bc0ebdfb0081c390e53e86dc854199a
+train,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0130.jpg,Foam-Mild/frame_0130.jpg,9d7bc00eac535b17a952693b7a93dd5711035cfc48d842c3182e32662a8a49a2
+train,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/WIN_20260707_13_14_01_Pro.jpg,Foam-Mild/WIN_20260707_13_14_01_Pro.jpg,c2db07a475be0448f6f64e6bc63a08f128cfa338bed5693b2da58f8f89acda0a
+train,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0118.jpg,Foam-Mild/frame_0118.jpg,6dcdba86f5be744c37864425c28bbcc187309793ce65e488764756ce29a6aab2
+train,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0119.jpg,Foam-Mild/frame_0119.jpg,2df933dbe85fbcc7c27b987edfd2685e7a2caf52158d460083fc40c20b139747
+train,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0079.jpg,Foam-Mild/frame_0079.jpg,b25ba6f7519ce0ab1af5d3d673822fe81d4367cb6cb4486b58c73e611fc4a153
+train,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0051.jpg,Foam-Mild/frame_0051.jpg,c26860f4d2e05cd6d25ed2875b9e5701df5831a216481ff12ec63dac087ea803
+train,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0086.jpg,Foam-Mild/frame_0086.jpg,3aa4a1a0480552f7f08f82f0b07156d32ff5627bbd10d307b8f6d787bfec8608
+train,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0090.jpg,Foam-Mild/frame_0090.jpg,f8b203ac2abb256f00d24fd24d34b5b6e3c29f29ce464eb6e763370a61363b05
+train,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0084.jpg,Foam-Mild/frame_0084.jpg,4565c6977f3d6c71d9768558ce395b8cd26c1b0384902abc70d2d7bebd64c382
+train,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0053.jpg,Foam-Mild/frame_0053.jpg,0866963156072ac3e0d777c5fc3bc0d334d8d1426dff1057278511fcddd397c1
+train,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0047.jpg,Foam-Mild/frame_0047.jpg,f87ab25d73319bb28aec7e1254c43b50d087bd91736807f1fa075cdbac4cdbca
+train,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/WIN_20260707_13_19_01_Pro.jpg,Foam-Mild/WIN_20260707_13_19_01_Pro.jpg,e0a03eb1919ca27ea889e4710a213a32ccb69ada9bdd0d6dbce4771e6d6cae36
+train,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/WIN_20260707_13_14_18_Pro.jpg,Foam-Mild/WIN_20260707_13_14_18_Pro.jpg,5dc49383cf2e8ae5d5f55f699da6874add859dabd06387544bcb4048448a5471
+train,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0127.jpg,Foam-Mild/frame_0127.jpg,0c4ea036bc63212f262b2c85292c1d33b606ec32514d85b35d73bab538d651fe
+train,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0133.jpg,Foam-Mild/frame_0133.jpg,8aa1d7f8ecb50ee84f694fab74d90d5715cddcd8f2e35a3cab22ebb6ad424922
+train,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0126.jpg,Foam-Mild/frame_0126.jpg,11127112cde24147067f6c2ad84b1397f956f2218ed8be38a30dfbb9cbff310f
+train,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0046.jpg,Foam-Mild/frame_0046.jpg,0ffc46289bff1e04b5b37c88c121cd14efd8dae94f7287569c6c257dee95bde5
+train,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0052.jpg,Foam-Mild/frame_0052.jpg,80ffb56a3d4917bacfa2cd286bac26870136109dbc6e536a3175b9b11017b8eb
+train,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0091.jpg,Foam-Mild/frame_0091.jpg,93c32494d492d5a31c08d6badabcf66d0e191f1683587d38e1b1fea377c54d98
+train,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0009.jpg,Foam-Mild/frame_0009.jpg,373f546281a919d80b3360c70e55cd829dddf7f3978ca9a745ac8c073597d576
+train,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0021.jpg,Foam-Mild/frame_0021.jpg,a92f179fcf0a8a86c1c8f3130d978b7ebcf1cb6a556dcdd5448278c9a21ef946
+train,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/WIN_20260707_13_14_13_Pro.jpg,Foam-Mild/WIN_20260707_13_14_13_Pro.jpg,73d3a81c59fb955dbff4a83a584986bd7092a521337c689eeb70365a52cfb9b7
+train,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0141.jpg,Foam-Mild/frame_0141.jpg,2ff9e1123cc6a3f723518edf95478fa755c7ed5d49977be9d8a3919b51ad5863
+train,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0155.jpg,Foam-Mild/frame_0155.jpg,3bc5c499853e1533a43db2232932abb249574d06f4c807a3f0e8e9c6c609a8bd
+train,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/WIN_20260707_13_15_05_Pro.jpg,Foam-Mild/WIN_20260707_13_15_05_Pro.jpg,4d96123fa1ff387c7395bf565354a2cf35c0440b00caf6f869b4bd6a60143438
+train,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0020.jpg,Foam-Mild/frame_0020.jpg,f46dd6a12150e83bf6d0e03b5ff0c000ec47a45e5142d86ff9afff3e28c1fced
+train,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0008.jpg,Foam-Mild/frame_0008.jpg,bc6910d992a547a3fcb59c24e96acdf1505e91c0e500977547691fe534a2e53f
+train,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0022.jpg,Foam-Mild/frame_0022.jpg,a70d5b43721dcc4aee963229dabd70ad7350f68bf04ab17c1ec579239bb98d9d
+train,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0036.jpg,Foam-Mild/frame_0036.jpg,a2350e26e60f7a738b4303a884c55f39c64f78b75e002156e613b935661a8ec0
+train,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0156.jpg,Foam-Mild/frame_0156.jpg,4a8ed81275e534965601a299ac2d1286ab9b598194862fb283656d38df24693f
+train,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0142.jpg,Foam-Mild/frame_0142.jpg,8602dc6e63bd83d01430577f8004ef35ad5b5a02f25d3e418720786833689cb2
+train,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0143.jpg,Foam-Mild/frame_0143.jpg,7cb9e758f35148c97244f4c6a3bd95be30166ef087184ddcaac762a148388a6c
+train,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0157.jpg,Foam-Mild/frame_0157.jpg,7762d9b345b6ad4ed04c7776a1fc249bde3fd33b10cb330e7a6611be89fb9d43
+train,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/WIN_20260707_13_35_45_Pro.jpg,Foam-Mild/WIN_20260707_13_35_45_Pro.jpg,6007d05647cb6a955b4b3c9fb81c5a0869f0b734d6dff25d4476e5baabf39923
+train,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0037.jpg,Foam-Mild/frame_0037.jpg,68aabbecd1f89b89149a41fc2e5ec9aaf1560b8c8f83c80d794d4ef99a6d8bf3
+train,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0023.jpg,Foam-Mild/frame_0023.jpg,7b102fc86eb1c0c01eefbb6a17a2d9ee532a5b2f074d87345bfc6ba7a1696ed6
+train,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0027.jpg,Foam-Mild/frame_0027.jpg,ebd34f7511f25fd47077075b4a52c43ff4cc67e48a68fa802e35c90267dcc8d1
+train,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0147.jpg,Foam-Mild/frame_0147.jpg,73024d2b4c25d99b106324e6648ee6e73bebeb1c24b6b9db1b406dcc9063c57a
+train,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/WIN_20260707_13_35_36_Pro.jpg,Foam-Mild/WIN_20260707_13_35_36_Pro.jpg,7ac2a7e58e85f302a5bd36b175dcd4a045ded91448f4d717ab6d69e6b8e8c3ea
+train,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0146.jpg,Foam-Mild/frame_0146.jpg,68f0a1da8cd3f2e903e2b141f47dbfee11d905240b4cb1bb8518b7f1375e31e7
+train,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0152.jpg,Foam-Mild/frame_0152.jpg,c696abcbf16a512c3fe37a4c70593e1a7fd3852958c4e3aac664049f33318eaa
+train,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0032.jpg,Foam-Mild/frame_0032.jpg,d0464fc19f8522e895c6c0d71bff00ca6bb644b15baa74cc4889b49200434913
+train,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0026.jpg,Foam-Mild/frame_0026.jpg,754b2c15ab97fddec2d3693389b1316126489466968a14dd7ec23727d6951727
+train,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/WIN_20260707_13_35_44_Pro.jpg,Foam-Mild/WIN_20260707_13_35_44_Pro.jpg,6dfb464e8c1b04e16d41f1afefbf18f3c9c017f43746c5d4622e7ff6e75696b4
+train,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/WIN_20260707_13_14_12_Pro.jpg,Foam-Mild/WIN_20260707_13_14_12_Pro.jpg,ad1f96450047a248ed5b060b33d1986a773b4e88beb943425ba5ada9366a30a2
+train,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0030.jpg,Foam-Mild/frame_0030.jpg,cfe9bb140057b84aa9c3684740ad4b52845a22f51dbf1a69233c1edb220e7b39
+train,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0144.jpg,Foam-Mild/frame_0144.jpg,1037c027b1eea5e17fc7da1b33fbd97a7e59db40b58ae5f4326e9fff611419a1
+train,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0151.jpg,Foam-Mild/frame_0151.jpg,b3827f8757cc67c604ac97bedcf44f40be210f26e68f0bebd7ef0de7e4c82b4f
+train,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0145.jpg,Foam-Mild/frame_0145.jpg,00d136456e6d28a796cc4d2d6e72cc9611b39402f752b7eed4dc4502bbe3d406
+train,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0031.jpg,Foam-Mild/frame_0031.jpg,586b52b60ab91b21cfa4a3a126f6126e808430379bf6d4d683d7bab949cab1bc
+train,Post-Antifoam Addition,2,root,Post-Antifoam Addition::root::Post-Antifoam Addition/frame_0028.jpg,Post-Antifoam Addition/frame_0028.jpg,5cfc2db464518530c235f2eeaf848c6d831c8c067d4caa09a93e3e86159dbb37
+train,Post-Antifoam Addition,2,root,Post-Antifoam Addition::root::Post-Antifoam Addition/frame_0014.jpg,Post-Antifoam Addition/frame_0014.jpg,ed5ac69e7200c185d454aec80aeae6c5400345b27a91c505ca13db636749a383
+train,Post-Antifoam Addition,2,root,Post-Antifoam Addition::root::Post-Antifoam Addition/frame_0000.jpg,Post-Antifoam Addition/frame_0000.jpg,b416e7c309b9f771cdf45a5a25975b4897f4705667b144995ffbaef0021fffe3
+train,Post-Antifoam Addition,2,root,Post-Antifoam Addition::root::Post-Antifoam Addition/frame_0001.jpg,Post-Antifoam Addition/frame_0001.jpg,0029c5ba5e54a5ce832cae5571449db7c42e92000a4c78106fb9430f7eed8b9d
+train,Post-Antifoam Addition,2,root,Post-Antifoam Addition::root::Post-Antifoam Addition/frame_0015.jpg,Post-Antifoam Addition/frame_0015.jpg,6e5ca9680fa0880fd9ba063dcd7833ade115b55fbd683d990a0521a79b48ebc7
+train,Post-Antifoam Addition,2,root,Post-Antifoam Addition::root::Post-Antifoam Addition/frame_0029.jpg,Post-Antifoam Addition/frame_0029.jpg,06c9dcb0386a3d754c981269676cd77b0b13f680bdc48258fb007308cbfa8f61
+train,Post-Antifoam Addition,2,root,Post-Antifoam Addition::root::Post-Antifoam Addition/frame_0016.jpg,Post-Antifoam Addition/frame_0016.jpg,931d4aeec7b5d900ce462b2400efb49ef6d5d344d6e6252b48e8b3624710020d
+train,Post-Antifoam Addition,2,root,Post-Antifoam Addition::root::Post-Antifoam Addition/frame_0002.jpg,Post-Antifoam Addition/frame_0002.jpg,196930a840e198e2675fa8ffac121ecc065e9e42db761f519cec3fda74bfab14
+train,Post-Antifoam Addition,2,root,Post-Antifoam Addition::root::Post-Antifoam Addition/frame_0006.jpg,Post-Antifoam Addition/frame_0006.jpg,23327aad36e6e2820e034d08dabbd61e6f0a6eda4cd5fbe7634d80ff6c66d86b
+train,Post-Antifoam Addition,2,root,Post-Antifoam Addition::root::Post-Antifoam Addition/frame_0012.jpg,Post-Antifoam Addition/frame_0012.jpg,b99e5191f333dd21561c8c72f9018816ed2dc59de7faba1bb170e7ff0dca4a0b
+train,Post-Antifoam Addition,2,root,Post-Antifoam Addition::root::Post-Antifoam Addition/frame_0005.jpg,Post-Antifoam Addition/frame_0005.jpg,d291e9fa9790d686175058212f04afac8e34fe2b60077532bd96e83cf2c940b4
+train,Post-Antifoam Addition,2,root,Post-Antifoam Addition::root::Post-Antifoam Addition/frame_0039.jpg,Post-Antifoam Addition/frame_0039.jpg,6146a549e4bc2cd4eb1ee05edcf4d03e65c0453876e6322a310818904c43a945
+train,Post-Antifoam Addition,2,root,Post-Antifoam Addition::root::Post-Antifoam Addition/frame_0004.jpg,Post-Antifoam Addition/frame_0004.jpg,d0329da1b07f559c87c53c65435e19ccbcdd38c3e827852ce3af949b12208c29
+train,Post-Antifoam Addition,2,root,Post-Antifoam Addition::root::Post-Antifoam Addition/frame_0010.jpg,Post-Antifoam Addition/frame_0010.jpg,9abe651b9ecf69b51348a817916260a594ca581dd8b313b01c77690960ce0cee
+train,Post-Antifoam Addition,2,root,Post-Antifoam Addition::root::Post-Antifoam Addition/frame_0088.jpg,Post-Antifoam Addition/frame_0088.jpg,b9b21eb2b7ef88d0094ec52720b2435a3bcb1f1e2e40e5e6e8c27248e96fe78c
+train,Post-Antifoam Addition,2,root,Post-Antifoam Addition::root::Post-Antifoam Addition/frame_0077.jpg,Post-Antifoam Addition/frame_0077.jpg,11aa535d92e58af977a832bf0638e14ecf730ab331eeed66c9a23dca6b6784e4
+train,Post-Antifoam Addition,2,root,Post-Antifoam Addition::root::Post-Antifoam Addition/frame_0063.jpg,Post-Antifoam Addition/frame_0063.jpg,310165ce78dd3776a9e971745577c5e899101ec685e644ec9f2e3ac96cbe5a7a
+train,Post-Antifoam Addition,2,root,Post-Antifoam Addition::root::Post-Antifoam Addition/frame_0102.jpg,Post-Antifoam Addition/frame_0102.jpg,41928ff0355c6a151e880fb153383905562fbe2dca7f978cb16ae5e284defc6c
+train,Post-Antifoam Addition,2,root,Post-Antifoam Addition::root::Post-Antifoam Addition/WIN_20260707_13_43_28_Pro.jpg,Post-Antifoam Addition/WIN_20260707_13_43_28_Pro.jpg,22fbfe126f4e8cbefd110128f0c89be9247d68d492bc2cd8a9f6b1369aac0965
+train,Post-Antifoam Addition,2,root,Post-Antifoam Addition::root::Post-Antifoam Addition/frame_0062.jpg,Post-Antifoam Addition/frame_0062.jpg,9cf9d8b5be0111e6977fb3cb6c187b056a9fb5bfc7b3a8337e6df6fd4d32ca69
+train,Post-Antifoam Addition,2,root,Post-Antifoam Addition::root::Post-Antifoam Addition/frame_0048.jpg,Post-Antifoam Addition/frame_0048.jpg,8a42ffc8bf7ced29a659306cfbac2c32a3a152ee2f4421e8156bac4c97c72ce3
+train,Post-Antifoam Addition,2,root,Post-Antifoam Addition::root::Post-Antifoam Addition/frame_0060.jpg,Post-Antifoam Addition/frame_0060.jpg,090b0c498f6d70e06c8f029f148e186e1d51f9a0e5fa7dcbfdc3981c4e600c71
+train,Post-Antifoam Addition,2,root,Post-Antifoam Addition::root::Post-Antifoam Addition/frame_0074.jpg,Post-Antifoam Addition/frame_0074.jpg,34522d49569b37df8392a57c1b6ec820ab0e8e2b9799414359dd8a4cd70822df
+train,Post-Antifoam Addition,2,root,Post-Antifoam Addition::root::Post-Antifoam Addition/frame_0101.jpg,Post-Antifoam Addition/frame_0101.jpg,c91d3b8d65a253924a38aed7f707e92b030cdd9107939e6979674e5de9e94812
+train,Post-Antifoam Addition,2,root,Post-Antifoam Addition::root::Post-Antifoam Addition/WIN_20260707_13_43_31_Pro.jpg,Post-Antifoam Addition/WIN_20260707_13_43_31_Pro.jpg,041bbb7de7a4f0caced74da9766e107885d4914b446ca0122bb4d37c3911151c
+train,Post-Antifoam Addition,2,root,Post-Antifoam Addition::root::Post-Antifoam Addition/frame_0075.jpg,Post-Antifoam Addition/frame_0075.jpg,a020f0c135ddfaf0060e40d3a8f761479d7c6bd3302247f86bbb58327d8871f8
+train,Post-Antifoam Addition,2,root,Post-Antifoam Addition::root::Post-Antifoam Addition/frame_0059.jpg,Post-Antifoam Addition/frame_0059.jpg,f743c23fc437af0f41e86f7f955b7b00eaab649f4d1b5e8af12bdbfc671d57bc
+train,Post-Antifoam Addition,2,root,Post-Antifoam Addition::root::Post-Antifoam Addition/IMG_5531.png,Post-Antifoam Addition/IMG_5531.png,42ed7770ab87e2bde0de0b2ff9a0271d211b6e7021b866f63c84424136e497b9
+train,Post-Antifoam Addition,2,root,Post-Antifoam Addition::root::Post-Antifoam Addition/frame_0099.jpg,Post-Antifoam Addition/frame_0099.jpg,f7a397e7fcd8d66f15038c15f7080494d2b73d546cc3416093d277906bd77bcc
+train,Post-Antifoam Addition,2,root,Post-Antifoam Addition::root::Post-Antifoam Addition/frame_0072.jpg,Post-Antifoam Addition/frame_0072.jpg,9aa8fe731d9be6076cb0e64a1ec9df7c261b3e9a4d6a67da41375f4c52462828
+train,Post-Antifoam Addition,2,root,Post-Antifoam Addition::root::Post-Antifoam Addition/frame_0066.jpg,Post-Antifoam Addition/frame_0066.jpg,1fa6526d59020c86798380ec921452488867f39d63b60e699bd7361a4f88e196
+train,Post-Antifoam Addition,2,root,Post-Antifoam Addition::root::Post-Antifoam Addition/IMG_5527.png,Post-Antifoam Addition/IMG_5527.png,83055b2ec1c9765f99a0cf3788d003be6168c1c66d828ac8b9341300fa07085b
+train,Post-Antifoam Addition,2,root,Post-Antifoam Addition::root::Post-Antifoam Addition/frame_0067.jpg,Post-Antifoam Addition/frame_0067.jpg,12e8afee61cdeb941db9362db9f59e46981d8e51b60f4c4bfdd485cfdadebc75
+train,Post-Antifoam Addition,2,root,Post-Antifoam Addition::root::Post-Antifoam Addition/frame_0098.jpg,Post-Antifoam Addition/frame_0098.jpg,be132063201ca1457c03595e98ab925d22d7fd5ba77a0e2ea147a0631d5d5bd2
+train,Post-Antifoam Addition,2,root,Post-Antifoam Addition::root::Post-Antifoam Addition/frame_0081.jpg,Post-Antifoam Addition/frame_0081.jpg,213fd2402aad5a2a54a78cec95babafa600105d4b9e19d38302afdf22a7462f1
+train,Post-Antifoam Addition,2,root,Post-Antifoam Addition::root::Post-Antifoam Addition/frame_0056.jpg,Post-Antifoam Addition/frame_0056.jpg,4dbba7da6b0afa9e6cba697d110385412ee3b192691236ccca0c6d007abbfca2
+train,Post-Antifoam Addition,2,root,Post-Antifoam Addition::root::Post-Antifoam Addition/frame_0042.jpg,Post-Antifoam Addition/frame_0042.jpg,215f67c07fedd66b775969421726061fdab03cfe8f8d900f455282279884ad7d
+train,Post-Antifoam Addition,2,root,Post-Antifoam Addition::root::Post-Antifoam Addition/frame_0043.jpg,Post-Antifoam Addition/frame_0043.jpg,90ac640d9479dda779dc10f013b84ec33b066c190a0daff19229eb9489305b69
+train,Post-Antifoam Addition,2,root,Post-Antifoam Addition::root::Post-Antifoam Addition/frame_0057.jpg,Post-Antifoam Addition/frame_0057.jpg,9e3cfe5ad4d83dd086e3ab63cf6a9f01248db72ee682d62234f55db77737d57c
+train,Post-Antifoam Addition,2,root,Post-Antifoam Addition::root::Post-Antifoam Addition/frame_0094.jpg,Post-Antifoam Addition/frame_0094.jpg,2d963ea87a203de7c719a8442bb39b07368e4d1f7756c1b6523e5598be3b62b1
+train,Post-Antifoam Addition,2,root,Post-Antifoam Addition::root::Post-Antifoam Addition/frame_0082.jpg,Post-Antifoam Addition/frame_0082.jpg,e574d03f729edb8d309d383c40ef4086410f7265b4e5bf0aaa7bfed16a7fc940
+train,Post-Antifoam Addition,2,root,Post-Antifoam Addition::root::Post-Antifoam Addition/frame_0096.jpg,Post-Antifoam Addition/frame_0096.jpg,6907f05a325b25eb273a47c013410452c5fb5320db2cfa1659322c1131e92f72
+train,Post-Antifoam Addition,2,root,Post-Antifoam Addition::root::Post-Antifoam Addition/frame_0069.jpg,Post-Antifoam Addition/frame_0069.jpg,6c9e1b7fdffbdc484029ee634757defb4f0fa8ba86657103a43a826e7e338c3f
+train,Post-Antifoam Addition,2,root,Post-Antifoam Addition::root::Post-Antifoam Addition/frame_0041.jpg,Post-Antifoam Addition/frame_0041.jpg,7fece50991d11ec284ed15a3ea2f17eb3d44323130a05ecd6eb4e0a69929e272
+train,Post-Antifoam Addition,2,root,Post-Antifoam Addition::root::Post-Antifoam Addition/frame_0055.jpg,Post-Antifoam Addition/frame_0055.jpg,47ff4ce033e652932a8631a2350666c51211d1fff3f7bac88237b4fd299591dd
+train,Post-Antifoam Addition,2,root,Post-Antifoam Addition::root::Post-Antifoam Addition/IMG_5528.png,Post-Antifoam Addition/IMG_5528.png,36b8bb771ea82f9363e34c72a72968e2c35a1b24fe4974aed88a8491feb25b60
+train,Post-Antifoam Addition,2,root,Post-Antifoam Addition::root::Post-Antifoam Addition/frame_0054.jpg,Post-Antifoam Addition/frame_0054.jpg,87a6bac2c8fc43107fa7a9b42882844da86275586f3a252f6b080614edd039bf
+train,Post-Antifoam Addition,2,root,Post-Antifoam Addition::root::Post-Antifoam Addition/frame_0040.jpg,Post-Antifoam Addition/frame_0040.jpg,636727d71a17672bd1086fce488a1e1db4346fcb7cd7efe26d16f67e2f489f02
+train,Post-Antifoam Addition,2,root,Post-Antifoam Addition::root::Post-Antifoam Addition/frame_0068.jpg,Post-Antifoam Addition/frame_0068.jpg,a400350eed272da5f893206c42ac7a344c670b2d1f6c803eba319a6039871ca5
+train,Post-Antifoam Addition,2,root,Post-Antifoam Addition::root::Post-Antifoam Addition/frame_0097.jpg,Post-Antifoam Addition/frame_0097.jpg,ce5d0941b5cc12fb8644849bf2935073d7eba0d051306be9ce2f2aad16994097
+train,Post-Antifoam Addition,2,root,Post-Antifoam Addition::root::Post-Antifoam Addition/frame_0083.jpg,Post-Antifoam Addition/frame_0083.jpg,cc022380c2baa2a91f68a4a3fdb6be4447c5a1e2edd74c85eaf90acb86a99bab
+train,Post-Antifoam Addition,2,root,Post-Antifoam Addition::root::Post-Antifoam Addition/frame_0093.jpg,Post-Antifoam Addition/frame_0093.jpg,1967ab14ec7bf60ecaaf262badf8c8f3de183a9b807f3c61f1f35a55253c2d1c
+train,Post-Antifoam Addition,2,root,Post-Antifoam Addition::root::Post-Antifoam Addition/frame_0044.jpg,Post-Antifoam Addition/frame_0044.jpg,509de2f5cb68ad45347969d198870fda8968ff2314e43db8fae1c8abee95ff94
+train,Post-Antifoam Addition,2,root,Post-Antifoam Addition::root::Post-Antifoam Addition/frame_0050.jpg,Post-Antifoam Addition/frame_0050.jpg,d9fbeaa84330c026d38194f334d4e987595c31baac7f67d7774f588b73dbbf53
+train,Post-Antifoam Addition,2,root,Post-Antifoam Addition::root::Post-Antifoam Addition/frame_0078.jpg,Post-Antifoam Addition/frame_0078.jpg,4755eed2a25146bda098e5ddce7f07c8fdd01cd2cecfba6d40ff19bc51a04b87
+train,Post-Antifoam Addition,2,root,Post-Antifoam Addition::root::Post-Antifoam Addition/WIN_20260707_13_43_34_Pro.jpg,Post-Antifoam Addition/WIN_20260707_13_43_34_Pro.jpg,e953c75f6eec9859aed8d69744f713a2e52e0fcffa73a4eb01579a8eb95bea74
+train,Post-Antifoam Addition,2,root,Post-Antifoam Addition::root::Post-Antifoam Addition/WIN_20260707_13_43_24_Pro.jpg,Post-Antifoam Addition/WIN_20260707_13_43_24_Pro.jpg,c82ac89617cd628d7f80c3eb5e964777ec26f43824cc4419d66494920e3c6d16
+train,Post-Antifoam Addition,2,root,Post-Antifoam Addition::root::Post-Antifoam Addition/frame_0079.jpg,Post-Antifoam Addition/frame_0079.jpg,86ca0be7e02c9b6a9b015f2153dadb544a8520ed10ba30c5fc05a227eef0cff0
+train,Post-Antifoam Addition,2,root,Post-Antifoam Addition::root::Post-Antifoam Addition/frame_0045.jpg,Post-Antifoam Addition/frame_0045.jpg,7f5af067fa913e5cc30281f1cc924fd726fadd93af2f35e01f42667dc8cd2ad8
+train,Post-Antifoam Addition,2,root,Post-Antifoam Addition::root::Post-Antifoam Addition/frame_0092.jpg,Post-Antifoam Addition/frame_0092.jpg,ede27a47037a2a9be45f4ae72fb4b5eadf5d84e2f711ce308b43bcd26079281f
+train,Post-Antifoam Addition,2,root,Post-Antifoam Addition::root::Post-Antifoam Addition/frame_0090.jpg,Post-Antifoam Addition/frame_0090.jpg,06c1df152087228f1e063a6873b3ae1889356e45246bffc7fcefe097982c69b1
+train,Post-Antifoam Addition,2,root,Post-Antifoam Addition::root::Post-Antifoam Addition/frame_0084.jpg,Post-Antifoam Addition/frame_0084.jpg,c2bde1fc83bbf58420aee9dbe5f1a21ffee23c8121e18c9ef0d66975255e2cfd
+train,Post-Antifoam Addition,2,root,Post-Antifoam Addition::root::Post-Antifoam Addition/frame_0047.jpg,Post-Antifoam Addition/frame_0047.jpg,9ef565caeecd3d49f5d676446944aa20e03287a36670dd4e706769ffc9cc5f97
+train,Post-Antifoam Addition,2,root,Post-Antifoam Addition::root::Post-Antifoam Addition/frame_0046.jpg,Post-Antifoam Addition/frame_0046.jpg,ad0fbb7d80d6cf329efef313d72973b918a1df8635a090fac803210bf7c932c2
+train,Post-Antifoam Addition,2,root,Post-Antifoam Addition::root::Post-Antifoam Addition/frame_0052.jpg,Post-Antifoam Addition/frame_0052.jpg,fd2448bada176ab4bb081b086d73fbffd3238301fe198d4ee91e0360baa36a90
+train,Post-Antifoam Addition,2,root,Post-Antifoam Addition::root::Post-Antifoam Addition/frame_0091.jpg,Post-Antifoam Addition/frame_0091.jpg,dbf786a3a1bcade97a43697efb6180ba5dd851ef3da2185a249cf50311777d06
+train,Post-Antifoam Addition,2,root,Post-Antifoam Addition::root::Post-Antifoam Addition/WIN_20260707_13_43_26_Pro.jpg,Post-Antifoam Addition/WIN_20260707_13_43_26_Pro.jpg,202b3e682d327cde9c34173d494728101de293ecb1f776bcbcf4875a980534e4
+train,Post-Antifoam Addition,2,root,Post-Antifoam Addition::root::Post-Antifoam Addition/frame_0009.jpg,Post-Antifoam Addition/frame_0009.jpg,79b8360000d66fe1ccb8126df893e1f3ca72f3cf655f7603351aa7f43e2be401
+train,Post-Antifoam Addition,2,root,Post-Antifoam Addition::root::Post-Antifoam Addition/frame_0021.jpg,Post-Antifoam Addition/frame_0021.jpg,9208896e9a22373be1ab5350c8de654e32b47f32b0a9a0f745184e7efa7002af
+train,Post-Antifoam Addition,2,root,Post-Antifoam Addition::root::Post-Antifoam Addition/frame_0022.jpg,Post-Antifoam Addition/frame_0022.jpg,c7abcf97e8c7319fc2686ee8f9e3889d8120d0b72f3b8a5d21468662811ee61f
+train,Post-Antifoam Addition,2,root,Post-Antifoam Addition::root::Post-Antifoam Addition/frame_0037.jpg,Post-Antifoam Addition/frame_0037.jpg,3a067b2ca9cb3878c13d0c766009c7ae8e6fa51f13ad75affb4277df5f755a0d
+train,Post-Antifoam Addition,2,root,Post-Antifoam Addition::root::Post-Antifoam Addition/frame_0023.jpg,Post-Antifoam Addition/frame_0023.jpg,df26223a41e32b281894cc0a87a021cba97534e04f1ebab4a4c0cbd386c4de64
+train,Post-Antifoam Addition,2,root,Post-Antifoam Addition::root::Post-Antifoam Addition/frame_0027.jpg,Post-Antifoam Addition/frame_0027.jpg,afc510180e1b4e40870180f3edd2abc85fa5a54722ec8669aa8af09fbfce1835
+train,Post-Antifoam Addition,2,root,Post-Antifoam Addition::root::Post-Antifoam Addition/frame_0033.jpg,Post-Antifoam Addition/frame_0033.jpg,b032dc524bf4e0ed5a5401feadd182e20a362f249fb060aadb2567ba084cb4cc
+train,Post-Antifoam Addition,2,root,Post-Antifoam Addition::root::Post-Antifoam Addition/frame_0030.jpg,Post-Antifoam Addition/frame_0030.jpg,dc18f7ff77009d28ee365b4a63c92c25f7b64f440662e36e6e9b0216d56955e4
+train,Post-Antifoam Addition,2,root,Post-Antifoam Addition::root::Post-Antifoam Addition/frame_0018.jpg,Post-Antifoam Addition/frame_0018.jpg,2f948a714abe74276b2c2e9b1ad5cd7d0d483940ff6350d8c94fcd11b8ef42a2
+train,Post-Antifoam Addition,2,root,Post-Antifoam Addition::root::Post-Antifoam Addition/frame_0019.jpg,Post-Antifoam Addition/frame_0019.jpg,94b309e2014d8963efb12d96407ed02cecf6d2409d239433490976c5125ff12e
+train,Post-Antifoam Addition,2,root,Post-Antifoam Addition::root::Post-Antifoam Addition/frame_0025.jpg,Post-Antifoam Addition/frame_0025.jpg,6dd42025c4dedf5c260aba9af81995509faa1c325ee2cad2888e6975ae349bb2
+train,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/frame_0000.jpg,Foam-Medium/frame_0000.jpg,54541f6e7a976038b76c9651f339cce868e1ac01aa58524a6a15fe32d6be377f
+train,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/WIN_20260707_13_31_12_Pro.jpg,Foam-Medium/WIN_20260707_13_31_12_Pro.jpg,ceedd184b8a9931c151de2b0ca0a129bf39ce1b19ee0bb6031f728d3ad81a95c
+train,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/WIN_20260707_13_28_03_Pro.jpg,Foam-Medium/WIN_20260707_13_28_03_Pro.jpg,eb9dd27b00602b5f708ef9ee5184571b3d815126774a57d37754d6a24713c5f9
+train,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/frame_0001.jpg,Foam-Medium/frame_0001.jpg,58da4415862386a6843a7a57fd5e1a544924d5a544900742867098de519f3e68
+train,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/WIN_20260707_13_35_05_Pro.jpg,Foam-Medium/WIN_20260707_13_35_05_Pro.jpg,a5d8ecc2942255ee5bd34f092be3c1af31895b916d618a4aa626f84138cc4a1d
+train,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/WIN_20260707_13_35_15_Pro.jpg,Foam-Medium/WIN_20260707_13_35_15_Pro.jpg,894de5ae2df2773a0f5509a96fc82c65a6b0116a7ae23b35d43b744a47331565
+train,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/frame_0029.jpg,Foam-Medium/frame_0029.jpg,d9e4d6977d0629f1cc005ce27c432d9514889d8e23d264b65e4471b3e8fd28e0
+train,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/WIN_20260707_13_26_30_Pro.jpg,Foam-Medium/WIN_20260707_13_26_30_Pro.jpg,cf56efd41005a998cf4c6f1ae35b7949dacf45b6c6837e42c94f105d904f0575
+train,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/frame_0003.jpg,Foam-Medium/frame_0003.jpg,8b3921217d30b3842509da5eef32415b3415579a868bdd70da479de115d0e854
+train,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/frame_0017.jpg,Foam-Medium/frame_0017.jpg,b4b87d336c2fdafee4030350adcb3a3d3e6890596f5f1e4f1bec3c8b6b05853e
+train,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/WIN_20260707_13_34_25_Pro.jpg,Foam-Medium/WIN_20260707_13_34_25_Pro.jpg,e16a594e34041bcbdb9d632155e6a0a21fea0c672a7961d9eb989d1721d077a5
+train,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/WIN_20260707_13_34_47_Pro.jpg,Foam-Medium/WIN_20260707_13_34_47_Pro.jpg,30cd0f4a03017c4e2b2b1f65ccd2724f79c3f6bb5f4c4001a4203633b93b4347
+train,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/frame_0002.jpg,Foam-Medium/frame_0002.jpg,7c21d4122a14efb4e81ceda2c946b205ad073d09184bebe722d77e6521780e6b
+train,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/frame_0006.jpg,Foam-Medium/frame_0006.jpg,9e3a21edf5142e7c707c0c1836d0fd95036dd78818ade719749694c56970e386
+train,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/WIN_20260707_13_26_31_Pro.jpg,Foam-Medium/WIN_20260707_13_26_31_Pro.jpg,6771bf0e2d3b75e404a07e23a398f75895fb06373552e28ea5bf628a3edcf4c7
+train,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/WIN_20260707_13_34_34_Pro.jpg,Foam-Medium/WIN_20260707_13_34_34_Pro.jpg,3e7fac71d4e061b4c836f85e2790c6e4accfd8f80034256a7d694cfc70f6844f
+train,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/WIN_20260707_13_29_40_Pro.jpg,Foam-Medium/WIN_20260707_13_29_40_Pro.jpg,09ffdcaabf03d5a90bcad2c3ef437d708e303c26e3b2772df82de03799a6f65f
+train,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/WIN_20260707_13_34_56_Pro.jpg,Foam-Medium/WIN_20260707_13_34_56_Pro.jpg,1b2ab57e15b8f6324f321ac514a8104bbefb71eb9e4ace431fd32dd827a33032
+train,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/WIN_20260707_13_33_10_Pro.jpg,Foam-Medium/WIN_20260707_13_33_10_Pro.jpg,b5fe295b737e1fe6e170d1734a5fcfc8a49cef828f2f442e489467afb29864b5
+train,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/WIN_20260707_13_27_55_Pro.jpg,Foam-Medium/WIN_20260707_13_27_55_Pro.jpg,b45fdac5315ad415c4269fd1f894948fcbce99659d8b3cf23ce22cb0f2a2ec3b
+train,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/WIN_20260707_13_33_00_Pro.jpg,Foam-Medium/WIN_20260707_13_33_00_Pro.jpg,625c603f4491699711b6b6895e584da42d91479c8acb3a7d4291ab4335eafe49
+train,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/frame_0013.jpg,Foam-Medium/frame_0013.jpg,67c71efd5908ef86a5a574d118c3391a41c3857e3ce859fdd1989e3dfe03be4d
+train,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/frame_0011.jpg,Foam-Medium/frame_0011.jpg,2fa2a137e88c00b0e0125e2992533914fddf62b56424b22cb2c95511490ca683
+train,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/frame_0039.jpg,Foam-Medium/frame_0039.jpg,1145226d368be10f14f198f4b7d755ecaf4eba83854cd93cd5424fdeb7c5fd5a
+train,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/WIN_20260707_13_34_12_Pro.jpg,Foam-Medium/WIN_20260707_13_34_12_Pro.jpg,5a591da178937722356422ed13b3953fb5ceab1a418f46574f1e3339f8e1eb50
+train,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/frame_0004.jpg,Foam-Medium/frame_0004.jpg,d4f7ed47e971a323ee83d726586c3aeef4c43ec93786a329a39a95a588bab626
+train,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/frame_0010.jpg,Foam-Medium/frame_0010.jpg,11d378af1e0571e6865d8d33fc968309f9c42faffc37b7e0687cc4152c08858d
+train,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/WIN_20260707_13_28_02_Pro.jpg,Foam-Medium/WIN_20260707_13_28_02_Pro.jpg,5ae3f6016aaedf9556eac2c469e0d1cdbd47f7787b2fb3690227d89b0552970a
+train,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/WIN_20260707_13_31_08_Pro.jpg,Foam-Medium/WIN_20260707_13_31_08_Pro.jpg,1a9635f16bcf58228c281a51b0c03e41429491103cea0a46d1b621ae53c04319
+train,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/WIN_20260707_13_32_04_Pro.jpg,Foam-Medium/WIN_20260707_13_32_04_Pro.jpg,48ffd1212fad494301d296375554e35e63bd2b5f9198a528c11649830e08148a
+train,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/frame_0063.jpg,Foam-Medium/frame_0063.jpg,90fa83f8b2326f3824ab8eafb5c68c4e22356de61944df1eaa42db5e3052f0f5
+train,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/WIN_20260707_13_34_44_Pro.jpg,Foam-Medium/WIN_20260707_13_34_44_Pro.jpg,a39c7f8b6fdce8c3e0537d556ef5ca7f6db63e8c21056a5264e142c5abe802c6
+train,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/WIN_20260707_13_33_02_Pro.jpg,Foam-Medium/WIN_20260707_13_33_02_Pro.jpg,c8867f9558cd2d132b162d1cc1a106d5fa9c29ade34cb3f77a61675d9d14875a
+train,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/WIN_20260707_13_34_54_Pro.jpg,Foam-Medium/WIN_20260707_13_34_54_Pro.jpg,4b3462a3df45b2dbf334b98771ec0716381e60ffd8c4ca351b281937a97db52f
+train,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/WIN_20260707_13_34_36_Pro.jpg,Foam-Medium/WIN_20260707_13_34_36_Pro.jpg,ce6397ab8a828b418b4f68ea69eea0f115008a9b97beb75be39bc0a80fefe14e
+train,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/frame_0062.jpg,Foam-Medium/frame_0062.jpg,8c02def059c8293336f9c415db7f17df6d858de9dd4bca3f2c5ed6dba3fbef7b
+train,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/frame_0076.jpg,Foam-Medium/frame_0076.jpg,747da4445406ea945c35b9fe74968f5dd140de10a24eaa6d1959b56953c8b204
+train,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/WIN_20260707_13_26_57_Pro (2).jpg,Foam-Medium/WIN_20260707_13_26_57_Pro (2).jpg,8d461e2aa9b03cdabffd93ea4af4158bf016de16246a8659ee5781d366b2937e
+train,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/frame_0048.jpg,Foam-Medium/frame_0048.jpg,d4474956b7f1f393d8a07e11afa172148601e728b8d1d322fd148a8d3b04616b
+train,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/frame_0074.jpg,Foam-Medium/frame_0074.jpg,3ddeee0c942e8be043bb8dfa15fb4900183537e946ecb899ed81893c3ffa28b1
+train,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/frame_0075.jpg,Foam-Medium/frame_0075.jpg,079bfd953a7058ca945791eaf6c60d9f3aa61a8458d4b66989c50156fa3463bc
+train,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/frame_0061.jpg,Foam-Medium/frame_0061.jpg,412bbcdc6de473413b4027df0b5fb2e01a827723e12ac8fe4b121de495e33d15
+train,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/frame_0049.jpg,Foam-Medium/frame_0049.jpg,06adf4d9d60476541ca0754e3bccac4ce61f5c131c3d2097adb29759f8565089
+train,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/IMG_5492.png,Foam-Medium/IMG_5492.png,625214d43a26261a62d05aeeb45d935f72352ddf3ccf8c02fae9bf859ae8781a
+train,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/frame_0065.jpg,Foam-Medium/frame_0065.jpg,9e9bf92609c95cb0322c20a4f8dacfcbace5b1eee18d25d91d0aa2e2935efdd8
+train,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/WIN_20260707_13_35_07_Pro.jpg,Foam-Medium/WIN_20260707_13_35_07_Pro.jpg,a16e5bafb6f71f20152c1ee9766c204a334a2bdd55a54dde2081eac69850b1df
+train,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/frame_0070.jpg,Foam-Medium/frame_0070.jpg,fc23e5d9f6e33bb3b2ab17fe2da6ad5ad7cd35d1b4c5533340d36fb031664cf8
+train,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/frame_0064.jpg,Foam-Medium/frame_0064.jpg,ff8a2d1b1aa4cdc79ea991145990f4f7167a2f84eeb4dc230dd2724fbe5dfb6c
+train,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/frame_0072.jpg,Foam-Medium/frame_0072.jpg,641ae5c60d6c0ab2c8b2c3378b0aebfbc84a748f713b382a4ac63d33841bc3e8
+train,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/frame_0066.jpg,Foam-Medium/frame_0066.jpg,e284c1c8e8e987df196954c32eca2ea670b0580ef63c159fc571d6ec64e92094
+train,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/IMG_5491.png,Foam-Medium/IMG_5491.png,9319f13a4419ebd82e48bf10d5e41fa3a73ed9a8aef3dc0f95632f3349cf0a4e
+train,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/WIN_20260707_13_35_21_Pro.jpg,Foam-Medium/WIN_20260707_13_35_21_Pro.jpg,f0fb64799729b7ed7d44305a44d52ee9ed65d3f2068a55213ab281fffdc6b4b3
+train,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/WIN_20260707_13_34_45_Pro.jpg,Foam-Medium/WIN_20260707_13_34_45_Pro.jpg,816af2f2a0ca8d27ea4e9d7271da49a244f20cf2b99b5dc5939d72234342c51c
+train,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/WIN_20260707_13_29_43_Pro.jpg,Foam-Medium/WIN_20260707_13_29_43_Pro.jpg,e635e93af20fb8bacef27f6e1d3ca60becaa7f125378ee8dea20bf4ea5621df7
+train,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/IMG_5490.png,Foam-Medium/IMG_5490.png,2941e2c0fbc606a889a3be40d58d2ae924cec6af1110103a98883c10a7d20c33
+train,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/frame_0073.jpg,Foam-Medium/frame_0073.jpg,c4928e0074c35e487147cb31a13bfcacfa1454a0abcb534c136cfeae4c52b042
+train,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/WIN_20260707_13_34_40_Pro.jpg,Foam-Medium/WIN_20260707_13_34_40_Pro.jpg,acb4b87c1e767bf24da8690ba9471bc21b942c50f25a56c3dc661ac0219eb72f
+train,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/WIN_20260707_13_34_50_Pro.jpg,Foam-Medium/WIN_20260707_13_34_50_Pro.jpg,2448e3dad8931677e038864d2052754b1e2b9a16ebe453a61a4b937d063d2a89
+train,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/frame_0095.jpg,Foam-Medium/frame_0095.jpg,f0607dc8fbd8979c6bdda98149346148c57772f6891cc192d27c907420953d6a
+train,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/frame_0081.jpg,Foam-Medium/frame_0081.jpg,438199ddfe133128191c87b752c5932858b1b61f7f61916e568a3397d285e7aa
+train,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/frame_0042.jpg,Foam-Medium/frame_0042.jpg,d3ba479615105ec51c43a031d07ae6e30ebd8b780d56f545579eb693acc60a79
+train,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/WIN_20260707_13_34_22_Pro.jpg,Foam-Medium/WIN_20260707_13_34_22_Pro.jpg,2590ec89760a3065a181f9eb5b721152971984f3ae12f0314b6cf2371508b9e8
+train,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/WIN_20260707_13_34_32_Pro.jpg,Foam-Medium/WIN_20260707_13_34_32_Pro.jpg,ffc54cfb8ba5a244575321424271232927c3c7769e61e9828609f81f9e3b276e
+train,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/frame_0043.jpg,Foam-Medium/frame_0043.jpg,ef5c869b7539c22dd9078dbf2cf12cc88553f9149f6ad3a5fa011e8756b0d023
+train,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/frame_0057.jpg,Foam-Medium/frame_0057.jpg,c40093a0baa384ae4264353b5159d0d56b58b9c3c8694e453374da7d2a0bb17f
+train,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/IMG_5488.png,Foam-Medium/IMG_5488.png,aadbacee4ce785d0ddd807857229aef257c4b851790eec974941d8b13cd71342
+train,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/frame_0080.jpg,Foam-Medium/frame_0080.jpg,db0afb99cd7d0a9ea7a813b59b365a02bf2a2e95754f106a96e8279284d7aec3
+train,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/frame_0094.jpg,Foam-Medium/frame_0094.jpg,f01f88db4febe1307a98e2a8aff75b6daec7f1166487d4cbf9b2ce4baa0305ac
+train,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/frame_0082.jpg,Foam-Medium/frame_0082.jpg,5605376184723dbe825f12424c0926e6c33c3d15a9f5b46a8113c3bdffce2ebb
+train,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/WIN_20260707_13_28_04_Pro.jpg,Foam-Medium/WIN_20260707_13_28_04_Pro.jpg,9e7a9fca67a1fac7a177d44018adf11e306e338b06eb6498b4801aa91e864487
+train,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/frame_0055.jpg,Foam-Medium/frame_0055.jpg,069665bed114d037126052d275ed33f2336627439cc0f069144d6f9f0eb37557
+train,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/WIN_20260707_13_32_54_Pro.jpg,Foam-Medium/WIN_20260707_13_32_54_Pro.jpg,9d912ec7fdbde39d9d1a92a052816c502a17eb53b0fad9de98172efe8c3f222b
+train,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/WIN_20260707_13_34_14_Pro.jpg,Foam-Medium/WIN_20260707_13_34_14_Pro.jpg,e3e2106b5c2bee96ac2fe89b6968e1b15784cad28d74880767954226081469e1
+train,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/frame_0040.jpg,Foam-Medium/frame_0040.jpg,8b1a2f3fd97f3495cc16982fb50b12425f7f5ebb55816094936972b4610e11b4
+train,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/frame_0068.jpg,Foam-Medium/frame_0068.jpg,f4a47db6e1ff5c3cc0358e758a8b29b738941a199fd093f9df4a3c338e0fcfa7
+train,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/WIN_20260707_13_33_20_Pro.jpg,Foam-Medium/WIN_20260707_13_33_20_Pro.jpg,f0cda2b4db7fe5727f66d4343c91fe952182a0f00a531023186e51e5bba01de1
+train,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/frame_0097.jpg,Foam-Medium/frame_0097.jpg,f50598df4b85569de0ecd9a95fbc5a40d5ac8e13dae531ede7be1a5799da2866
+train,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/frame_0083.jpg,Foam-Medium/frame_0083.jpg,e992dc2f5058cd3a69af8185e7237da1f145019d936c08a35b518b0d1cdf31b7
+train,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/frame_0087.jpg,Foam-Medium/frame_0087.jpg,8bc3513c25c1d327987e42a319cc5a29463bb5c00732d9d0d4bffacd79bf36fa
+train,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/WIN_20260707_13_35_13_Pro.jpg,Foam-Medium/WIN_20260707_13_35_13_Pro.jpg,94abfcc921eb11d79036db477af958911969a5e4b1fda8074c5a7157362b8965
+train,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/frame_0050.jpg,Foam-Medium/frame_0050.jpg,abfdddd60fc60dc96040192622d9cbe2699906a47bd9dafbfd0ee3aef182fe85
+train,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/WIN_20260707_13_31_59_Pro.jpg,Foam-Medium/WIN_20260707_13_31_59_Pro.jpg,1c8152f82b6863714461b75727a5f4d5acc0a4adeb0764cce4af44be8ac33394
+train,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/WIN_20260707_13_34_58_Pro.jpg,Foam-Medium/WIN_20260707_13_34_58_Pro.jpg,c68011094593cdf6d6b7e2d32e19de6ab1eb8d257890c9ae537988963962ee00
+train,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/frame_0079.jpg,Foam-Medium/frame_0079.jpg,572a36260229351beec311bc9c1a437c70513c43cf4c8512b89b4e44bb14032f
+train,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/frame_0045.jpg,Foam-Medium/frame_0045.jpg,ff717b820fed8bb3f81d2c9ed32949f83fe3dbfbbb0615cb2bbee34d97d68de3
+train,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/frame_0086.jpg,Foam-Medium/frame_0086.jpg,10d0ba1aadb3babfee785f230ef94e06153175424442d9f6ba8708faf1f333f0
+train,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/frame_0090.jpg,Foam-Medium/frame_0090.jpg,6b167e912eb508317fe9467eca1ea4be5de98635a847a3afab710741d3a5908a
+train,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/frame_0084.jpg,Foam-Medium/frame_0084.jpg,71652adc4317f1c50c342b4b7c143cafa0c588e2eb6fdc2b886c558da0146fc5
+train,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/frame_0053.jpg,Foam-Medium/frame_0053.jpg,5b1e8421f56ead482127c2013ade5d1f8c26f6b21eb5b8d615b9fa40499582e0
+train,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/WIN_20260707_13_32_01_Pro.jpg,Foam-Medium/WIN_20260707_13_32_01_Pro.jpg,4bce07e0f48e01d58d23e1902f532465f58d0b8e41ceef1349cf8201ae7b58a2
+train,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/frame_0046.jpg,Foam-Medium/frame_0046.jpg,92192922397e165af9df564f99ee5b5c18169de13b4f5c595e30a00b1548a3c1
+train,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/frame_0052.jpg,Foam-Medium/frame_0052.jpg,5a057108e963431a94c5d7d22a35b51f2759bcceddf2bebfbc73be090b2b51a8
+train,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/frame_0091.jpg,Foam-Medium/frame_0091.jpg,08d7ef92d6daf57375995db3aa2f0249b5165479110f5fbd15a48a71df2a4676
+train,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/frame_0009.jpg,Foam-Medium/frame_0009.jpg,4b75e3d3cfb195ac7fa6229db471e6465d3647f299c104e73ed27ef12682d064
+train,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/frame_0035.jpg,Foam-Medium/frame_0035.jpg,5ac5c180d742437f303b512074dbb8d1863c57b8d4afb224d21a111b1dc23d7a
+train,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/WIN_20260707_13_34_28_Pro.jpg,Foam-Medium/WIN_20260707_13_34_28_Pro.jpg,7f7d81b0511a1024889a19d377939e11d62b02bc2bb2a7498a031a9ab59d4f8b
+train,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/WIN_20260707_13_35_11_Pro.jpg,Foam-Medium/WIN_20260707_13_35_11_Pro.jpg,06878d492fcdd6ad4abf2e0cd027fa7021bc780f06291bd51fa29695d72eb76e
+train,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/WIN_20260707_13_32_57_Pro.jpg,Foam-Medium/WIN_20260707_13_32_57_Pro.jpg,77d6123dae03c355b1af7b31027eb6c853011b1af6af7bc98d95fcc60e57fc76
+train,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/frame_0020.jpg,Foam-Medium/frame_0020.jpg,0cb27c0df1e331de0482b8778a6d7688f35da404f352c8f114abb203f7b024b8
+train,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/frame_0034.jpg,Foam-Medium/frame_0034.jpg,2588addcfbf177d1c9edbe62d3b3073f74347e8d90514df7a12de2cef1c09fdf
+train,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/frame_0008.jpg,Foam-Medium/frame_0008.jpg,1365d4051e301c55f55187f84f19de0eaddd4933ad88ba0e2f2d694334e79f0c
+train,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/WIN_20260707_13_34_31_Pro.jpg,Foam-Medium/WIN_20260707_13_34_31_Pro.jpg,2fb0eb84e4789c1ebcaf4731e0c2fd266f2987d22e35b454697cb5f3b729ff7f
+train,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/frame_0022.jpg,Foam-Medium/frame_0022.jpg,a5c205ae551acd9bf8c19a2264bfe425cad2a9a4a60c5387e398475b7056c965
+train,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/frame_0036.jpg,Foam-Medium/frame_0036.jpg,6bd1299563bd199520b31b6797aa19de12a79394195c83f96a776a2a5ec6ae08
+train,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/WIN_20260707_13_35_08_Pro.jpg,Foam-Medium/WIN_20260707_13_35_08_Pro.jpg,4f14e8a71e366c8e0b118b0dce8e7c7342a0bf4a9d76d2d2b58c657372eed40c
+train,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/WIN_20260707_13_34_43_Pro.jpg,Foam-Medium/WIN_20260707_13_34_43_Pro.jpg,651804aef18da26e8ec8b239a223c37c078ddd30cea057c9f2ad8b58797cefd9
+train,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/WIN_20260707_13_33_05_Pro.jpg,Foam-Medium/WIN_20260707_13_33_05_Pro.jpg,fcd787433aca1a086e8d410c0425589d2a21c3bb49cf3448f2210477e61a98c7
+train,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/WIN_20260707_13_26_56_Pro.jpg,Foam-Medium/WIN_20260707_13_26_56_Pro.jpg,52e006befab15a31fe0b051115493564c950f731d836c73484d90ac7ce912c0b
+train,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/frame_0037.jpg,Foam-Medium/frame_0037.jpg,dc1a5684feb1b6831fd00adb129934c141337ea9e71050d0ca0be784b1f03648
+train,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/frame_0027.jpg,Foam-Medium/frame_0027.jpg,afc49887a76428448fb42a115e293080c556e4882d936d325d40ec79a06ed035
+train,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/WIN_20260707_13_34_52_Pro.jpg,Foam-Medium/WIN_20260707_13_34_52_Pro.jpg,77bbbabfa9b884bcdc7c30e45502629ac7405625b3bd6eb90ddee24e63b2840c
+train,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/WIN_20260707_13_33_04_Pro.jpg,Foam-Medium/WIN_20260707_13_33_04_Pro.jpg,eb82f925ed9346c961d4d7c85e37672971fc12d312a0dc6d919828f4acdbf3b1
+train,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/frame_0032.jpg,Foam-Medium/frame_0032.jpg,5a9b52b6c0a814de4c6daa159087701042cbb8dee0c76e4e4a278760768a6e2b
+train,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/frame_0026.jpg,Foam-Medium/frame_0026.jpg,6905a970cd8f0910a09a48815e2eec2cb9d7ec15c4850778709165cc08455235
+train,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/WIN_20260707_13_32_02_Pro.jpg,Foam-Medium/WIN_20260707_13_32_02_Pro.jpg,d859a9f3ea2d2259689d46b25fe82b5bf4fdeff3f3cdfba04e2a453acf9a035a
+train,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/frame_0024.jpg,Foam-Medium/frame_0024.jpg,e28f230c64b9d5963f6b39b680a8201d807c9507d92380a7de72d5ea53e9df42
+train,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/frame_0018.jpg,Foam-Medium/frame_0018.jpg,11142632ec9deaa70726397354d6a89e241ea10e130589f9287e4063fc461908
+train,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/WIN_20260707_13_34_29_Pro.jpg,Foam-Medium/WIN_20260707_13_34_29_Pro.jpg,3705fd040e55698a1f75708bdf490082cdfda848767cb771c67a644fd34eaf0f
+train,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/WIN_20260707_13_32_56_Pro.jpg,Foam-Medium/WIN_20260707_13_32_56_Pro.jpg,d3bb5601834d2e8bc8dc509cc465e164028c87c4abf52c76b2315bf149069d19
+train,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/WIN_20260707_13_33_22_Pro.jpg,Foam-Medium/WIN_20260707_13_33_22_Pro.jpg,b2ed04ae6551b011962ad424717155923764f432d5c31ebc193536d685a81d7c
+train,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/frame_0019.jpg,Foam-Medium/frame_0019.jpg,9dbc2e8105ea8ca88064c71699037080301477dc9acef89295c94ef847830be8
+train,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/frame_0025.jpg,Foam-Medium/frame_0025.jpg,130f7c02b51db6b4ead94eaf7fead2926f262c80469748feeb65586c937e1ccf
+train,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/frame_0031.jpg,Foam-Medium/frame_0031.jpg,fcfac8207af28cee324a2a7404d1366b44805750ca92637d9b32605bf07d595d
+train,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/WIN_20260707_13_28_29_Pro.jpg,Foam-Medium/WIN_20260707_13_28_29_Pro.jpg,da751ed256c5b296a21c1eb13c38e9f756e1a12cc5d75584ffc98b06a647036e
+train,No Foam,4,root,No Foam::root::No Foam/frame_0028.jpg,No Foam/frame_0028.jpg,6ec1d093d11203bdee86d1de202dcc6ec7daa28385d0b2c1ac292edca656f7c6
+train,No Foam,4,root,No Foam::root::No Foam/frame_0014.jpg,No Foam/frame_0014.jpg,52a5a1012e0c5c4828679b413f7237fce8074a52fa66697d25ec40b9d21091c7
+train,No Foam,4,root,No Foam::root::No Foam/WIN_20260707_13_06_02_Pro.jpg,No Foam/WIN_20260707_13_06_02_Pro.jpg,34d0d90e96c6ba8913e9a683c2982b2c055ba8a5ef0f012d11a2aab8e050909e
+train,No Foam,4,root,No Foam::root::No Foam/frame_0148.jpg,No Foam/frame_0148.jpg,f2ecbb99b801e65f0e2bc1cd661cbce4e9cc92b583fa73fb49a00cccc8ba23fb
+train,No Foam,4,root,No Foam::root::No Foam/frame_0160.jpg,No Foam/frame_0160.jpg,63d111974504eec328522185cf6ef8f530068c99cbb704474d63158f620e7856
+train,No Foam,4,root,No Foam::root::No Foam/frame_0175.jpg,No Foam/frame_0175.jpg,eb5f667d0e9a18fc5e150290066494c7bb4aad0a9b1cdf2ffc60250a185f1e8e
+train,No Foam,4,root,No Foam::root::No Foam/WIN_20260707_13_09_01_Pro.jpg,No Foam/WIN_20260707_13_09_01_Pro.jpg,04d72b76f078362388d334271a0ca267e8789bd5285ce64d1c1264e64d70189a
+train,No Foam,4,root,No Foam::root::No Foam/frame_0001.jpg,No Foam/frame_0001.jpg,850585aa96bae95011827348964404da3c5e78ed564f3481852552cd1504f0db
+train,No Foam,4,root,No Foam::root::No Foam/frame_0003.jpg,No Foam/frame_0003.jpg,c40e66146024b02a6f9dc33ff7175cf391b1b194df09c988194fbd7fec041cf0
+train,No Foam,4,root,No Foam::root::No Foam/frame_0017.jpg,No Foam/frame_0017.jpg,7f84c02dfc39fb69f3b5f8f84c05fb920ebbcaf3b4da1d38c1cc9ec5e189d356
+train,No Foam,4,root,No Foam::root::No Foam/WIN_20260707_13_09_45_Pro.jpg,No Foam/WIN_20260707_13_09_45_Pro.jpg,5688cd717b50daf8b926e875bab0969b7ed7690bfbf343918841416155076e39
+train,No Foam,4,root,No Foam::root::No Foam/WIN_20260707_13_07_32_Pro.jpg,No Foam/WIN_20260707_13_07_32_Pro.jpg,751830e2b480e14226de8fd427ca23b77a771203101ef23f9675b39fb3a153f5
+train,No Foam,4,root,No Foam::root::No Foam/frame_0177.jpg,No Foam/frame_0177.jpg,1b8c47cb01e1452dfe5c1ef145cb5cf8a9657888536a606f28a50f47cb4f6275
+train,No Foam,4,root,No Foam::root::No Foam/frame_0162.jpg,No Foam/frame_0162.jpg,6b54485462082a055f9af33403b9c42d6c2e95bdfea9c7ccedaa7c7ff09c0a94
+train,No Foam,4,root,No Foam::root::No Foam/frame_0016.jpg,No Foam/frame_0016.jpg,d845dab0096d88e909bfafec5b35c4b67ba106d6b5dc555e3937b0bdea1d8898
+train,No Foam,4,root,No Foam::root::No Foam/frame_0002.jpg,No Foam/frame_0002.jpg,92ddfa8c8afc4db034ce50e87a5301da6c78f8e5c954363b803427adac34d04e
+train,No Foam,4,root,No Foam::root::No Foam/frame_0006.jpg,No Foam/frame_0006.jpg,1e08c8d4f6ea0c339b505a750156d4eb9d3f78550bd815c9f1640ea6dcf6ca69
+train,No Foam,4,root,No Foam::root::No Foam/frame_0012.jpg,No Foam/frame_0012.jpg,2f58cf04a11ccab4f04be540e46de9afefb8adad9a87ed7a2043280c9669dd03
+train,No Foam,4,root,No Foam::root::No Foam/frame_0172.jpg,No Foam/frame_0172.jpg,2457b002d9aae7569f15b21ec5fd464cc3d73e9707c59e16f9f3c914cc5e70f2
+train,No Foam,4,root,No Foam::root::No Foam/frame_0166.jpg,No Foam/frame_0166.jpg,369301d3efc2f77d99ee59df192aa4bc01b406579789c91865704197910f6d6e
+train,No Foam,4,root,No Foam::root::No Foam/WIN_20260707_13_09_36_Pro.jpg,No Foam/WIN_20260707_13_09_36_Pro.jpg,695d00ceb8a32efbb1097b49f5720779d50225d735c2f5004b1358e6c56da509
+train,No Foam,4,root,No Foam::root::No Foam/frame_0167.jpg,No Foam/frame_0167.jpg,7939cc1ebf2fa5a4fb98074bcb79330857b5fd14e7ea510fb10badfe808bc595
+train,No Foam,4,root,No Foam::root::No Foam/frame_0173.jpg,No Foam/frame_0173.jpg,e9915db2d1abddea96493a5119d1a46d75c96f9dc63c3efa2d5828e2744bbe65
+train,No Foam,4,root,No Foam::root::No Foam/WIN_20260707_13_40_54_Pro.jpg,No Foam/WIN_20260707_13_40_54_Pro.jpg,e8d8bd920e3eb86fc622697b532f1ad21c590a4978a58af764025f072118330e
+train,No Foam,4,root,No Foam::root::No Foam/frame_0007.jpg,No Foam/frame_0007.jpg,d9e59d2b28e3326cd4fc7370952e5ebf3abb8fbee911b1acb44df297876c93ea
+train,No Foam,4,root,No Foam::root::No Foam/frame_0011.jpg,No Foam/frame_0011.jpg,a521c8921d13335bb9dd7dd0c8527683d10786b45a9b228cef4c31675d0d5230
+train,No Foam,4,root,No Foam::root::No Foam/frame_0039.jpg,No Foam/frame_0039.jpg,716368e1e5a83e0a2854b861912c2192c2fb5116820b4a81d6219be349a0c80d
+train,No Foam,4,root,No Foam::root::No Foam/frame_0165.jpg,No Foam/frame_0165.jpg,ee87e5715f6cbb428d7f6ee8c4ed295b23616fbf5261b7097e51a08b7242d687
+train,No Foam,4,root,No Foam::root::No Foam/frame_0171.jpg,No Foam/frame_0171.jpg,b87fda7a01987aa9e2d0750bb661082e941d222de0785653f4cc35faeefd3ca3
+train,No Foam,4,root,No Foam::root::No Foam/frame_0159.jpg,No Foam/frame_0159.jpg,5cbf6e183e42e3eb66d26edbfc643eabcaa624d7ba45919bfea1c763eb4bd6c2
+train,No Foam,4,root,No Foam::root::No Foam/frame_0158.jpg,No Foam/frame_0158.jpg,cfd580c0541e716ccafacb951a032bb2ae52f1c0590b8a5b9b1f401390f9911e
+train,No Foam,4,root,No Foam::root::No Foam/frame_0170.jpg,No Foam/frame_0170.jpg,41f4e53823d8e1a6137000d363e23783b8094311e29fa49d8fc1d85588fe7c7a
+train,No Foam,4,root,No Foam::root::No Foam/frame_0164.jpg,No Foam/frame_0164.jpg,6df8305da435c20d2648bb815c28c6c298199b25d91ede39b69008690f749b8b
+train,No Foam,4,root,No Foam::root::No Foam/WIN_20260707_13_41_06_Pro.jpg,No Foam/WIN_20260707_13_41_06_Pro.jpg,7e94a3ffe0e2dd074a2cc5b87ed11c15683ddbf447a4f66765ec4c57cf681208
+train,No Foam,4,root,No Foam::root::No Foam/frame_0038.jpg,No Foam/frame_0038.jpg,e65c99331e0bf21e94f3036f66d62dca4629dc9f640aecf80369b2a46f8ab415
+train,No Foam,4,root,No Foam::root::No Foam/frame_0004.jpg,No Foam/frame_0004.jpg,0de2dfa5ea7a4398e309e82e56939a3c69d34b5c024aadbe3fd35743073be527
+train,No Foam,4,root,No Foam::root::No Foam/frame_0010.jpg,No Foam/frame_0010.jpg,d0fac30e77158dd60b8a111566d6f538deeca68c93c34b04639626d2fe678208
+train,No Foam,4,root,No Foam::root::No Foam/frame_0088.jpg,No Foam/frame_0088.jpg,3e1c0a6312dcee7314ef9601f53f3700460808cb88c4a3b061ca7122b6c4fa72
+train,No Foam,4,root,No Foam::root::No Foam/WIN_20260707_13_06_18_Pro.jpg,No Foam/WIN_20260707_13_06_18_Pro.jpg,f9022975344fa63ea2a5f819bba8cc1f97ac0b15b15f87de0d69c89508ac27de
+train,No Foam,4,root,No Foam::root::No Foam/frame_0077.jpg,No Foam/frame_0077.jpg,5c1237f782ebe9600a1a79f4aeb3896a941e1ff7147b4ca54de7a9eb5e7f703c
+train,No Foam,4,root,No Foam::root::No Foam/frame_0063.jpg,No Foam/frame_0063.jpg,866140001610fa894c22fbabdb26a206d13355e1683c5475a13cd7d1749e1e16
+train,No Foam,4,root,No Foam::root::No Foam/frame_0103.jpg,No Foam/frame_0103.jpg,c2f8460a6af1bf132dbe13bd8a023ec5dc21fc2544851e60ab9ec44b95d9a3a4
+train,No Foam,4,root,No Foam::root::No Foam/frame_0117.jpg,No Foam/frame_0117.jpg,2ba6589cb83cf10dcdc46a9fe425f555de9bf0506481b6e019b8c3c1eddf0eee
+train,No Foam,4,root,No Foam::root::No Foam/frame_0116.jpg,No Foam/frame_0116.jpg,052d2bdf4321ed321bc29db3a21c2e8f739455c706e85576eeebedf3c19b4fb0
+train,No Foam,4,root,No Foam::root::No Foam/frame_0102.jpg,No Foam/frame_0102.jpg,8b2df9cfbe7e90da449e86b901493e4c2e09c963f0ae765ed29c4220fbb0e8ac
+train,No Foam,4,root,No Foam::root::No Foam/frame_0062.jpg,No Foam/frame_0062.jpg,d00c56a4114aa1868fc2add5d9cda4fd27299cc915b4d26edc3b2873f94836b9
+train,No Foam,4,root,No Foam::root::No Foam/frame_0076.jpg,No Foam/frame_0076.jpg,9996da8e704bb7c2a4ceac8456fbc7d3bdc5cc104c1bc91375d2fdf33925d377
+train,No Foam,4,root,No Foam::root::No Foam/WIN_20260707_13_40_56_Pro.jpg,No Foam/WIN_20260707_13_40_56_Pro.jpg,53ca9950bc8c73c0e5c04197c38119f0f07b0cd0853140b27bd1c0c09902b9bd
+train,No Foam,4,root,No Foam::root::No Foam/IMG_5468.png,No Foam/IMG_5468.png,a90278d8f6820cbe51ea33d9e099f52569bdedecb07afc35021eb53e53cd6236
+train,No Foam,4,root,No Foam::root::No Foam/frame_0048.jpg,No Foam/frame_0048.jpg,40e8bc19c8e4d354b35f033d00ac756c87b4921450d18810e643d3a7aafe6a3c
+train,No Foam,4,root,No Foam::root::No Foam/frame_0060.jpg,No Foam/frame_0060.jpg,9b64be2682265c6365c1aeaaf4f6f8f80f61457577764d30012e6b495276fd11
+train,No Foam,4,root,No Foam::root::No Foam/frame_0128.jpg,No Foam/frame_0128.jpg,559b6dc8e0bf6adb703e5536fea850c6aa5e8cfc231834c197b143ca06698c72
+train,No Foam,4,root,No Foam::root::No Foam/frame_0100.jpg,No Foam/frame_0100.jpg,207d40c84f0cffc9d98cfd07497c7f5378823f7136ac39eff7534d7c19390be5
+train,No Foam,4,root,No Foam::root::No Foam/frame_0115.jpg,No Foam/frame_0115.jpg,741ff2612a19736c3be2fab9fd4aede10562445e422d89d192509b1fc595a66f
+train,No Foam,4,root,No Foam::root::No Foam/frame_0129.jpg,No Foam/frame_0129.jpg,36d0a750e38f8c5a9897ebfae3e387c592a96646eac3feb3bef0503737e35304
+train,No Foam,4,root,No Foam::root::No Foam/frame_0075.jpg,No Foam/frame_0075.jpg,78ce6200a5e45181480e68b92d64e3b614eab9bb41f8cb2c443cfdf31bfe0c01
+train,No Foam,4,root,No Foam::root::No Foam/frame_0061.jpg,No Foam/frame_0061.jpg,e32d137053ff91784f626edd6b397c2274e599e89b18af2fbad7cddbf5943515
+train,No Foam,4,root,No Foam::root::No Foam/frame_0065.jpg,No Foam/frame_0065.jpg,95b496fd90276a84284c691af60845f339c35c4792a78152f0603c75fe25cbea
+train,No Foam,4,root,No Foam::root::No Foam/frame_0071.jpg,No Foam/frame_0071.jpg,c60e5b91ebdf53ba5c33b1bbd68eedd59a1573c604bb4afb8994f3a220c4364d
+train,No Foam,4,root,No Foam::root::No Foam/frame_0111.jpg,No Foam/frame_0111.jpg,f96f9f617c000cabcef1e7282be21ce4074ff3b7b07f3d0588bbb383cf98aee6
+train,No Foam,4,root,No Foam::root::No Foam/frame_0105.jpg,No Foam/frame_0105.jpg,e843527f31385da4a378a99464da8bea16f1d61fdb3b8a9970ad4395dd872eed
+train,No Foam,4,root,No Foam::root::No Foam/frame_0138.jpg,No Foam/frame_0138.jpg,2d4042a5668eeeb49ce4063db5ba7b4f9c5d857cfe9a4f98a139d4ccb4870cb8
+train,No Foam,4,root,No Foam::root::No Foam/frame_0104.jpg,No Foam/frame_0104.jpg,44f3d210eef76bc574f9bbff17f66a55ec2943d3fe02b342f6ef05d98e8cfe25
+train,No Foam,4,root,No Foam::root::No Foam/WIN_20260707_13_07_16_Pro.jpg,No Foam/WIN_20260707_13_07_16_Pro.jpg,0c4e71bf4831f261a5d069b3c104af0de76b16e2499f9748df2c60c0af28655d
+train,No Foam,4,root,No Foam::root::No Foam/frame_0058.jpg,No Foam/frame_0058.jpg,32be525208238fb33c551289f8dec5b06a46265427571be9193f436b19f0bd49
+train,No Foam,4,root,No Foam::root::No Foam/frame_0070.jpg,No Foam/frame_0070.jpg,70a2049eaa5a2a16436d61933a8cea04a561ce9c9e9913be04987dcbcdcc21d0
+train,No Foam,4,root,No Foam::root::No Foam/WIN_20260707_13_41_15_Pro.jpg,No Foam/WIN_20260707_13_41_15_Pro.jpg,28bf182aad309799b6b5a894d99c7c2522ba375c2b30d8b8b8533a3c9828a631
+train,No Foam,4,root,No Foam::root::No Foam/WIN_20260707_13_09_03_Pro.jpg,No Foam/WIN_20260707_13_09_03_Pro.jpg,72c2455f5469f332b4cb0682d46e742df21414b4e1a17bcc8b13efe6dcd3fd6d
+train,No Foam,4,root,No Foam::root::No Foam/frame_0099.jpg,No Foam/frame_0099.jpg,bc03123c0cd5e8252c5820b03392c083a2b1b85ff2653e308767fc1139f9d647
+train,No Foam,4,root,No Foam::root::No Foam/WIN_20260707_13_06_19_Pro.jpg,No Foam/WIN_20260707_13_06_19_Pro.jpg,f2b9fe59db66354a1b88fad54688f53a4d7c561aa0de83b7141e72eb138ff1d7
+train,No Foam,4,root,No Foam::root::No Foam/frame_0112.jpg,No Foam/frame_0112.jpg,0383825ec36b33b6d3282ac4e6c6e97617c6508881ddfdc69c03a47ff9f13d7d
+train,No Foam,4,root,No Foam::root::No Foam/frame_0107.jpg,No Foam/frame_0107.jpg,1878f990cd12675656ff81907a5748fe78cb39809195dd5a81d496e7d32b4d1a
+train,No Foam,4,root,No Foam::root::No Foam/WIN_20260707_13_40_35_Pro.jpg,No Foam/WIN_20260707_13_40_35_Pro.jpg,f54188fd3871dae2b363ae5a04e7748c74d2426eafc7519be6a8a371c1604caf
+train,No Foam,4,root,No Foam::root::No Foam/frame_0067.jpg,No Foam/frame_0067.jpg,e2f089035df232443d5054396a4d83b871f2e3c9ecd914572ecdc64111c4961f
+train,No Foam,4,root,No Foam::root::No Foam/frame_0073.jpg,No Foam/frame_0073.jpg,1b5b7a0ca509045308fc9a55d0d281833b31692c35ca763783ae84af877e78a3
+train,No Foam,4,root,No Foam::root::No Foam/frame_0098.jpg,No Foam/frame_0098.jpg,a8ecc71325bf26e6c94777fd1b435cffbb6cafa2a703f6f53b72f7e1c1a90885
+train,No Foam,4,root,No Foam::root::No Foam/frame_0095.jpg,No Foam/frame_0095.jpg,a5851720745b20186c30c1a2c0b7705a4679f7bcac263ed7854ed8d51379b824
+train,No Foam,4,root,No Foam::root::No Foam/frame_0081.jpg,No Foam/frame_0081.jpg,7fb7e70af65650d998d7645d7b43537edd8de7f7c8810b55c082ecd5939377e1
+train,No Foam,4,root,No Foam::root::No Foam/frame_0056.jpg,No Foam/frame_0056.jpg,0ce19dd24ddfb42740e9dbd2de995082cd21cc4e103de5c9bd296c7a979cfa49
+train,No Foam,4,root,No Foam::root::No Foam/frame_0042.jpg,No Foam/frame_0042.jpg,7b9d09ff5baef545a49d3fab938a8c0a1b2871307f7951b46a2cf9361e60c908
+train,No Foam,4,root,No Foam::root::No Foam/WIN_20260707_13_41_09_Pro.jpg,No Foam/WIN_20260707_13_41_09_Pro.jpg,b8cd8242a5dc2ad1cdb816bb9c80ed33ffc193a5708ddca9593c60566e81f5cd
+train,No Foam,4,root,No Foam::root::No Foam/frame_0137.jpg,No Foam/frame_0137.jpg,dd46bd84aaa73fba12630a501e8d548ee2de539eeca1ccda825e8e1e9090d792
+train,No Foam,4,root,No Foam::root::No Foam/frame_0123.jpg,No Foam/frame_0123.jpg,bed6ad1a420a5f66ac933f8dbb86a8ce3eb65f297b564cb7ecfc52d312a41821
+train,No Foam,4,root,No Foam::root::No Foam/WIN_20260707_13_07_25_Pro.jpg,No Foam/WIN_20260707_13_07_25_Pro.jpg,36597b598bf79d72b4a053556a703e4b54dd9289c2155974d9a3a12ea59b4ee7
+train,No Foam,4,root,No Foam::root::No Foam/WIN_20260707_13_07_35_Pro.jpg,No Foam/WIN_20260707_13_07_35_Pro.jpg,b3fa75626a663d606a677dde57b007bf58600f3422b5f81cb09148237fbbb477
+train,No Foam,4,root,No Foam::root::No Foam/frame_0043.jpg,No Foam/frame_0043.jpg,d86341fb36330c3ad7a081bfd407cc3ae0c36fb3842584c1b2fe1fcfdf8d9f03
+train,No Foam,4,root,No Foam::root::No Foam/frame_0057.jpg,No Foam/frame_0057.jpg,f1ff9cafc53677450056fae7e2f096945b8d7d5286692029473c809942575b4d
+train,No Foam,4,root,No Foam::root::No Foam/frame_0094.jpg,No Foam/frame_0094.jpg,2c4470781015d3c6b168aa95113eed89bfea8ad6c6da66de4da0bf83179885f4
+train,No Foam,4,root,No Foam::root::No Foam/IMG_5461.png,No Foam/IMG_5461.png,c78ccbe1e957f0e3f7e42939c857ba6b30995dba98b1e464e77bc7c502c839cb
+train,No Foam,4,root,No Foam::root::No Foam/WIN_20260707_13_09_16_Pro.jpg,No Foam/WIN_20260707_13_09_16_Pro.jpg,3a48be3711825c0555aebb2d57be2e86b1fcaeadc328303f8a5acf37fc514912
+train,No Foam,4,root,No Foam::root::No Foam/frame_0135.jpg,No Foam/frame_0135.jpg,e9f51c64147ba8ff4079a1086606d8a6d7f70dfe836d509982d8cb53ed6883ea
+train,No Foam,4,root,No Foam::root::No Foam/frame_0121.jpg,No Foam/frame_0121.jpg,9856224bd3b47a9c1c3c62c26d56c96ba9c96e9392ca172cd58e43b3cf2502b9
+train,No Foam,4,root,No Foam::root::No Foam/frame_0120.jpg,No Foam/frame_0120.jpg,d053179e87ab3edf47f6a3223c0f5f5e88f4e697ba96f95f08c70afb06ac52d9
+train,No Foam,4,root,No Foam::root::No Foam/frame_0134.jpg,No Foam/frame_0134.jpg,3de959a0d428cb1cd5aa230ef4635eba3930747fb3f37c4c133418844a6478c0
+train,No Foam,4,root,No Foam::root::No Foam/frame_0040.jpg,No Foam/frame_0040.jpg,20fd4f3f078e05b3ff1434611b0c332cd5780317b7673e00b60b08b476a005c7
+train,No Foam,4,root,No Foam::root::No Foam/IMG_5460.png,No Foam/IMG_5460.png,1bba770a2b0f2725b0357c9312bfc7d3be67fefbaaa444aac0edb4d52b24a040
+train,No Foam,4,root,No Foam::root::No Foam/frame_0083.jpg,No Foam/frame_0083.jpg,58a8a5aebfeece0c3a7a8d43836cf6765557165ed7738d580e906449ed384a11
+train,No Foam,4,root,No Foam::root::No Foam/frame_0087.jpg,No Foam/frame_0087.jpg,5da193007df1ed1b124f4111f40b687c8f3c7cd7f278e20b7fdce4d409a2ec02
+train,No Foam,4,root,No Foam::root::No Foam/frame_0093.jpg,No Foam/frame_0093.jpg,2625217e96d72e828030c17d3dd47c8fa424691ec5bf099dbc68f66d47942c00
+train,No Foam,4,root,No Foam::root::No Foam/IMG_5464.png,No Foam/IMG_5464.png,1c7b61c751eff8576633fff82613c3857a7df3dd0ba50727b0bb05cdaa6c499d
+train,No Foam,4,root,No Foam::root::No Foam/WIN_20260707_13_05_55_Pro.jpg,No Foam/WIN_20260707_13_05_55_Pro.jpg,3de4aa227085661952bdb4f458fdcc3c1c9b84319f2c5787ef09500dd1160b92
+train,No Foam,4,root,No Foam::root::No Foam/frame_0044.jpg,No Foam/frame_0044.jpg,a36f582a1e66572b8c173283da5787976e7aa4c930b70a50f9af4595f65bb396
+train,No Foam,4,root,No Foam::root::No Foam/frame_0050.jpg,No Foam/frame_0050.jpg,8f0cfbdf49387dfa186cd6d00c2627d0fee5eb77b165d907b71a6a6e4dcaf17a
+train,No Foam,4,root,No Foam::root::No Foam/frame_0078.jpg,No Foam/frame_0078.jpg,ff606a9c28da31098bc33297f046f4e0fe62a1b36fe282c69b50368b2d2fbc6e
+train,No Foam,4,root,No Foam::root::No Foam/WIN_20260707_13_40_38_Pro.jpg,No Foam/WIN_20260707_13_40_38_Pro.jpg,0c23a80362533eb5b0338146fe97b0a9a3f4b2ede60145e71f4ce2e6e559174a
+train,No Foam,4,root,No Foam::root::No Foam/WIN_20260707_13_41_01_Pro.jpg,No Foam/WIN_20260707_13_41_01_Pro.jpg,ab9034dff091698fa54ea990fc2960b18bc447166f3ce4b18f43f54e0d587c25
+train,No Foam,4,root,No Foam::root::No Foam/frame_0130.jpg,No Foam/frame_0130.jpg,28d95f88ccde4df4015ac625e064c9bf6fb13ff80ca58d08fa7894f36e5bc8d4
+train,No Foam,4,root,No Foam::root::No Foam/frame_0118.jpg,No Foam/frame_0118.jpg,3b124994214dffac5a04db445d8b50ac0eccdc5c65de3e20dcc11a7769b688fe
+train,No Foam,4,root,No Foam::root::No Foam/frame_0119.jpg,No Foam/frame_0119.jpg,01dd3d1c45eed65718ae8ecbfb3e3a8a69f4c55e70da4ac865ea8efcc9794e6a
+train,No Foam,4,root,No Foam::root::No Foam/frame_0131.jpg,No Foam/frame_0131.jpg,867da9c0d75ba221657b530b8f0d165131f0a8e00266b5f9c17c93eb228eeab0
+train,No Foam,4,root,No Foam::root::No Foam/WIN_20260707_13_09_28_Pro.jpg,No Foam/WIN_20260707_13_09_28_Pro.jpg,bbdbe0218e9f1383c6e1bb130f006cc35bf7f079b55a053a2965e1d874ca8ba9
+train,No Foam,4,root,No Foam::root::No Foam/IMG_5465.png,No Foam/IMG_5465.png,0f831b77eca06c89b4bca21b5eec4da74f4a003fa4b50bc78225f2f8b8a32abb
+train,No Foam,4,root,No Foam::root::No Foam/IMG_5471.png,No Foam/IMG_5471.png,c36203a7a27021e05d297c695102521affb52f09228c6069ef3c22ea97d455fe
+train,No Foam,4,root,No Foam::root::No Foam/frame_0086.jpg,No Foam/frame_0086.jpg,7696d93fe140c5b4cc83ffe483e55b3ad2054266fd9d07fe850a652d5d237c38
+train,No Foam,4,root,No Foam::root::No Foam/IMG_5467.png,No Foam/IMG_5467.png,d0b834f4d815b6067b37279207e5cf2ca1912ddef71b1404d8cded55751ac64a
+train,No Foam,4,root,No Foam::root::No Foam/frame_0090.jpg,No Foam/frame_0090.jpg,4e9d343d08be030bab8c8209264b4fbd59d0e3021ad628d6342c9cf91331f185
+train,No Foam,4,root,No Foam::root::No Foam/frame_0084.jpg,No Foam/frame_0084.jpg,cb8b5db8c21c7aaf339665ea311e9b8b1150d1e83ffa2b3217d3a92e845fc961
+train,No Foam,4,root,No Foam::root::No Foam/frame_0053.jpg,No Foam/frame_0053.jpg,77523fed6c3250f0da6a382db36c86231c6ed83239c424b105ddd256d5db9690
+train,No Foam,4,root,No Foam::root::No Foam/frame_0047.jpg,No Foam/frame_0047.jpg,f8a4ea404e23bdcd79cfac500a68b9dda0e8e85f286b8a63aff958ed473901ac
+train,No Foam,4,root,No Foam::root::No Foam/frame_0127.jpg,No Foam/frame_0127.jpg,e7717f530ef26d2b8b553eb55a4fcb59e466b897f5f4ee6c3a3eb11f783a5f7f
+train,No Foam,4,root,No Foam::root::No Foam/frame_0133.jpg,No Foam/frame_0133.jpg,78c175d2448e3bc0feaf616e926fb3ac711835876a372823c333128d6d8f7166
+train,No Foam,4,root,No Foam::root::No Foam/WIN_20260707_13_07_34_Pro.jpg,No Foam/WIN_20260707_13_07_34_Pro.jpg,1de3118509a691582b59ca9b1547baa0372196a2f07a2d75df2b9d526ab04805
+train,No Foam,4,root,No Foam::root::No Foam/frame_0132.jpg,No Foam/frame_0132.jpg,d0b78119a1cb2856466279d2159267027be3295ae707513e82f34c5210f20f8b
+train,No Foam,4,root,No Foam::root::No Foam/frame_0126.jpg,No Foam/frame_0126.jpg,61f91b0fe857f406554d92474b83e5087d065749cdcc51003d409b372f320b0c
+train,No Foam,4,root,No Foam::root::No Foam/frame_0046.jpg,No Foam/frame_0046.jpg,7f094e224bb804a2d794e46a98116501d9d59caf7f23e72e41a1d8a26797e406
+train,No Foam,4,root,No Foam::root::No Foam/frame_0052.jpg,No Foam/frame_0052.jpg,25ee612958fe3a9c514db41f677b2dc57319f72d4b3e5b20a5e22d731a39e90f
+train,No Foam,4,root,No Foam::root::No Foam/frame_0085.jpg,No Foam/frame_0085.jpg,ca5ef67243953b98a31b6a13499d4f8f1c67a912e6aaad3a4061e563819b3a0f
+train,No Foam,4,root,No Foam::root::No Foam/IMG_5472.png,No Foam/IMG_5472.png,42d4c574c0c8af73bd9861cd247807a18329245f9ee7fed894cb5635390d29c9
+train,No Foam,4,root,No Foam::root::No Foam/IMG_5466.png,No Foam/IMG_5466.png,9eefc7886eb2298e95ef6e81ffd0294ca7102fa188521456c7b1a7a554edc973
+train,No Foam,4,root,No Foam::root::No Foam/frame_0091.jpg,No Foam/frame_0091.jpg,5fb8dd308481fdbecc0d9c27739c8cf6602969698f18d8720e848d753d61f89c
+train,No Foam,4,root,No Foam::root::No Foam/frame_0021.jpg,No Foam/frame_0021.jpg,a44fa94f68b3a380834caeef1e5860fef72eb4465334a6ca38e2a29684795659
+train,No Foam,4,root,No Foam::root::No Foam/WIN_20260707_13_40_58_Pro.jpg,No Foam/WIN_20260707_13_40_58_Pro.jpg,403ccb4cfb14ff97682a55b84f93d5f63775b6035b05806d7812704f23cf6fba
+train,No Foam,4,root,No Foam::root::No Foam/frame_0182.jpg,No Foam/frame_0182.jpg,7f65ca0037b53a9b6542afa0760877fb6c09479882a3e4e0d877eb967f2b1d74
+train,No Foam,4,root,No Foam::root::No Foam/frame_0141.jpg,No Foam/frame_0141.jpg,f2ca60900bb601303814e9ef221aae6484dcd8b1075064ba39006384d8d2ede6
+train,No Foam,4,root,No Foam::root::No Foam/frame_0183.jpg,No Foam/frame_0183.jpg,21731620e6d4ac3b2eb139df93240cd2ecc13e07858ced46f611e5dc729a8a0a
+train,No Foam,4,root,No Foam::root::No Foam/frame_0020.jpg,No Foam/frame_0020.jpg,e16f66fd05e55982ed85f3d2cea7f6da0977ac015c98fe50262c06e2e5f74b14
+train,No Foam,4,root,No Foam::root::No Foam/frame_0034.jpg,No Foam/frame_0034.jpg,27e4bf7efebaf2bea08b5ce6841c2be2b92170654171c22ebe1a777598e2a0c0
+train,No Foam,4,root,No Foam::root::No Foam/frame_0008.jpg,No Foam/frame_0008.jpg,ff3db2348b285974483e7184517f9a84d4898f0dd834daa9ef0e7f39651bc0aa
+train,No Foam,4,root,No Foam::root::No Foam/frame_0181.jpg,No Foam/frame_0181.jpg,e7fb488843e7cfd3d5d3dabf83aec84029f98486dffd8c999d8b1b18e1585da7
+train,No Foam,4,root,No Foam::root::No Foam/frame_0143.jpg,No Foam/frame_0143.jpg,64c524d5080b249fee701b75f2396a458e0c06ff8821792971ebb42741fe7fef
+train,No Foam,4,root,No Foam::root::No Foam/frame_0157.jpg,No Foam/frame_0157.jpg,8a791b3ac94903c4bdd96a20cadfbe89d4b174dc90ab52cf37e91c165cc43e70
+train,No Foam,4,root,No Foam::root::No Foam/frame_0180.jpg,No Foam/frame_0180.jpg,48a6d85d409a803ede32881638394a3123fa921451a9bd127a43b2b8fdd1ca51
+train,No Foam,4,root,No Foam::root::No Foam/frame_0037.jpg,No Foam/frame_0037.jpg,e0518ce2bbd139ad06ebefd75ac7ee50e761d2901a6e0b689ba5fab64aa6443e
+train,No Foam,4,root,No Foam::root::No Foam/frame_0023.jpg,No Foam/frame_0023.jpg,c226a53d1142347111a4a361c9fd62a9be8081c6ef68d2a034f8a178c5c64851
+train,No Foam,4,root,No Foam::root::No Foam/WIN_20260707_13_07_18_Pro.jpg,No Foam/WIN_20260707_13_07_18_Pro.jpg,41a3de2471cf9c965cf5701ec97c7530e0a80f184a4c8c23967df1b9cf0ecd91
+train,No Foam,4,root,No Foam::root::No Foam/WIN_20260707_13_06_21_Pro.jpg,No Foam/WIN_20260707_13_06_21_Pro.jpg,7c2b92bc21f828a4794de7c63352ab46d1d03a1d5fce2cc0f3266ee55c808fdc
+train,No Foam,4,root,No Foam::root::No Foam/WIN_20260707_13_08_24_Pro.jpg,No Foam/WIN_20260707_13_08_24_Pro.jpg,36a14e1533e96561f4a1b5e534f556caa1195ebdba421ae94d83cfdd0b137041
+train,No Foam,4,root,No Foam::root::No Foam/frame_0153.jpg,No Foam/frame_0153.jpg,1121dbf50366a9eb433a28695a35653edf7c52a3951449847b8c6a5ab7195148
+train,No Foam,4,root,No Foam::root::No Foam/frame_0147.jpg,No Foam/frame_0147.jpg,350d5880f35733cc65f850c834a4ea4a3b2be2757c01b538a8e623f66053ece7
+train,No Foam,4,root,No Foam::root::No Foam/frame_0146.jpg,No Foam/frame_0146.jpg,39b81c011aa40a2c446568a09828441c50cadfbe8ab568b493179e17b2ab40c1
+train,No Foam,4,root,No Foam::root::No Foam/frame_0152.jpg,No Foam/frame_0152.jpg,287a5567e11f9911f6921ad463f0bfe6f9c53d58b064967a8e9fb17f7f59e1aa
+train,No Foam,4,root,No Foam::root::No Foam/frame_0032.jpg,No Foam/frame_0032.jpg,dd81c2fc9933cb911a0a5fc93d361a4d446f5c43d346332cdf7b23b84c009fa2
+train,No Foam,4,root,No Foam::root::No Foam/frame_0026.jpg,No Foam/frame_0026.jpg,3f0065e9c62229a5b32305f189c93295a79c0d69c1e82ad694e40318760da24d
+train,No Foam,4,root,No Foam::root::No Foam/frame_0030.jpg,No Foam/frame_0030.jpg,b1e9378049adf806ada69c897d959fa1ed2888570e40b0ccc08b9a4d8bdb8f21
+train,No Foam,4,root,No Foam::root::No Foam/frame_0024.jpg,No Foam/frame_0024.jpg,54322c57e8947db9c88c80513b9b38b4fd62f814f3393a89f890268532adfe1e
+train,No Foam,4,root,No Foam::root::No Foam/frame_0018.jpg,No Foam/frame_0018.jpg,272213b8361ddaab169695a2a380efd09aacf1958bc4b6402218ba4bf4985bc2
+train,No Foam,4,root,No Foam::root::No Foam/frame_0150.jpg,No Foam/frame_0150.jpg,15116713fcd2b41b31fb9a866790ab3e3da46d21f00d19af8a20d62c253544a0
+train,No Foam,4,root,No Foam::root::No Foam/frame_0178.jpg,No Foam/frame_0178.jpg,519c0cfceac4c2416e5a26e2fe7d99b38347c85076c599c744b0604a875c2a1d
+train,No Foam,4,root,No Foam::root::No Foam/frame_0151.jpg,No Foam/frame_0151.jpg,3c295fd8085666936f6fe6c57c1be6c7234ae3c32831ed773641a2de0364d9c5
+train,No Foam,4,root,No Foam::root::No Foam/frame_0031.jpg,No Foam/frame_0031.jpg,ccbf7ab6e12754f9df61ee0dcec93bc1097cfdb025970bd0fc5105342b3ce684
+validation,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/WIN_20260707_13_40_01_Pro.jpg,Foam-Heavy/WIN_20260707_13_40_01_Pro.jpg,9f84afdcaf57774062d8d0486d770c7aa3dc4a2e02ce4b15969b92d38d7742e6
+validation,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/frame_0029.jpg,Foam-Heavy/frame_0029.jpg,a3c2e5472e347b8a70882794a5e3fa231511b7722fdec549c2a0ed53f4af9b66
+validation,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/frame_0013.jpg,Foam-Heavy/frame_0013.jpg,8b415155cec0af4e2e85f842d5ff390c5fc04643ab38be96f4b77c6cfb3a6f5e
+validation,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/frame_0004.jpg,Foam-Heavy/frame_0004.jpg,18ed54d7c4eae4964c3ca75c2a89666bcb7d0eefb5f90e3348423832cbb0cba8
+validation,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/frame_0063.jpg,Foam-Heavy/frame_0063.jpg,cc4a3df43f30ada2b4d5dc546c6f78c38d3719b7b1759067f50dd37beeeba53e
+validation,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/IMG_5508.png,Foam-Heavy/IMG_5508.png,9652e9f9674a9c4b1adc8644eb53f96ee45ff2587f07e282305c3b0892d17d3d
+validation,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/frame_0114.jpg,Foam-Heavy/frame_0114.jpg,bdf22ce7aa966cac5f014860c8dbcb5e601ba6fe85cfd7c4d5bbe022c80c5f39
+validation,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/IMG_5521.png,Foam-Heavy/IMG_5521.png,500c90c7e88ec3585d7f857b0c28d2c5017573b1063276d1db298cef24f15882
+validation,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/frame_0071.jpg,Foam-Heavy/frame_0071.jpg,047466237bf8f19de8a359421011c66fadceb19307b5e0ac094ccab2743a7eaa
+validation,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/frame_0104.jpg,Foam-Heavy/frame_0104.jpg,7a3a304b13ceeaa72fedf25efe5c8289022929bc6340cb5a627dc42cc6742f72
+validation,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/frame_0072.jpg,Foam-Heavy/frame_0072.jpg,b83b71469adcdd0c37c591ccb1417736cfff803290c351ce6134be756226fdb9
+validation,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/frame_0112.jpg,Foam-Heavy/frame_0112.jpg,002727e1bf5d7b78fabc9e29492750115dc959a54986087559729ad7e4e98cc6
+validation,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/frame_0107.jpg,Foam-Heavy/frame_0107.jpg,efac97cbcfae448dc8b1cc7c1eb0f24ff4c93fa7e60250577871d39e82c13e32
+validation,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/WIN_20260707_13_39_59_Pro.jpg,Foam-Heavy/WIN_20260707_13_39_59_Pro.jpg,7accd80d429ec5a8e498694cda4fa09509a2b38637175f1f82573d01ce583c8a
+validation,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/frame_0123.jpg,Foam-Heavy/frame_0123.jpg,fcce25ee97f78606d013ad133723be30d6e4c7eb1bf5337ed7022df61854fefb
+validation,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/WIN_20260707_13_41_36_Pro.jpg,Foam-Heavy/WIN_20260707_13_41_36_Pro.jpg,ef983bb8743c4fd4286e0c6204fd4f350270f3a726c19c3aa0e76ca87164686a
+validation,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/frame_0057.jpg,Foam-Heavy/frame_0057.jpg,70a531cc75c6340881b67f5f44b6e0fa663509a61c779e666de053f3341ddae8
+validation,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/frame_0082.jpg,Foam-Heavy/frame_0082.jpg,8812486901079e4ddda1d01b30f91b9f22246edcf9b1765b79e4870b58bb08be
+validation,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/frame_0055.jpg,Foam-Heavy/frame_0055.jpg,4c31abb48459001d777d28536fd23781b0306690c8963ee1461ad14b9ab2d29d
+validation,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/frame_0087.jpg,Foam-Heavy/frame_0087.jpg,dad5d2d36d393d680b0751d3de5977cd3904f11b1c207168456d763d4f6869cf
+validation,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/frame_0093.jpg,Foam-Heavy/frame_0093.jpg,b0a1ebf2db6ee46a804dbb73ce94a1c3c7cfbc91287dce9bf199c0e471a017c4
+validation,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/frame_0045.jpg,Foam-Heavy/frame_0045.jpg,a8ed0afbec25dde39a2bc58cd0f6384d2e47068fdedbfe035335029158a773af
+validation,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/WIN_20260707_13_40_07_Pro.jpg,Foam-Heavy/WIN_20260707_13_40_07_Pro.jpg,6e8f0725e7882948c9de5d5a8ef8b9bcba64a0c075dea59800e8f64d7e4f6ce7
+validation,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/frame_0132.jpg,Foam-Heavy/frame_0132.jpg,f6e2872ee282b40c4163879671a517801f0d211195f84808ec0a98b683529c81
+validation,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/frame_0037.jpg,Foam-Heavy/frame_0037.jpg,8c430957c249fa4df1b90e2816ed065666e2c0cae1af2d32f91098c246f02dcd
+validation,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/WIN_20260707_13_41_25_Pro.jpg,Foam-Heavy/WIN_20260707_13_41_25_Pro.jpg,be1c4df2c45f297e6bec8d043608c478194e81ac3a576b26aeccdc502b922601
+validation,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/frame_0033.jpg,Foam-Heavy/frame_0033.jpg,49972f7b95cf83ae8ef3a9fc992720c100dc478f117a9b4e741bd3eeaf59f4ed
+validation,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/frame_0018.jpg,Foam-Heavy/frame_0018.jpg,400f03f9983bf42249cbe29c1ebf861823e08edf4ad73424f1bb733ebfa98ed7
+validation,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/frame_0019.jpg,Foam-Heavy/frame_0019.jpg,10e57e1d7dbd9c0d659b3df620c659a82a9ac10f637a234d440914d3ebc5f6d0
+validation,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0014.jpg,Foam-Mild/frame_0014.jpg,2d500297005d3a87403ece92f3d7d17e9250f8072c8157870237e76e78786f47
+validation,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/WIN_20260707_13_35_48_Pro.jpg,Foam-Mild/WIN_20260707_13_35_48_Pro.jpg,bb4c658c7a34c52b7509b97f47ebd8ab6009e60e2ac00880c27d147942638be7
+validation,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0148.jpg,Foam-Mild/frame_0148.jpg,13781e0f7087b2c049afed3e754f44c0c5817b9211df9f53980fca939a0d443f
+validation,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0160.jpg,Foam-Mild/frame_0160.jpg,0954b71bb9de2f0fc57d1d90b79a4132764ff10f91d99ff9cb5c0960342a2fef
+validation,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/WIN_20260707_13_21_14_Pro.jpg,Foam-Mild/WIN_20260707_13_21_14_Pro.jpg,94e3faa190baa9f83e878051937ca0e577ecf3b82ed3853c29d394429b92e9a6
+validation,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0006.jpg,Foam-Mild/frame_0006.jpg,2dd38107b2131c06a03861035d369e6f357a6a8e3bdf092a987da3727ea13ec0
+validation,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/WIN_20260707_13_35_40_Pro.jpg,Foam-Mild/WIN_20260707_13_35_40_Pro.jpg,54d69869da9f1ca3daa10b5d7e1fb5ea7bb189692bb48271213aa410804d708f
+validation,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0039.jpg,Foam-Mild/frame_0039.jpg,4f5301bffb4311198dfd272f0923e8d811c8f9de5794b2e93cb9d1b1ff733ee3
+validation,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/WIN_20260707_13_14_16_Pro.jpg,Foam-Mild/WIN_20260707_13_14_16_Pro.jpg,de4cf97c061eccd31b8c487193fc56f567652feb3b39da30846854dbc8e88a76
+validation,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0038.jpg,Foam-Mild/frame_0038.jpg,29c1fdf6c09240aef59a979f9ef11d1c214c1fc4d8cfd64d4c89fb635b11f2be
+validation,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/IMG_5481.png,Foam-Mild/IMG_5481.png,c5b0c598d9648e049e4b711ca7ca641ecccea9f43830db576ebf274076b1e903
+validation,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0048.jpg,Foam-Mild/frame_0048.jpg,ceebccae54e925574278ca48f7c1d6b8ec69156798c2bcef213fd6aca9be8cfc
+validation,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0115.jpg,Foam-Mild/frame_0115.jpg,11019cd3cd0aedc8fe515db713cd5fb2e062a1dd337942e7b1d44c333db041c5
+validation,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0065.jpg,Foam-Mild/frame_0065.jpg,67d5dfa4c4a2b4d7384133a1a32007cd7b4886a3c50b734e64c230ab9aec4438
+validation,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/WIN_20260707_13_17_44_Pro.jpg,Foam-Mild/WIN_20260707_13_17_44_Pro.jpg,b56b9c3878388c777ca05a8fbfc76cc9ce75ae54c6054d52b56f13197bc8fd16
+validation,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0139.jpg,Foam-Mild/frame_0139.jpg,c8da3ff3859e0b97948a2856b04eb6aeba7d1d90f72a4c3af6e90e08a4cf3ba8
+validation,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0110.jpg,Foam-Mild/frame_0110.jpg,429651e7ef68c697bc665c36f7dc7e946eb8ca97af630330a9a126a9606a89cc
+validation,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0064.jpg,Foam-Mild/frame_0064.jpg,c2d483d52591a1ea095d3a68ed32535c4124527847dac56c770fa78df952781a
+validation,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/IMG_5485.png,Foam-Mild/IMG_5485.png,3468baa9f56b5830871c246599485d323ca124c1eec2a31597764ee63f41a58f
+validation,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0112.jpg,Foam-Mild/frame_0112.jpg,aca10cb0560859fa842a6e0c30093fc1e3807ae05c524a1be83bbb624c58efad
+validation,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0067.jpg,Foam-Mild/frame_0067.jpg,267941226a897b9c342a9b5c9105c9352acf82ed79429e740028325fe155dda0
+validation,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0081.jpg,Foam-Mild/frame_0081.jpg,9f4dcca84acccbc2148cbe08e94f427185a69592772361a3ca39baecaa3df472
+validation,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0056.jpg,Foam-Mild/frame_0056.jpg,47ff78983edc845b2b495a498ce622f3a93e45be16a9ba7ceb48c66c64d0056d
+validation,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/WIN_20260707_13_35_46_Pro.jpg,Foam-Mild/WIN_20260707_13_35_46_Pro.jpg,5078a021fd7bef6ba07df4ddeca7960cf205e806eddef6c1b8bd5a13dc0c1cd8
+validation,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0096.jpg,Foam-Mild/frame_0096.jpg,25f12c97d0802d65c331a24ba6238aa6d84eaf08b8ab68b9d0d97fc4eb3ad8bc
+validation,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0134.jpg,Foam-Mild/frame_0134.jpg,f9ed81ee0ca2171bba5bd327f61c76cd1fedabcf34a92524314656b489639bbb
+validation,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/WIN_20260707_13_16_34_Pro.jpg,Foam-Mild/WIN_20260707_13_16_34_Pro.jpg,3cf60df85ee010df3e88da4708cba06d532984fd3b79fcc02f68d316f9533eee
+validation,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0124.jpg,Foam-Mild/frame_0124.jpg,46a938b5cf5c7a85b5fc09a80e3f420d09615e6a3f58f070de5d9aa84ef7b202
+validation,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0092.jpg,Foam-Mild/frame_0092.jpg,398f42cc4bf48df52e716c17f6c81f9aad91ef74e40d0ad90fc2e6c50b9edb01
+validation,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0132.jpg,Foam-Mild/frame_0132.jpg,77735352f39add339abc3753c2ba4b3331c7aeb7b45a909b378fa14ee3aecd1b
+validation,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0085.jpg,Foam-Mild/frame_0085.jpg,b596ce71b68fff01187a5055e73674b57cb36850ab82464376dc9afbcaa7be24
+validation,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0033.jpg,Foam-Mild/frame_0033.jpg,f4676a6835707f3965120f11cd037d7c01a1883c754d95dfad101ca2bc6cbb0a
+validation,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0153.jpg,Foam-Mild/frame_0153.jpg,c527d002b23825244399526918393f704ee266bca24c3e49bd00ba6c94098d82
+validation,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0024.jpg,Foam-Mild/frame_0024.jpg,c9f0ef644acb297ce9c1353cc350fa79fc897b0554b7f236a8f9e4af0e7da4db
+validation,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0018.jpg,Foam-Mild/frame_0018.jpg,2170c56861eb87256e910078451452638f1c4f727aab549070291092e6ddd468
+validation,Post-Antifoam Addition,2,root,Post-Antifoam Addition::root::Post-Antifoam Addition/WIN_20260707_13_43_32_Pro.jpg,Post-Antifoam Addition/WIN_20260707_13_43_32_Pro.jpg,9578d21fc369b67424b1e3c0be4fd4ba66d84f608b848e54bb8237f6def8ee68
+validation,Post-Antifoam Addition,2,root,Post-Antifoam Addition::root::Post-Antifoam Addition/WIN_20260707_13_43_40_Pro.jpg,Post-Antifoam Addition/WIN_20260707_13_43_40_Pro.jpg,ace26de05a10e8f980d8a343f1bd21912a635149733970f5eb229217a0240e8c
+validation,Post-Antifoam Addition,2,root,Post-Antifoam Addition::root::Post-Antifoam Addition/frame_0013.jpg,Post-Antifoam Addition/frame_0013.jpg,5f3803557d4271635893ea2b0d04a67b28ad814b4857ed3587145ba1835ceaf5
+validation,Post-Antifoam Addition,2,root,Post-Antifoam Addition::root::Post-Antifoam Addition/frame_0103.jpg,Post-Antifoam Addition/frame_0103.jpg,4a2e1d740a559d69b41ecf1b21e9be228ff9a63e37aa31a229bfecd28c6b166d
+validation,Post-Antifoam Addition,2,root,Post-Antifoam Addition::root::Post-Antifoam Addition/frame_0089.jpg,Post-Antifoam Addition/frame_0089.jpg,7ccc7240df5bd1fb4552c9ef9cc0b2a1ddfff92bdac1b69bab62267826605e33
+validation,Post-Antifoam Addition,2,root,Post-Antifoam Addition::root::Post-Antifoam Addition/frame_0100.jpg,Post-Antifoam Addition/frame_0100.jpg,b5c036ccec45b04c0cc6eaac95723ab7b97a51c54e0b32c143551296eee7ddf8
+validation,Post-Antifoam Addition,2,root,Post-Antifoam Addition::root::Post-Antifoam Addition/frame_0061.jpg,Post-Antifoam Addition/frame_0061.jpg,9774338bf0359d60fe3527cb77949a6aeb3a723846cb1c066dfbc95b6d010916
+validation,Post-Antifoam Addition,2,root,Post-Antifoam Addition::root::Post-Antifoam Addition/frame_0049.jpg,Post-Antifoam Addition/frame_0049.jpg,eaba83b59038d2217edf3c01d772ddf484181839323ba8bb80fa0b94b99d431a
+validation,Post-Antifoam Addition,2,root,Post-Antifoam Addition::root::Post-Antifoam Addition/frame_0065.jpg,Post-Antifoam Addition/frame_0065.jpg,1dbf7b67ff8eaca9a56790cacd29f0f39110cbf412c26bb7dab6f51bf3e49f4a
+validation,Post-Antifoam Addition,2,root,Post-Antifoam Addition::root::Post-Antifoam Addition/frame_0071.jpg,Post-Antifoam Addition/frame_0071.jpg,979cccfe534687024c08d9a2bf5c1aad8d08cf2b2e746a366110fc488cc420df
+validation,Post-Antifoam Addition,2,root,Post-Antifoam Addition::root::Post-Antifoam Addition/frame_0104.jpg,Post-Antifoam Addition/frame_0104.jpg,c276a1b8b1436ab1fbe868a9cdb01792ac4bd524d8caf1754021691943e4e5de
+validation,Post-Antifoam Addition,2,root,Post-Antifoam Addition::root::Post-Antifoam Addition/WIN_20260707_13_43_29_Pro.jpg,Post-Antifoam Addition/WIN_20260707_13_43_29_Pro.jpg,a27f53a61be0bd53fae853f1f619cf90b1b9934eeb39494bbc5f14ff72a6c4df
+validation,Post-Antifoam Addition,2,root,Post-Antifoam Addition::root::Post-Antifoam Addition/frame_0080.jpg,Post-Antifoam Addition/frame_0080.jpg,4aee87000b8707935d006a0669859a2387970c5ce6163d75092a9614bcd8a814
+validation,Post-Antifoam Addition,2,root,Post-Antifoam Addition::root::Post-Antifoam Addition/IMG_5529.png,Post-Antifoam Addition/IMG_5529.png,ddf3e7de68584a68f63efecb073d68d8de3ffec90a73533e16a467663d065293
+validation,Post-Antifoam Addition,2,root,Post-Antifoam Addition::root::Post-Antifoam Addition/frame_0087.jpg,Post-Antifoam Addition/frame_0087.jpg,ea5c87f08de0192136df37a3edb0ad58bd54bb1cb9d33ccaf72dd971f757289f
+validation,Post-Antifoam Addition,2,root,Post-Antifoam Addition::root::Post-Antifoam Addition/frame_0051.jpg,Post-Antifoam Addition/frame_0051.jpg,f6e393e795f9634741146cbecd97d7f3c17139fd3a3a7e743884157fbf824b74
+validation,Post-Antifoam Addition,2,root,Post-Antifoam Addition::root::Post-Antifoam Addition/frame_0035.jpg,Post-Antifoam Addition/frame_0035.jpg,4f547fdc1437b7658724f01bc804c67fd1b4e3cded005883086eaf41928c636d
+validation,Post-Antifoam Addition,2,root,Post-Antifoam Addition::root::Post-Antifoam Addition/frame_0020.jpg,Post-Antifoam Addition/frame_0020.jpg,e4c0bb7c42872848030012cdebfcc981b54ef74234215d3f1d97f4f7b3e003dd
+validation,Post-Antifoam Addition,2,root,Post-Antifoam Addition::root::Post-Antifoam Addition/frame_0008.jpg,Post-Antifoam Addition/frame_0008.jpg,ce7974cc299b30057f0c106faa045266e257e5e7547d51be171ead1bd5f96e83
+validation,Post-Antifoam Addition,2,root,Post-Antifoam Addition::root::Post-Antifoam Addition/frame_0036.jpg,Post-Antifoam Addition/frame_0036.jpg,cdea444d15703d401804d2f95dc057ea6e26e28bb86a009d20fc5d049627769a
+validation,Post-Antifoam Addition,2,root,Post-Antifoam Addition::root::Post-Antifoam Addition/frame_0026.jpg,Post-Antifoam Addition/frame_0026.jpg,87fa5843b23f5ace60aa4c4b69b6d9e9a7a33206b040d847a3adc07834659bd9
+validation,Post-Antifoam Addition,2,root,Post-Antifoam Addition::root::Post-Antifoam Addition/frame_0031.jpg,Post-Antifoam Addition/frame_0031.jpg,c15ffa4e130f6f0bc1c0e97914e60c2f1c0744b3b1ae0fbe119a5aaf20a2abd5
+validation,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/frame_0014.jpg,Foam-Medium/frame_0014.jpg,662e30fd51a7cdbf7661cf4b5fa51588e89246e401dd889a49a5bfcb6c8892da
+validation,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/frame_0015.jpg,Foam-Medium/frame_0015.jpg,6ae689ffbc9cbeddf0b74d999775ec01a73d5715074e8b82a9b1d2eee919d6d9
+validation,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/WIN_20260707_13_26_52_Pro.jpg,Foam-Medium/WIN_20260707_13_26_52_Pro.jpg,2b871ecc5791eed85eb3a5f6389987c683c4530393b8fb95252f168c5625f17b
+validation,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/WIN_20260707_13_33_01_Pro.jpg,Foam-Medium/WIN_20260707_13_33_01_Pro.jpg,b67d57da54c1a26ec4e3b8e6c6811a1dd5b82191cd7307e6595903b27836aa00
+validation,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/WIN_20260707_13_31_57_Pro.jpg,Foam-Medium/WIN_20260707_13_31_57_Pro.jpg,5217684297c9ba22e6383b5338801e62ca72a41ee8965ef95eb1e8a1f0500d85
+validation,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/frame_0005.jpg,Foam-Medium/frame_0005.jpg,8554612a9fae6495596cca1351b84ad098e3b209876638bc947f1548c88f4c0b
+validation,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/frame_0038.jpg,Foam-Medium/frame_0038.jpg,6bbd06a74c5fa663d7635765771941316ac5350e646bf09af8a783a1b3939596
+validation,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/frame_0088.jpg,Foam-Medium/frame_0088.jpg,5bd2014762cb7992ddc3f1350f92c4b0083c45ba57462b8431a2ae21374f3d90
+validation,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/WIN_20260707_13_31_11_Pro.jpg,Foam-Medium/WIN_20260707_13_31_11_Pro.jpg,0e2c7606bc848a86cbbecd372deb397adf04a9d444cb1d145a0fee2de9a716bf
+validation,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/WIN_20260707_13_35_16_Pro.jpg,Foam-Medium/WIN_20260707_13_35_16_Pro.jpg,13bd5ca3a2cf4def1ccf8505d4ce0911a6aa84ed4a83a152be5dce186eb73879
+validation,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/frame_0071.jpg,Foam-Medium/frame_0071.jpg,c8febadad08a39f02c931f4cc2dbace580cbaa5b28823cdaa6f2a81c180158b5
+validation,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/frame_0059.jpg,Foam-Medium/frame_0059.jpg,bc698b5df1741e79b07e3d72ddeb91529f6af40d105eaee208fdb80c38f6ad2d
+validation,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/WIN_20260707_13_34_37_Pro.jpg,Foam-Medium/WIN_20260707_13_34_37_Pro.jpg,9517713ca45fcb287e2f6ad72b138a3db03e0c7f381934a317144cb8267652f7
+validation,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/frame_0067.jpg,Foam-Medium/frame_0067.jpg,950804285f3cfff866b7aafa385e8276cc235d42a8e04a63c21ba1ce823090da
+validation,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/frame_0056.jpg,Foam-Medium/frame_0056.jpg,0f48191b2b78677fc51fd574fede1dacd419a1c3ee0c882ec1620f2320aa4db1
+validation,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/WIN_20260707_13_26_37_Pro.jpg,Foam-Medium/WIN_20260707_13_26_37_Pro.jpg,25b1a4073ede18c33c8e0dc1ae6e36dfb0e24ba1b7dea4b07a31506aebc2a36c
+validation,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/WIN_20260707_13_34_49_Pro.jpg,Foam-Medium/WIN_20260707_13_34_49_Pro.jpg,7ee78d4dbe5864e89f2e28cd89258f27fb2f70cb8543d1f5c1ecfde0bdced0cd
+validation,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/frame_0093.jpg,Foam-Medium/frame_0093.jpg,375c496ea9ddc66de763d393874038d8c86c33ce41bb800bd68aba2660f50287
+validation,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/WIN_20260707_13_35_03_Pro.jpg,Foam-Medium/WIN_20260707_13_35_03_Pro.jpg,f9a17bfc581de3eb400f16f2315977efe0f560a4703ed62d37757cb3ef0b8c2d
+validation,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/frame_0078.jpg,Foam-Medium/frame_0078.jpg,8f0c7a1a9385622df282f91a01d04bc44f4e32ca0c505cc95bec9a2b341e8256
+validation,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/frame_0051.jpg,Foam-Medium/frame_0051.jpg,5d22f34144cbeb1024fca8cb90860efef4b1a9805735bbfb768e47d61fe39072
+validation,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/frame_0092.jpg,Foam-Medium/frame_0092.jpg,f35c93a9e26459d918ae88ea9d2c2909f37a63aed954a5f9ac7f2320b8cc3348
+validation,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/frame_0047.jpg,Foam-Medium/frame_0047.jpg,5b46f5ca94c4ce991939047e2d7464fdaf5cc2486e49bc9f4d9a34d37334ed25
+validation,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/WIN_20260707_13_33_17_Pro.jpg,Foam-Medium/WIN_20260707_13_33_17_Pro.jpg,74f00d6e238a636fbabe824af70694c1921dd9f8dce6e8b9b53a82595bcbe9a9
+validation,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/WIN_20260707_13_33_07_Pro.jpg,Foam-Medium/WIN_20260707_13_33_07_Pro.jpg,bc82d995a7cdb8b8b91750dca71c71615006a092634b2cbd593c060b494f4871
+validation,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/WIN_20260707_13_34_41_Pro.jpg,Foam-Medium/WIN_20260707_13_34_41_Pro.jpg,0c44ebbe28bd1b6431fc170e5945705baef8080a4b71024aa83b8cb83138216a
+validation,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/frame_0021.jpg,Foam-Medium/frame_0021.jpg,14f2acf0762b6d69f914599b7c92c96a5501c127550479100cc4a34f26b37fe8
+validation,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/WIN_20260707_13_35_01_Pro.jpg,Foam-Medium/WIN_20260707_13_35_01_Pro.jpg,7083710f1da794444fee97b9097742f1a133680602e0d0e5a23c8326dfde7e61
+validation,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/WIN_20260707_13_29_45_Pro.jpg,Foam-Medium/WIN_20260707_13_29_45_Pro.jpg,01066820a2f03611fb1feb8eb1151eb03d56fca49eaa747658a6a35300253b37
+validation,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/WIN_20260707_13_33_14_Pro.jpg,Foam-Medium/WIN_20260707_13_33_14_Pro.jpg,1b1e0782b3100786eeaff7b15dae188eb8a8e318864ef753027959c911cec1d9
+validation,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/frame_0030.jpg,Foam-Medium/frame_0030.jpg,1d197f328039622a19dfc7bc422d181e0ac01326fc68b1b91a6db54db32692eb
+validation,No Foam,4,root,No Foam::root::No Foam/WIN_20260707_13_08_07_Pro.jpg,No Foam/WIN_20260707_13_08_07_Pro.jpg,ca13298727200fe49ff983e143ca06f392702a2f8afd7cf6371d741a92a447a4
+validation,No Foam,4,root,No Foam::root::No Foam/frame_0000.jpg,No Foam/frame_0000.jpg,6c2f5576b02ed8c4f35283493609ffba0e17b53f29ab277f1e30cedc00cb79ea
+validation,No Foam,4,root,No Foam::root::No Foam/frame_0174.jpg,No Foam/frame_0174.jpg,cff7d4eb9178b21884ea50b20bd8f6ba7ec024e12c40f7c3c29e05f587a05a35
+validation,No Foam,4,root,No Foam::root::No Foam/frame_0029.jpg,No Foam/frame_0029.jpg,77fb7a1edc92cba8142f623c7cd332e3d290bac46025e3d552a61dade16f553c
+validation,No Foam,4,root,No Foam::root::No Foam/frame_0163.jpg,No Foam/frame_0163.jpg,30355439de0eb843b7d5d4cebd0a2fdda673fc1440fb13453bb8de9ea5291549
+validation,No Foam,4,root,No Foam::root::No Foam/frame_0176.jpg,No Foam/frame_0176.jpg,a632d5b31f746358d11edacb74b5d531898b07bb148a8553935fc20c8a57c670
+validation,No Foam,4,root,No Foam::root::No Foam/WIN_20260707_13_40_44_Pro.jpg,No Foam/WIN_20260707_13_40_44_Pro.jpg,83e3e5606e58fbc989df452aa43e1e2bcab545eecdcfce2ede230124b9874fe8
+validation,No Foam,4,root,No Foam::root::No Foam/frame_0013.jpg,No Foam/frame_0013.jpg,dff1e0634fef912b5cab94822cc6d515b57b1995eedf0827658afbae3e465ee1
+validation,No Foam,4,root,No Foam::root::No Foam/frame_0005.jpg,No Foam/frame_0005.jpg,25aab7ca025729a74d47dc3ae4957acaa7943404829dae75fd0966a40d2c1891
+validation,No Foam,4,root,No Foam::root::No Foam/frame_0074.jpg,No Foam/frame_0074.jpg,944692ddfc80ed9cbd6f5485bd8d10dbf41b69e5fc44f4272410f62ca4c1d702
+validation,No Foam,4,root,No Foam::root::No Foam/WIN_20260707_13_09_02_Pro.jpg,No Foam/WIN_20260707_13_09_02_Pro.jpg,f067d58fc055ea3900ec8746dff60cbb758a86bbf760c49280c1ce4f2b9265c9
+validation,No Foam,4,root,No Foam::root::No Foam/frame_0049.jpg,No Foam/frame_0049.jpg,627857e6b31fc26c23b10ace25585b9ab7550fdf67aaf0bc697f87408a49c4eb
+validation,No Foam,4,root,No Foam::root::No Foam/IMG_5469.png,No Foam/IMG_5469.png,0d7632f741fc13ad7e6cf652d38b41d8012e012e54c50c6b5afe99b0d014018f
+validation,No Foam,4,root,No Foam::root::No Foam/frame_0064.jpg,No Foam/frame_0064.jpg,36616201fbe48fbc3f5a7a9626dd14b0a3f32dca12360ccda188f3a812073988
+validation,No Foam,4,root,No Foam::root::No Foam/frame_0072.jpg,No Foam/frame_0072.jpg,d1f6301b2571ecdee776ce6c44b2d4de2c7e7dd8694b410ce77d3c036bdc61f3
+validation,No Foam,4,root,No Foam::root::No Foam/frame_0066.jpg,No Foam/frame_0066.jpg,6cb6f815ed26bb09251d904d951ea53fb7557426713a4fe4245ef7435e11e6bd
+validation,No Foam,4,root,No Foam::root::No Foam/frame_0106.jpg,No Foam/frame_0106.jpg,05286c2c872c28531d19227fb8c5753ee71caf55de5f2e803d0ee299f7c58b07
+validation,No Foam,4,root,No Foam::root::No Foam/frame_0113.jpg,No Foam/frame_0113.jpg,00c5dfe32083efd058be46651a758b9e00ca4438143885811fb4fc25ddc80e6b
+validation,No Foam,4,root,No Foam::root::No Foam/IMG_5462.png,No Foam/IMG_5462.png,c0abd4666719765927b95338edf1bebbf71d829ee9bad910b55f3a82ce43bcba
+validation,No Foam,4,root,No Foam::root::No Foam/frame_0122.jpg,No Foam/frame_0122.jpg,c33737a12031ace9da4a6b0632af6d80945c489b18150d68532296c0f0e66758
+validation,No Foam,4,root,No Foam::root::No Foam/IMG_5475.png,No Foam/IMG_5475.png,234832bf235f522a9f1bad67175d397f48d6409dd67cbe6bca89812bdf308bbf
+validation,No Foam,4,root,No Foam::root::No Foam/frame_0096.jpg,No Foam/frame_0096.jpg,3d2831757ba46ea4cef945bac108797eea6bb34cb816ca5c01fb9f6a46c60b59
+validation,No Foam,4,root,No Foam::root::No Foam/frame_0109.jpg,No Foam/frame_0109.jpg,1a8ed8d6fb84814ab13d2ef9649cb10bccc6107fc81c53841b8d0025ec85e1d6
+validation,No Foam,4,root,No Foam::root::No Foam/frame_0108.jpg,No Foam/frame_0108.jpg,890e223eb982a258024f098c2a7c35bf11d38aaf797a2746df9bd4e59a734a4d
+validation,No Foam,4,root,No Foam::root::No Foam/frame_0054.jpg,No Foam/frame_0054.jpg,4d96e96001f18e4ead5a3e03e4ed70fae86d5b7943f54b2dd1a1bf4a721f0ad7
+validation,No Foam,4,root,No Foam::root::No Foam/IMG_5474.png,No Foam/IMG_5474.png,77f8b1a8ce5195c36e2715b9cf04722268cfb2bd311a3048e34623809df3c016
+validation,No Foam,4,root,No Foam::root::No Foam/frame_0079.jpg,No Foam/frame_0079.jpg,780b4e76aa33d39af449f75221811258a0431d83df86e5ae6dd35fe70013337b
+validation,No Foam,4,root,No Foam::root::No Foam/frame_0045.jpg,No Foam/frame_0045.jpg,f8ca1660b91ab780c6879b4bb44d9c8ec414d1f29ea7aaa3205e182e3078c610
+validation,No Foam,4,root,No Foam::root::No Foam/frame_0092.jpg,No Foam/frame_0092.jpg,ccdccf5490023e660faf4d27101d2e47c49c3dbe4076faded00688a120ef08aa
+validation,No Foam,4,root,No Foam::root::No Foam/WIN_20260707_13_09_15_Pro.jpg,No Foam/WIN_20260707_13_09_15_Pro.jpg,ccc940fc890cf56a974979509ff991e8cb7a07a9510ff4bef39ea148edf18242
+validation,No Foam,4,root,No Foam::root::No Foam/frame_0035.jpg,No Foam/frame_0035.jpg,ba6cba3c90f92a6b2893c6b2ce0553b012220c3a46579d7b3ffd2865a182c5af
+validation,No Foam,4,root,No Foam::root::No Foam/frame_0155.jpg,No Foam/frame_0155.jpg,639d01906061cb7ee89fbf9b8d74813b90846f86ea5293ed8c9a3481690268de
+validation,No Foam,4,root,No Foam::root::No Foam/frame_0140.jpg,No Foam/frame_0140.jpg,cabb608b649569978a3d014142c329640d2118689f581e7e514f2c845e7708bd
+validation,No Foam,4,root,No Foam::root::No Foam/frame_0022.jpg,No Foam/frame_0022.jpg,581ddefa38ed60955338da925d13cc6d8876cb1215866e6f639043c66182a14b
+validation,No Foam,4,root,No Foam::root::No Foam/frame_0156.jpg,No Foam/frame_0156.jpg,623539f7e3994f067e51e5dd70509636653fa477cc28951196a545889219e304
+validation,No Foam,4,root,No Foam::root::No Foam/frame_0142.jpg,No Foam/frame_0142.jpg,febf7c484e6301ab4965231c1170fecbacbaf5a555bacc168af2e1813993cc01
+validation,No Foam,4,root,No Foam::root::No Foam/frame_0033.jpg,No Foam/frame_0033.jpg,73304639fc07e345d7e91efb924a7f81b35f6c1c051bbb976f3ff659ae3c9880
+validation,No Foam,4,root,No Foam::root::No Foam/WIN_20260707_13_41_12_Pro.jpg,No Foam/WIN_20260707_13_41_12_Pro.jpg,fd13d5a9386351a626be7ce35f199b7f28c85a61e23bd9b3786a5baa3545dcdd
+validation,No Foam,4,root,No Foam::root::No Foam/frame_0144.jpg,No Foam/frame_0144.jpg,8e8a75f11cad2003cd1f379c99fe2f2851bd944d7d6b4f4b742d925dff6d051b
+test,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/frame_0014.jpg,Foam-Heavy/frame_0014.jpg,abbf2f67b494a7659f22708bad63851305378effcd6ccc7ed0d88a6263ef5fc9
+test,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/frame_0000.jpg,Foam-Heavy/frame_0000.jpg,1010f029ab3e6f02dc6c26c90e2b62fffa3304d7006e42705e41357a58dbf590
+test,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/frame_0002.jpg,Foam-Heavy/frame_0002.jpg,61109ee6fc4075149f373cd6ebd2951d0c072c66a4354684a35152e5f5b754a0
+test,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/WIN_20260707_13_40_26_Pro.jpg,Foam-Heavy/WIN_20260707_13_40_26_Pro.jpg,2696d8654554872c71b114d9a968dc47adac284a5babeb48008d9d9ddc2d6b63
+test,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/frame_0011.jpg,Foam-Heavy/frame_0011.jpg,b34345eb050bb17dc6fb3389dcb754e9eae66571684f1374397192051048d03d
+test,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/frame_0077.jpg,Foam-Heavy/frame_0077.jpg,2c9c6d6bbc18b54a6cb900a7e8777d6cd27db4c5e5ea23451396688fb913d912
+test,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/WIN_20260707_13_39_00_Pro.jpg,Foam-Heavy/WIN_20260707_13_39_00_Pro.jpg,b76aceb29814b385311b972b1e196c8c426023947374ed808218c8fe83e326a7
+test,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/frame_0129.jpg,Foam-Heavy/frame_0129.jpg,15e9e6783c7f8c462a0858ab6d3acf23b6671954af172dd033bcb042ab739d19
+test,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/frame_0061.jpg,Foam-Heavy/frame_0061.jpg,dccc3857670c182aea652eb0e89ccff50148fec34ae44ba0a38c9941a1107938
+test,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/frame_0049.jpg,Foam-Heavy/frame_0049.jpg,d95b3e30c8b0de67546d4d352b06986b490e0a14fd489ff3746b7edf4ef8dcbf
+test,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/frame_0111.jpg,Foam-Heavy/frame_0111.jpg,b0222a4cdaf956cf80bfb3fc31afedc79c649784dbfdfa34aebf86de51d9da27
+test,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/frame_0099.jpg,Foam-Heavy/frame_0099.jpg,5e4c0f3b91a8f4cbbf5d0a758205b6647d3194ba6b6a8ca8876881a7b469c08a
+test,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/frame_0066.jpg,Foam-Heavy/frame_0066.jpg,97644e162069a2695322a9b6950861490e87f31463dbb3cebdf4f6c58ac7dd03
+test,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/frame_0073.jpg,Foam-Heavy/frame_0073.jpg,051c16b323f7a51a193c2ed54b2666ec96e575284f19c2b91ea27ca137485c95
+test,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/IMG_5516.png,Foam-Heavy/IMG_5516.png,bcf941d598feac85371af1240d78b465835b84cee22840a0cd2b3883356796f5
+test,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/frame_0122.jpg,Foam-Heavy/frame_0122.jpg,aec96781116ca1e8ea461c36453dd15b0f0808bda77e9cf77c2b3020459d83c4
+test,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/frame_0043.jpg,Foam-Heavy/frame_0043.jpg,84838901d9401124b981025d3d332d9401b8e90e3cb0b95d05be2bd313cadffb
+test,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/frame_0109.jpg,Foam-Heavy/frame_0109.jpg,bb67cd712cd007ab7eed5f9593178938f7de6ca830eb17c9983801a903e57d64
+test,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/WIN_20260707_13_40_28_Pro.jpg,Foam-Heavy/WIN_20260707_13_40_28_Pro.jpg,3a07bee127074f5ec43c15756950f2d62b4b3e62eef608ac8228c7ed34542173
+test,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/IMG_5505.png,Foam-Heavy/IMG_5505.png,6860d72e183dce43a5db5b40ede754535d77c93a08b958c886d49a992ffb7790
+test,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/frame_0092.jpg,Foam-Heavy/frame_0092.jpg,aefa6e4183b8d6a1bf38a1fd7d4638e1b7d116c3b9388ce617d970051c076f6e
+test,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/frame_0084.jpg,Foam-Heavy/frame_0084.jpg,3d76b8e83ee995d6b37a017ec4b5594fcff87935e8331afb4309b5ed00d402ab
+test,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/IMG_5507.png,Foam-Heavy/IMG_5507.png,660522d0bff159909bc17fc872bc95aef04572c67bc2c7cae7f0aa3ca86bd4ab
+test,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/frame_0126.jpg,Foam-Heavy/frame_0126.jpg,f0832bc9045e9dcf93017eac3670cc5309396fc0f97b6b6ebaa9bdc2b4c382d2
+test,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/frame_0046.jpg,Foam-Heavy/frame_0046.jpg,e337378a2558d4c637f20066bc122e7822f07ea518196d720151cafeb28fb715
+test,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/frame_0091.jpg,Foam-Heavy/frame_0091.jpg,30b1634ecbd7a0556c26086c0ef9164be44bb638d7c19f2e1f88ea4def44f3eb
+test,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/WIN_20260707_13_40_05_Pro.jpg,Foam-Heavy/WIN_20260707_13_40_05_Pro.jpg,68ba177a2c7bec2f2f8b64f80fef51402c2492d0ff2ae9c875f3ce97967c6158
+test,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/frame_0020.jpg,Foam-Heavy/frame_0020.jpg,e7127dc0dfa03504a6730a3934c25ca99be517c7da7e2cb510f1eeae037b542a
+test,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/frame_0036.jpg,Foam-Heavy/frame_0036.jpg,4772d7b3d1fee6e311195b0bea2b97c8cc0f613898ce4c1b1d0ff5bcaf42ba9e
+test,Foam-Heavy,0,root,Foam-Heavy::root::Foam-Heavy/frame_0025.jpg,Foam-Heavy/frame_0025.jpg,8f8da2e4d363fb41464165a1f2e9ec16d40c19d7853b71e68c98edb78af73cb1
+test,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/WIN_20260707_13_18_08_Pro.jpg,Foam-Mild/WIN_20260707_13_18_08_Pro.jpg,38a56ab95023e2ec780469b2151925f2cb708631c1a7523076078415c0200feb
+test,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/WIN_20260707_13_19_43_Pro.jpg,Foam-Mild/WIN_20260707_13_19_43_Pro.jpg,d6d7a84756b2d9937a5b0ff7a37db730ae1674533689170e1d387d9082b42465
+test,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0015.jpg,Foam-Mild/frame_0015.jpg,bdb67c0f39fe9b21bd306c8bddd25f9a03c2cf17422d0b78ec5828da63513e96
+test,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0003.jpg,Foam-Mild/frame_0003.jpg,434a7965dbbd2500638fccc7d9c6a9f2897e47bda81c13b4a5bc7b3cc5228421
+test,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/WIN_20260707_13_16_04_Pro.jpg,Foam-Mild/WIN_20260707_13_16_04_Pro.jpg,ae8f43590fd191727459948282c38596f8263d4b8a76e7239681ebe6280c1b9d
+test,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/WIN_20260707_13_35_41_Pro.jpg,Foam-Mild/WIN_20260707_13_35_41_Pro.jpg,71489fc76ae31c5ca3255cf7608a542af66bbeea2e30c29a7c2d714bf8383e08
+test,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0011.jpg,Foam-Mild/frame_0011.jpg,cc491574615dfd819a2563e56d71351fe2db217d67a685f22d2d890af1664e87
+test,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/WIN_20260707_13_15_00_Pro.jpg,Foam-Mild/WIN_20260707_13_15_00_Pro.jpg,d3b56ecec09ead012d8f7cc210c220959c3191dcd598cd456b8361cbcebf4022
+test,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0159.jpg,Foam-Mild/frame_0159.jpg,aeb56357ae3ac50b66d5ce2e0ffad78060b74c4bd758a7acb2b948efc3d7f498
+test,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0063.jpg,Foam-Mild/frame_0063.jpg,a33044686fa131e1f49bc900c9d60894eaae90b6dc62c3de1699e0db1ee6b1e7
+test,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/WIN_20260707_13_35_30_Pro.jpg,Foam-Mild/WIN_20260707_13_35_30_Pro.jpg,11aafe99033617b33988dcec75d0f5f30283fce3b9d327a7c8975cf22bf993bc
+test,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0116.jpg,Foam-Mild/frame_0116.jpg,0d144d2fced9ef1256144700402b271b928b115f5d13a7d03a5acd9737ec9e3c
+test,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/IMG_5483.png,Foam-Mild/IMG_5483.png,3aafb6010f8ded80ca5a01207890d8f7c1f51dfb99864b8de5430e2e3ff605c9
+test,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0071.jpg,Foam-Mild/frame_0071.jpg,f581b6f8b35371447d7f6cf63a0756071f84be92391e221541c431f7d7b4df0b
+test,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0059.jpg,Foam-Mild/frame_0059.jpg,ac0a6cc67619d6b28afd22d2e5aa072fdd032fb0a347106904b641e29d3820c4
+test,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0072.jpg,Foam-Mild/frame_0072.jpg,c800bdabe77b1f45789201191000ac8f821c5aad3ffbccd12df326d73c6dbf50
+test,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0106.jpg,Foam-Mild/frame_0106.jpg,a0fe69e0d6e10f98a5581462ec4920ab928f57ac322de71010bab1d258739879
+test,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0107.jpg,Foam-Mild/frame_0107.jpg,c8f0ce11d6f66a898c6694ffd91f96cf5bcc593f423b3369a8e36629987b6838
+test,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0095.jpg,Foam-Mild/frame_0095.jpg,d8d97e7586849175d0a557dab7ad559e578cb0ae959e29d7c509f23e4ef0e197
+test,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0135.jpg,Foam-Mild/frame_0135.jpg,ed1b060466d8cfce42b06f46b124bf454003659a02127109b70ddbf875a2cdf8
+test,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0054.jpg,Foam-Mild/frame_0054.jpg,91eefb9335c27fe1b9208171ab46582606d780359a781cfb37405ce61fd790ce
+test,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0083.jpg,Foam-Mild/frame_0083.jpg,47ecb983d6cc3c744cdbc2ee172cc36968c0c8ad095f8de0044f32dcddc82cd7
+test,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0087.jpg,Foam-Mild/frame_0087.jpg,93f082b4fa2c9548ef3ba5b58abb1f5c3c3a7c9aff0135d27520a87b7fe9653a
+test,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0093.jpg,Foam-Mild/frame_0093.jpg,9a4dc77026025902d192be16da4b7659385bbb146d8307037fd914bb25ed3d2f
+test,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0125.jpg,Foam-Mild/frame_0125.jpg,a1cd747ec731b10a9e1a1688a0f564e446ee7caa61e64fa5bccd69a4f1c2f301
+test,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0131.jpg,Foam-Mild/frame_0131.jpg,1a167956df3c45311a19583faf3c4da8a2261b641e4cf7959351956d9166b85f
+test,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0045.jpg,Foam-Mild/frame_0045.jpg,d07e85a23bcda81ca2c8191d9a284c6bac6b299bbeb1b910898c719461adc937
+test,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0035.jpg,Foam-Mild/frame_0035.jpg,849b765f7cd600b0030bbe2a8d79c9d9a11c6245309ae9aff2f5c6eee3668d52
+test,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0154.jpg,Foam-Mild/frame_0154.jpg,c5287bd158498a14a5cf2733b23f9eea25dc25aa1d9593bce3076d2680e507a7
+test,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0140.jpg,Foam-Mild/frame_0140.jpg,7308e4bfd9993735e4050c996e2965470c366a4f959b692d4df89776f0dd5813
+test,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0034.jpg,Foam-Mild/frame_0034.jpg,c8418164f315a16b331887f2b083b914887de51a913d1acce03bc38539cc5f4e
+test,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/WIN_20260707_13_13_54_Pro.jpg,Foam-Mild/WIN_20260707_13_13_54_Pro.jpg,966bb002c6b3481c70b612f40fc50cc21ffbf84644b58f00d41d844b87a16349
+test,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0150.jpg,Foam-Mild/frame_0150.jpg,ff50fc9197207cef080a078964c39d45158168b862a939e9be5a047b015cba25
+test,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0019.jpg,Foam-Mild/frame_0019.jpg,4429d704484934b626da2b2d52f04ffec45192e281f9b9cc1f7b0d1aea27c913
+test,Foam-Mild,1,root,Foam-Mild::root::Foam-Mild/frame_0025.jpg,Foam-Mild/frame_0025.jpg,df2c2b493830d171e03f9b7c260c43df78ee8a47c30e64b6d4dfd42878383828
+test,Post-Antifoam Addition,2,root,Post-Antifoam Addition::root::Post-Antifoam Addition/frame_0003.jpg,Post-Antifoam Addition/frame_0003.jpg,a1c5e104deea58c6e4fc3af1c5f29b9d827256c1c288fa047793d893a6403739
+test,Post-Antifoam Addition,2,root,Post-Antifoam Addition::root::Post-Antifoam Addition/frame_0017.jpg,Post-Antifoam Addition/frame_0017.jpg,3205d09daead4e377c517011b6ef5b739b22b42eb660d1c2403b967267251798
+test,Post-Antifoam Addition,2,root,Post-Antifoam Addition::root::Post-Antifoam Addition/frame_0007.jpg,Post-Antifoam Addition/frame_0007.jpg,4b81e428f2d7c31601f14d95d5619fa00fd2db7181ba0d13106122a61c8f9406
+test,Post-Antifoam Addition,2,root,Post-Antifoam Addition::root::Post-Antifoam Addition/frame_0011.jpg,Post-Antifoam Addition/frame_0011.jpg,3184fe6207d2fd7ba92b41469b5aac33ed95e76d014069aab19c4f09a52c093f
+test,Post-Antifoam Addition,2,root,Post-Antifoam Addition::root::Post-Antifoam Addition/frame_0038.jpg,Post-Antifoam Addition/frame_0038.jpg,c76e0f7a5f62a801663c922ab64b3ef22290f0418e81707a7ec0ca536a7431ce
+test,Post-Antifoam Addition,2,root,Post-Antifoam Addition::root::Post-Antifoam Addition/WIN_20260707_13_43_38_Pro.jpg,Post-Antifoam Addition/WIN_20260707_13_43_38_Pro.jpg,a7e3bcd25ffd921396ec76134b49ea3ae9bfe9062e8b786886ddbadbe8c5cc88
+test,Post-Antifoam Addition,2,root,Post-Antifoam Addition::root::Post-Antifoam Addition/frame_0076.jpg,Post-Antifoam Addition/frame_0076.jpg,7c49b35bd78d5b192d4597af53b01c9446b084b3b562d197bee30d2498267afc
+test,Post-Antifoam Addition,2,root,Post-Antifoam Addition::root::Post-Antifoam Addition/IMG_5530.png,Post-Antifoam Addition/IMG_5530.png,3f4a06c7b5390af08fa2a758436a3c737d56e2485ca350e8d0918f94e68e76da
+test,Post-Antifoam Addition,2,root,Post-Antifoam Addition::root::Post-Antifoam Addition/frame_0058.jpg,Post-Antifoam Addition/frame_0058.jpg,1be9a7018e8f0c00ce99df2953c29a3ac75d213f71b4246501bde385bf4e2f2e
+test,Post-Antifoam Addition,2,root,Post-Antifoam Addition::root::Post-Antifoam Addition/frame_0070.jpg,Post-Antifoam Addition/frame_0070.jpg,ca9869742e8b868f21eb415a3463109b8d4e1c09b2ad195a69255f3d0fd07315
+test,Post-Antifoam Addition,2,root,Post-Antifoam Addition::root::Post-Antifoam Addition/frame_0064.jpg,Post-Antifoam Addition/frame_0064.jpg,d34d2cab034c7cae1f23a329127d28d91690a87f824fc5711d244cb1e2c551ef
+test,Post-Antifoam Addition,2,root,Post-Antifoam Addition::root::Post-Antifoam Addition/frame_0073.jpg,Post-Antifoam Addition/frame_0073.jpg,e3b8841fcd27369c0bd9effbccea7179d6d15d61f964630ed4f2ca52e49fb6d6
+test,Post-Antifoam Addition,2,root,Post-Antifoam Addition::root::Post-Antifoam Addition/frame_0095.jpg,Post-Antifoam Addition/frame_0095.jpg,33275691723dccaa58e013e8743c6fbf406e5903623741e2e4cfbea53316b017
+test,Post-Antifoam Addition,2,root,Post-Antifoam Addition::root::Post-Antifoam Addition/frame_0086.jpg,Post-Antifoam Addition/frame_0086.jpg,e00cfdb3d89f37f60adeeaa387401f8aa4708ab6d9a2f797b120849ba4300a80
+test,Post-Antifoam Addition,2,root,Post-Antifoam Addition::root::Post-Antifoam Addition/frame_0053.jpg,Post-Antifoam Addition/frame_0053.jpg,0ce69c5b3240116db4d745415a586de270876593ad0253889179594bfce5dc5b
+test,Post-Antifoam Addition,2,root,Post-Antifoam Addition::root::Post-Antifoam Addition/frame_0085.jpg,Post-Antifoam Addition/frame_0085.jpg,e3724ff55c52404be7464d87a11810b7c9b69f6430174ab94a7596158385747f
+test,Post-Antifoam Addition,2,root,Post-Antifoam Addition::root::Post-Antifoam Addition/frame_0034.jpg,Post-Antifoam Addition/frame_0034.jpg,3d5c2f16a9599ef4df9612d41ac11e694dbeedaecda441a72c54ce86e3444e97
+test,Post-Antifoam Addition,2,root,Post-Antifoam Addition::root::Post-Antifoam Addition/frame_0032.jpg,Post-Antifoam Addition/frame_0032.jpg,9165ebd8276aa350650eeea36a8ab00a60eea0f82848f1d4fc96a912869d9a18
+test,Post-Antifoam Addition,2,root,Post-Antifoam Addition::root::Post-Antifoam Addition/frame_0024.jpg,Post-Antifoam Addition/frame_0024.jpg,7e972ee19c4c7a1e939eb83432de1b9c2f2b5f60605b33101eefe8553e3a882c
+test,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/frame_0028.jpg,Foam-Medium/frame_0028.jpg,345b258548deb0fc30bc6dce33244198275017d66dd8d6408ae7dc612e8383d3
+test,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/WIN_20260707_13_34_35_Pro.jpg,Foam-Medium/WIN_20260707_13_34_35_Pro.jpg,a6f6e2b6050a3317718b1cbc6e4cf520900f048942e7d409a61c523fcae58ad5
+test,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/frame_0016.jpg,Foam-Medium/frame_0016.jpg,e8d147f2692da7c35466484133089e5e4939925e2d0da8dd666d0f3301e8a021
+test,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/frame_0012.jpg,Foam-Medium/frame_0012.jpg,ef4ff4c6cf23a8797c0c4c29417cc09de3b097a914ddad2776b9e6d0895e7a79
+test,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/WIN_20260707_13_32_06_Pro.jpg,Foam-Medium/WIN_20260707_13_32_06_Pro.jpg,56591af3dc315e7a82bf25a63a1f6e0e2c73ff266157dc0b5a1901d884ba4f57
+test,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/WIN_20260707_13_26_31_Pro (2).jpg,Foam-Medium/WIN_20260707_13_26_31_Pro (2).jpg,467a1c9a8d567ad73d4e4216c80ca965214052edcf95e7b59b7e601603c3cee0
+test,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/frame_0007.jpg,Foam-Medium/frame_0007.jpg,5ca03b31e62c095ba1ea4b6fc3086ef812a589f17e2b92135ff4081ee8385952
+test,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/WIN_20260707_13_33_09_Pro.jpg,Foam-Medium/WIN_20260707_13_33_09_Pro.jpg,d19d9ca955114fc9540cc5e39fc809dc3361d4455dd1c85c08de5a0565d04eae
+test,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/frame_0077.jpg,Foam-Medium/frame_0077.jpg,2abc71f670b1da2dd539fbe4beeaab8fdfe55e47651d344e950118c69bc6ce1a
+test,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/WIN_20260707_13_34_26_Pro.jpg,Foam-Medium/WIN_20260707_13_34_26_Pro.jpg,6d8790bf98ee2c44e8a01883459a28c0952606002779e4ba5514ebcc6a8a9641
+test,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/WIN_20260707_13_32_59_Pro.jpg,Foam-Medium/WIN_20260707_13_32_59_Pro.jpg,55462ab327f0f69ec800f47477f3884033e84be9234fe7944b97fcb025310d23
+test,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/frame_0089.jpg,Foam-Medium/frame_0089.jpg,baa37a20deb153c9c7fa4839142fff43727a1a849d19bd41a045107a4e0cd686
+test,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/frame_0060.jpg,Foam-Medium/frame_0060.jpg,fc1fa09e22da17432a4475e956a64d5dbdaa588fad7a23c9b30aa38f6a44c585
+test,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/frame_0058.jpg,Foam-Medium/frame_0058.jpg,40a6a974e63b9b50a12d520afb9de5c1c6ca020bb1a811a63b0123edd64a54a1
+test,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/IMG_5493.png,Foam-Medium/IMG_5493.png,a5bacd3b08033e05a77987e35a862c3d90854c4e0a0101524dc5889bd373b256
+test,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/WIN_20260707_13_31_09_Pro.jpg,Foam-Medium/WIN_20260707_13_31_09_Pro.jpg,2783d6305840b7c1e47df4c3be5acb7d36d7123caec5f15b322f8cd9474d4538
+test,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/frame_0096.jpg,Foam-Medium/frame_0096.jpg,a256bb16acb8a69779c0e5b35c6526e400f66715d5ce36ab761cdea0433e8fea
+test,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/frame_0069.jpg,Foam-Medium/frame_0069.jpg,af988112003066b2761d92ffe9dee27cc345c8ac0af2afe70945705245f0e029
+test,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/frame_0041.jpg,Foam-Medium/frame_0041.jpg,e58eae7555a3ad74497762cc1f43d83b8694319ee8b46de3a2c1ead9f8312719
+test,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/frame_0054.jpg,Foam-Medium/frame_0054.jpg,e7807882358887bcc3aefcc0e133f3cf2bd1ca449c41cdd79edad8a86c93aded
+test,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/frame_0044.jpg,Foam-Medium/frame_0044.jpg,0ce443a330c00f413a5ed76c57221341cd2eef995090ea1129d938a1ac95e171
+test,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/frame_0085.jpg,Foam-Medium/frame_0085.jpg,7cf920edb8fa5e7c4c45629e132dcd7e11e109762bdffdaa5bd1a07c81701df7
+test,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/WIN_20260707_13_34_38_Pro.jpg,Foam-Medium/WIN_20260707_13_34_38_Pro.jpg,957d188088477bf4017e0aedebe038612d64d5a2095aaf8e615b22470756bd9f
+test,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/WIN_20260707_13_33_15_Pro.jpg,Foam-Medium/WIN_20260707_13_33_15_Pro.jpg,03b2c6a4f1cb417fb040a5212226063e11712ee39f2582c8e82cb132df0178bc
+test,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/WIN_20260707_13_34_53_Pro.jpg,Foam-Medium/WIN_20260707_13_34_53_Pro.jpg,4ebb3a52ed2c9d05024e5bea2bcbb1351f99de43266793b1020aae325c04efaa
+test,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/frame_0023.jpg,Foam-Medium/frame_0023.jpg,f909704f1d4fca680404df917b3a1b7a8f60600bc82fd467c46bec854c338a93
+test,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/frame_0033.jpg,Foam-Medium/frame_0033.jpg,e784f3ed73778a0042802e62a5619af8d7a9340a29bbdb8fc4894e038fbda2f5
+test,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/WIN_20260707_13_35_19_Pro.jpg,Foam-Medium/WIN_20260707_13_35_19_Pro.jpg,15295565551f3e6240fdaf306e8213060c5d1ac10ab92daf7323e5b4d083d9b0
+test,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/WIN_20260707_13_26_57_Pro.jpg,Foam-Medium/WIN_20260707_13_26_57_Pro.jpg,78c3d566d1e27058da9bfae511efa6b017093c4f3adc2a0220b13a3208a6ffa1
+test,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/WIN_20260707_13_35_10_Pro.jpg,Foam-Medium/WIN_20260707_13_35_10_Pro.jpg,60258053770fa13b06247db6efb6b72ac80c95461bb7c2fd2a789483c4459e67
+test,Foam-Medium,3,root,Foam-Medium::root::Foam-Medium/WIN_20260707_13_35_00_Pro.jpg,Foam-Medium/WIN_20260707_13_35_00_Pro.jpg,332bef9b6c46607531243f23be647655b00a569cfff486f8046f365b1ec29602
+test,No Foam,4,root,No Foam::root::No Foam/frame_0161.jpg,No Foam/frame_0161.jpg,a58de58a8d7fb2048c452712635100e21dc67b1eb157879b3ceb782ce6a63d24
+test,No Foam,4,root,No Foam::root::No Foam/frame_0149.jpg,No Foam/frame_0149.jpg,bbaceddb9ed4dd4f119d500abc5573dad1e47bfb1163824ffb8f7026085885ec
+test,No Foam,4,root,No Foam::root::No Foam/WIN_20260707_13_09_36_Pro (2).jpg,No Foam/WIN_20260707_13_09_36_Pro (2).jpg,114bb64e73f48cf1cee2e0cc6120e6befebf5e285ce63f7f0b8dcc8e0db41ab7
+test,No Foam,4,root,No Foam::root::No Foam/WIN_20260707_13_41_17_Pro.jpg,No Foam/WIN_20260707_13_41_17_Pro.jpg,293374a982f0e1ed510a670425c088ad96f4f7ba5009556e54aa385ee462b293
+test,No Foam,4,root,No Foam::root::No Foam/frame_0015.jpg,No Foam/frame_0015.jpg,5774dfc12964e32df602b28cacdbb09543800ada9ed29f728474969f7b6ff79b
+test,No Foam,4,root,No Foam::root::No Foam/WIN_20260707_13_09_46_Pro.jpg,No Foam/WIN_20260707_13_09_46_Pro.jpg,08eb24ce085452390d6dc3b3cc32005591677345bc9fbbdcc45ebb10ec7f259a
+test,No Foam,4,root,No Foam::root::No Foam/frame_0089.jpg,No Foam/frame_0089.jpg,f635b9fdb93c0ae692c0c2e2671492675bee246c80442292a28cb6dfbf869ea8
+test,No Foam,4,root,No Foam::root::No Foam/frame_0114.jpg,No Foam/frame_0114.jpg,904e65a0922c46cb5e96ef061f0e79d118f731c4be4044ee9f1fe9a3f1485b94
+test,No Foam,4,root,No Foam::root::No Foam/frame_0101.jpg,No Foam/frame_0101.jpg,652636fff4d18feb1a9fc11a8eee17ba51cc8aabc9027635a0ac87e1234e87bd
+test,No Foam,4,root,No Foam::root::No Foam/frame_0059.jpg,No Foam/frame_0059.jpg,ddc54f2d600edbab490cd630b312614365c7e62d9cd10c50bf71aade96a14ec2
+test,No Foam,4,root,No Foam::root::No Foam/frame_0139.jpg,No Foam/frame_0139.jpg,1280b81f8283e1b9de3254b9bd2db40a546eb1a06847ee2d97f920b46b05ad64
+test,No Foam,4,root,No Foam::root::No Foam/frame_0110.jpg,No Foam/frame_0110.jpg,294ece3db53e85e1e68df75a3ce6c2ccd597a290e21148a0c28cb46551939dca
+test,No Foam,4,root,No Foam::root::No Foam/WIN_20260707_13_08_23_Pro.jpg,No Foam/WIN_20260707_13_08_23_Pro.jpg,29bc291d99024134d9eaa5e2ccc899e87863b1c663a4eff082378c4be1d1858b
+test,No Foam,4,root,No Foam::root::No Foam/IMG_5476.png,No Foam/IMG_5476.png,2fdc05c361d3adf730e9db2bde2b7b97e7d7970012d81427d6dbb4f26da22282
+test,No Foam,4,root,No Foam::root::No Foam/frame_0136.jpg,No Foam/frame_0136.jpg,d42e1aa8726c7762a9744ceb2446e0436708dbab7a450d6b28493920ee0043bd
+test,No Foam,4,root,No Foam::root::No Foam/frame_0080.jpg,No Foam/frame_0080.jpg,0e257eea17c66e3ce425aada64efabd2b78e85af64afb2b0ff0035e4e8e0abea
+test,No Foam,4,root,No Foam::root::No Foam/IMG_5463.png,No Foam/IMG_5463.png,f16900c15853f8f935534252236c0db233a5a5fae2ca0faf30e45bb887ab954a
+test,No Foam,4,root,No Foam::root::No Foam/frame_0082.jpg,No Foam/frame_0082.jpg,c37d9d1f1a662f408f3bb0969e58758ef7384fff051086a69ea60a7eec63b10b
+test,No Foam,4,root,No Foam::root::No Foam/frame_0069.jpg,No Foam/frame_0069.jpg,144cbb1a42c2b32cff2232213190b34ccfbc8d219141ed056c0d5e7d03a2f69f
+test,No Foam,4,root,No Foam::root::No Foam/frame_0041.jpg,No Foam/frame_0041.jpg,54c980d4c8b8c7a39f84fb40c42194b08295e9d921bb7d578f2accf956aa135c
+test,No Foam,4,root,No Foam::root::No Foam/frame_0055.jpg,No Foam/frame_0055.jpg,4edbd688f5f3684859da65a062ceac3e63a75902cc4581e096d99ab6dbc1bc8e
+test,No Foam,4,root,No Foam::root::No Foam/WIN_20260707_13_09_29_Pro.jpg,No Foam/WIN_20260707_13_09_29_Pro.jpg,df88a825069691d233b8795c82b8a9ec613e1f67990ed45c40aa4dde4677731d
+test,No Foam,4,root,No Foam::root::No Foam/frame_0068.jpg,No Foam/frame_0068.jpg,2739b131e5bc44fc1c3ec7379218a7d7af0b94dbec2fa895e35680992e59f818
+test,No Foam,4,root,No Foam::root::No Foam/frame_0097.jpg,No Foam/frame_0097.jpg,d68cc193e75b5777ff89fe999ac0a2cca289ab6dd31d9ee94904d74a32919f75
+test,No Foam,4,root,No Foam::root::No Foam/frame_0124.jpg,No Foam/frame_0124.jpg,d6ce9abdd53e0bb2fde6807a88e205eb2eaaa86300bae2513b96841eb5cd6ee2
+test,No Foam,4,root,No Foam::root::No Foam/frame_0125.jpg,No Foam/frame_0125.jpg,3b1160b0558b09bd9be29626e1d9e09957ef59777bfee87ffa19beb5f4f933ee
+test,No Foam,4,root,No Foam::root::No Foam/frame_0051.jpg,No Foam/frame_0051.jpg,11d26788be7fae09997274e9f8e816801d87b39d770132d1dc0e9d318d23567d
+test,No Foam,4,root,No Foam::root::No Foam/IMG_5473.png,No Foam/IMG_5473.png,8a2a8531011fdce545bca423e67b01f6be90892dbec6c48316e5094eefa2eb06
+test,No Foam,4,root,No Foam::root::No Foam/frame_0009.jpg,No Foam/frame_0009.jpg,a94e9ab13b2891860402c0f0ad1cf5e3587f07777dec17e7903c7730239090f3
+test,No Foam,4,root,No Foam::root::No Foam/frame_0169.jpg,No Foam/frame_0169.jpg,e222696eff39c816dc1e83da619d90b97bed3b464dbcc49aec2865302242d70a
+test,No Foam,4,root,No Foam::root::No Foam/frame_0154.jpg,No Foam/frame_0154.jpg,d121be2d5afcdd0248a05fab0875c7073c530b4bb9f6a6bc74dc33cfb47cdd59
+test,No Foam,4,root,No Foam::root::No Foam/frame_0168.jpg,No Foam/frame_0168.jpg,15d3cc04e94a6340144fffd635f7e2498cce35155acbbdaf4d769c10281d87c4
+test,No Foam,4,root,No Foam::root::No Foam/frame_0036.jpg,No Foam/frame_0036.jpg,5c561dfea66296fc4cbe11c6dd4ca26a4f67ec9486ab31228e47818815a3fbd8
+test,No Foam,4,root,No Foam::root::No Foam/frame_0027.jpg,No Foam/frame_0027.jpg,922b960cdc6570bfd8054f1b43fe96270872b093e01c20d4f93abe8be4cc8d35
+test,No Foam,4,root,No Foam::root::No Foam/WIN_20260707_13_06_43_Pro.jpg,No Foam/WIN_20260707_13_06_43_Pro.jpg,ba4bc17d57b741b38d8575911a0f02c929b7bcef8386e06b9955079e8bb96034
+test,No Foam,4,root,No Foam::root::No Foam/WIN_20260707_13_09_04_Pro.jpg,No Foam/WIN_20260707_13_09_04_Pro.jpg,f9204d18a6136bbcb84dd37ac2a05da77a19fe97a3da10dd7ae95545ae73a767
+test,No Foam,4,root,No Foam::root::No Foam/frame_0179.jpg,No Foam/frame_0179.jpg,fd6805ee7a61f9bd0f00482e861273933b29c4c9a98b86d342f7f16ffa401b75
+test,No Foam,4,root,No Foam::root::No Foam/frame_0145.jpg,No Foam/frame_0145.jpg,ef80c119f9543b8e699ba34595e79dd468126cbfac393e505447f8c99eeea772
+test,No Foam,4,root,No Foam::root::No Foam/frame_0019.jpg,No Foam/frame_0019.jpg,3b789ceac279740b8403c39008541195d209d337e4358c7d52a54681ff9be072
+test,No Foam,4,root,No Foam::root::No Foam/frame_0025.jpg,No Foam/frame_0025.jpg,c4b1a0536bbc66ff87e43139d1ccf3e8f8ccdc7f1ec309ac4b59668ff7d6c358

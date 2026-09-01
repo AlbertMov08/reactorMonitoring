@@ -3,3 +3,6 @@ uvicorn
 tensorflow
 pillow
 numpy
+requests
+gspread
+google-auth
