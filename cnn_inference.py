@@ -1537,9 +1537,9 @@ async def get_home():
     const FULL_ENSEMBLE_EVERY = __FULL_ENSEMBLE_EVERY__;
     const MIN_WEIGHTED_MODEL_AGREEMENT = __MIN_WEIGHTED_MODEL_AGREEMENT__;
 
-    const GOOGLE_CLIENT_ID = "1003881011936-ntgdn3d28kbbn5si56fkmmfppakst7bg.apps.googleusercontent.com";
-    const GOOGLE_API_KEY = "AIzaSyCKS54ZwDki5N4XyauyEind0OZ8-O6r-uM";
-    const GOOGLE_SCOPES = "https://www.googleapis.com/auth/drive.readonly";
+    const GOOGLE_CLIENT_ID = "";
+    const GOOGLE_API_KEY = "";
+    const GOOGLE_SCOPES = "";
 
     function prettyModelName(name) {
       const map = {
