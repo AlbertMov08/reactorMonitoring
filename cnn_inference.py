@@ -2279,7 +2279,7 @@ async def get_home():
           includeItemsFromAllDrives: "true"
         });
 
-        const response = await fetch(`https://www.googleapis.com/drive/v3/files?${params.toString()}`, {
+        const response = await fetch(``, {
           headers: {
             Authorization: `Bearer ${accessToken}`
           }
